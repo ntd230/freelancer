@@ -1,0 +1,24 @@
+{
+    "require": {
+        "pmvc/pmvc": "*",
+        "pmvc-plugin/app_action_router": "*",
+        "pmvc-plugin/controller": "*",
+        "pmvc-plugin/cli": "*",
+        "pmvc-plugin/cache_header": "*",
+        "pmvc-plugin/dispatcher": "*",
+        "pmvc-plugin/dotenv": "*",
+        "pmvc-plugin/error": "*",
+        "pmvc-plugin/debug": "*",
+        "pmvc-plugin/debug_console": "*",
+        "pmvc-plugin/debug_cli": "*",
+        "pmvc-plugin/default_forward": "*",
+        "pmvc-plugin/view": "*",
+        "pmvc-plugin/view_react": "*",
+        "pmvc-plugin/view_cli": "*",
+        "pmvc-plugin/view_config_helper": "*",
+        "pmvc-app/hello_app": "*",
+        "pmvc-theme/hello_react": "*",
+        "mouf/nodejs-installer": "~1.0"
+    }
+
+}

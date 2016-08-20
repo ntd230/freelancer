@@ -1,0 +1,1046 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1cfa174418f3d27b54bb47981798140d",
+    "content-hash": "56c264186b99b4ef96253de7d2fe7c91",
+    "packages": [
+        {
+            "name": "mouf/nodejs-installer",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/nodejs-installer.git",
+                "reference": "bc598de486bb450e684221a3abcbfd6017dfca35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/nodejs-installer/zipball/bc598de486bb450e684221a3abcbfd6017dfca35",
+                "reference": "bc598de486bb450e684221a3abcbfd6017dfca35",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "ext-openssl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Mouf\\NodeJsInstaller\\NodeJsPlugin"
+                ],
+                "mouf": {
+                    "logo": "node-js.png"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\NodeJsInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "An installer package that let's you install NodeJS and NPM as a Composer dependency.",
+            "homepage": "http://mouf-php.com/packages/mouf/nodejs-installer",
+            "keywords": [
+                "installer",
+                "nodejs",
+                "npm"
+            ],
+            "time": "2016-01-05 14:00:57"
+        },
+        {
+            "name": "pmvc-app/hello_app",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-app/hello_app.git",
+                "reference": "0cf12f9dd6f876ab7a52a790aeddc9cf1bd1a36a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-app/hello_app/zipball/0cf12f9dd6f876ab7a52a790aeddc9cf1bd1a36a",
+                "reference": "0cf12f9dd6f876ab7a52a790aeddc9cf1bd1a36a",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "Hello World Plugin, show you how the pmvc work",
+            "keywords": [
+                "hello",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-01-31 18:13:38"
+        },
+        {
+            "name": "pmvc-plugin/app_action_router",
+            "version": "0.7.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/app_action_router.git",
+                "reference": "b700542c74d8685ef7eeda9b9c8c91bf9c368d81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/app_action_router/zipball/b700542c74d8685ef7eeda9b9c8c91bf9c368d81",
+                "reference": "b700542c74d8685ef7eeda9b9c8c91bf9c368d81",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/http": "*",
+                "pmvc-plugin/url": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC App Action Router",
+            "keywords": [
+                "plug-in",
+                "pmvc",
+                "router"
+            ],
+            "time": "2016-08-13 12:26:30"
+        },
+        {
+            "name": "pmvc-plugin/asset",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/asset.git",
+                "reference": "4bfd1f81dd0ecc4bd63789c523ea10c1534bbb4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/asset/zipball/4bfd1f81dd0ecc4bd63789c523ea10c1534bbb4f",
+                "reference": "4bfd1f81dd0ecc4bd63789c523ea10c1534bbb4f",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC asset management",
+            "homepage": "https://github.com/pmvc-plugin/asset",
+            "keywords": [
+                "asset",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 07:01:45"
+        },
+        {
+            "name": "pmvc-plugin/cache_header",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/cache_header.git",
+                "reference": "6f5629ac76883f24c2a1dcb2604ae82781018cb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/cache_header/zipball/6f5629ac76883f24c2a1dcb2604ae82781018cb5",
+                "reference": "6f5629ac76883f24c2a1dcb2604ae82781018cb5",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "A library help you setup http cache header",
+            "homepage": "https://github.com/pmvc-plugin/cache_header",
+            "keywords": [
+                "browser",
+                "cache",
+                "header",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-06-17 14:27:07"
+        },
+        {
+            "name": "pmvc-plugin/cli",
+            "version": "0.7.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/cli.git",
+                "reference": "e9e93be49fabebf0836aae4a604f11b7d9dbc8db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/cli/zipball/e9e93be49fabebf0836aae4a604f11b7d9dbc8db",
+                "reference": "e9e93be49fabebf0836aae4a604f11b7d9dbc8db",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "wp-cli/php-cli-tools": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC command line router",
+            "keywords": [
+                "cli",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-11 11:05:14"
+        },
+        {
+            "name": "pmvc-plugin/controller",
+            "version": "0.1.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/controller.git",
+                "reference": "ef92b4a74d02c94874afc3ffb68f72d4965bf2f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/controller/zipball/ef92b4a74d02c94874afc3ffb68f72d4965bf2f9",
+                "reference": "ef92b4a74d02c94874afc3ffb68f72d4965bf2f9",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC Controller",
+            "homepage": "https://github.com/pmvc/pmvc",
+            "keywords": [
+                "controller",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-15 16:49:04"
+        },
+        {
+            "name": "pmvc-plugin/debug",
+            "version": "0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/debug.git",
+                "reference": "78f4f9e2d70ae4be053a3206096c35f3a1d62c1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/debug/zipball/78f4f9e2d70ae4be053a3206096c35f3a1d62c1c",
+                "reference": "78f4f9e2d70ae4be053a3206096c35f3a1d62c1c",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "pmvc debug dump tool",
+            "homepage": "https://github.com/pmvc/pmvc",
+            "keywords": [
+                "debug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 17:31:31"
+        },
+        {
+            "name": "pmvc-plugin/debug_cli",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/debug_cli.git",
+                "reference": "d7742008cb1cfad981c789d2416acd8d3fa1edfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/debug_cli/zipball/d7742008cb1cfad981c789d2416acd8d3fa1edfe",
+                "reference": "d7742008cb1cfad981c789d2416acd8d3fa1edfe",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/cli": "*",
+                "pmvc-plugin/debug": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC debug output for command line ",
+            "keywords": [
+                "cli",
+                "debug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-07-22 14:14:08"
+        },
+        {
+            "name": "pmvc-plugin/debug_console",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/debug_console.git",
+                "reference": "f187aa1abaf0fdb077a1e37511ef307ad9007e5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/debug_console/zipball/f187aa1abaf0fdb077a1e37511ef307ad9007e5d",
+                "reference": "f187aa1abaf0fdb077a1e37511ef307ad9007e5d",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/asset": "*",
+                "pmvc-plugin/debug": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "pmvc debug_console",
+            "homepage": "https://github.com/pmvc-plugin/debug_console",
+            "keywords": [
+                "debug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-06 04:49:48"
+        },
+        {
+            "name": "pmvc-plugin/default_forward",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/default_forward.git",
+                "reference": "d05a8565e408a736c2865ead028d55df4c0c515a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/default_forward/zipball/d05a8565e408a736c2865ead028d55df4c0c515a",
+                "reference": "d05a8565e408a736c2865ead028d55df4c0c515a",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "pmvc-plugin/url": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC default forward (error, debug etc)",
+            "keywords": [
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 06:45:36"
+        },
+        {
+            "name": "pmvc-plugin/dispatcher",
+            "version": "0.1.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/dispatcher.git",
+                "reference": "4ab9b8307606e8dc39107ff28cce2067a2ebb026"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/dispatcher/zipball/4ab9b8307606e8dc39107ff28cce2067a2ebb026",
+                "reference": "4ab9b8307606e8dc39107ff28cce2067a2ebb026",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC observer plugin, event dispatcher",
+            "homepage": "https://github.com/pmvc/pmvc",
+            "keywords": [
+                "observable",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-06 12:59:03"
+        },
+        {
+            "name": "pmvc-plugin/dotenv",
+            "version": "0.1.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/dotenv.git",
+                "reference": "5f52a5b9ec2057a420570c83ef6fc78b6b2951fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/dotenv/zipball/5f52a5b9ec2057a420570c83ef6fc78b6b2951fc",
+                "reference": "5f52a5b9ec2057a420570c83ef6fc78b6b2951fc",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/underscore": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC Plugin For phpdotenv",
+            "homepage": "https://github.com/pmvc/pmvc",
+            "keywords": [
+                "dotenv",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 16:10:48"
+        },
+        {
+            "name": "pmvc-plugin/error",
+            "version": "0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/error.git",
+                "reference": "9df698e2c63b8d097ffe16be29cd2440a300869c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/error/zipball/9df698e2c63b8d097ffe16be29cd2440a300869c",
+                "reference": "9df698e2c63b8d097ffe16be29cd2440a300869c",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "suggest": {
+                "pmvc-plugin/dispatcher": "Allows event dispatch"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC error hnadler",
+            "keywords": [
+                "error",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 17:18:07"
+        },
+        {
+            "name": "pmvc-plugin/get",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/get.git",
+                "reference": "2ea55ad1742bc7c095e0985a527a1267c23df76b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/get/zipball/2ea55ad1742bc7c095e0985a527a1267c23df76b",
+                "reference": "2ea55ad1742bc7c095e0985a527a1267c23df76b",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "smart get function, help you get configure from different storage simply. ",
+            "keywords": [
+                "get",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-06-17 04:22:02"
+        },
+        {
+            "name": "pmvc-plugin/getenv",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/getenv.git",
+                "reference": "2b9546227ee682ecd47b0a01a2ac86492e45cfb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/getenv/zipball/2b9546227ee682ecd47b0a01a2ac86492e45cfb8",
+                "reference": "2b9546227ee682ecd47b0a01a2ac86492e45cfb8",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/get": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "getenv for PMVC get plugin",
+            "keywords": [
+                "get",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-06-17 04:18:25"
+        },
+        {
+            "name": "pmvc-plugin/http",
+            "version": "0.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/http.git",
+                "reference": "0eead609ee26328803c756fadf93f2dc02287fc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/http/zipball/0eead609ee26328803c756fadf93f2dc02287fc5",
+                "reference": "0eead609ee26328803c756fadf93f2dc02287fc5",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "pmvc-plugin/url": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC Http Support",
+            "keywords": [
+                "http",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-07-21 10:12:57"
+        },
+        {
+            "name": "pmvc-plugin/underscore",
+            "version": "0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/underscore.git",
+                "reference": "98ee2e6cf1cd8d80a6da72febda20e2dcc6b5d6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/underscore/zipball/98ee2e6cf1cd8d80a6da72febda20e2dcc6b5d6a",
+                "reference": "98ee2e6cf1cd8d80a6da72febda20e2dcc6b5d6a",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "Convert array or camel case to underscore, or underscore to others.",
+            "keywords": [
+                "array",
+                "camelcase",
+                "plug-in",
+                "pmvc",
+                "underscore"
+            ],
+            "time": "2016-08-12 09:40:59"
+        },
+        {
+            "name": "pmvc-plugin/url",
+            "version": "0.1.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/url.git",
+                "reference": "2d0224a9ca8948949e360fa1aeffcf8bfc76f6f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/url/zipball/2d0224a9ca8948949e360fa1aeffcf8bfc76f6f2",
+                "reference": "2d0224a9ca8948949e360fa1aeffcf8bfc76f6f2",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/getenv": "*",
+                "pmvc-plugin/underscore": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC url utility",
+            "homepage": "https://github.com/pmvc-plugin/url",
+            "keywords": [
+                "plug-in",
+                "pmvc",
+                "url"
+            ],
+            "time": "2016-08-13 11:56:14"
+        },
+        {
+            "name": "pmvc-plugin/view",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/view.git",
+                "reference": "4631bce28b59c3f6cee927bffcbce19c64c6f804"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/view/zipball/4631bce28b59c3f6cee927bffcbce19c64c6f804",
+                "reference": "4631bce28b59c3f6cee927bffcbce19c64c6f804",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PMVC\\PlugIn\\view\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC official view engine",
+            "homepage": "https://github.com/pmvc-plugin/view",
+            "keywords": [
+                "plug-in",
+                "pmvc",
+                "view"
+            ],
+            "time": "2016-08-15 16:28:41"
+        },
+        {
+            "name": "pmvc-plugin/view_cli",
+            "version": "0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/view_cli.git",
+                "reference": "936009be2ff6a135714e39319bdc1000ae5467da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/view_cli/zipball/936009be2ff6a135714e39319bdc1000ae5467da",
+                "reference": "936009be2ff6a135714e39319bdc1000ae5467da",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/cli": "*",
+                "pmvc-plugin/view": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "Command line View engine",
+            "keywords": [
+                "cli",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-06-05 07:50:29"
+        },
+        {
+            "name": "pmvc-plugin/view_config_helper",
+            "version": "0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/view_config_helper.git",
+                "reference": "227b4ad0c0e72f05088c1f19baf2b082a19ce146"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/view_config_helper/zipball/227b4ad0c0e72f05088c1f19baf2b082a19ce146",
+                "reference": "227b4ad0c0e72f05088c1f19baf2b082a19ce146",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "pmvc-plugin/dotenv": "*",
+                "pmvc-plugin/view": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "auto fill view's configure",
+            "keywords": [
+                "configure",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-20 05:53:23"
+        },
+        {
+            "name": "pmvc-plugin/view_react",
+            "version": "0.2.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/view_react.git",
+                "reference": "33b73897052f30bbbf7fdc404681b846d9b3eb19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/view_react/zipball/33b73897052f30bbbf7fdc404681b846d9b3eb19",
+                "reference": "33b73897052f30bbbf7fdc404681b846d9b3eb19",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/get": "*",
+                "pmvc-plugin/view": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC view engine for react.js",
+            "homepage": "https://github.com/pmvc-plugin/view_react",
+            "keywords": [
+                "plug-in",
+                "pmvc",
+                "react",
+                "template",
+                "view"
+            ],
+            "time": "2016-07-27 05:18:08"
+        },
+        {
+            "name": "pmvc-theme/hello_react",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-theme/hello_react.git",
+                "reference": "0af518867db4e7bbfb935180d78033d46bbf4b3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-theme/hello_react/zipball/0af518867db4e7bbfb935180d78033d46bbf4b3f",
+                "reference": "0af518867db4e7bbfb935180d78033d46bbf4b3f",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/view_react": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "Hello World Theme for PMVC Facebook react.js",
+            "keywords": [
+                "hello",
+                "pmvc",
+                "react",
+                "theme"
+            ],
+            "time": "2016-07-26 19:06:09"
+        },
+        {
+            "name": "pmvc/pmvc",
+            "version": "0.7.83",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc/pmvc.git",
+                "reference": "6fcbda7587117c044280b6f7bdaf800ed97d6b6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc/pmvc/zipball/6fcbda7587117c044280b6f7bdaf800ed97d6b6f",
+                "reference": "6fcbda7587117c044280b6f7bdaf800ed97d6b6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PMVC\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "Pure plugin framework (PMVC7), use anything you like. No mvc, http inside.",
+            "keywords": [
+                "framework",
+                "mvc",
+                "phramework",
+                "plug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-12 05:37:21"
+        },
+        {
+            "name": "wp-cli/php-cli-tools",
+            "version": "v0.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/php-cli-tools.git",
+                "reference": "5311a4b99103c0505db015a334be4952654d6e21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/5311a4b99103c0505db015a334be4952654d6e21",
+                "reference": "5311a4b99103c0505db015a334be4952654d6e21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "cli": "lib/"
+                },
+                "files": [
+                    "lib/cli/cli.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Logsdon",
+                    "email": "jlogsdon@php.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@handbuilt.co",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Console utilities for PHP",
+            "homepage": "http://github.com/wp-cli/php-cli-tools",
+            "keywords": [
+                "cli",
+                "console"
+            ],
+            "time": "2016-02-08 14:34:01"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
