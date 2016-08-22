@@ -11,6 +11,7 @@
         "pmvc-plugin/debug": "*",
         "pmvc-plugin/debug_console": "*",
         "pmvc-plugin/debug_cli": "*",
+        "pmvc-plugin/dev": "*",
         "pmvc-plugin/default_forward": "*",
         "pmvc-plugin/view": "*",
         "pmvc-plugin/view_react": "*",

@@ -1,0 +1,17 @@
+{
+    "name": "pmvc-theme/hello_react",
+    "description": "Hello World Theme for PMVC Facebook react.js",
+    "type": "library",
+    "keywords": ["hello", "theme", "pmvc", "react"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "require": {
+        "pmvc-plugin/view_react": "*"
+    },
+    "minimum-stability": "dev"
+}

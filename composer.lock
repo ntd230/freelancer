@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1cfa174418f3d27b54bb47981798140d",
-    "content-hash": "56c264186b99b4ef96253de7d2fe7c91",
+    "hash": "03b987da1869eabef6b9762a413a6597",
+    "content-hash": "ce3e4fbe9c95f37c1f73c25a2162004a",
     "packages": [
         {
             "name": "mouf/nodejs-installer",
@@ -442,6 +442,43 @@
             "time": "2016-08-03 06:45:36"
         },
         {
+            "name": "pmvc-plugin/dev",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/dev.git",
+                "reference": "8937a764ebd052f7ddf294aa00aedb14e9034330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/dev/zipball/8937a764ebd052f7ddf294aa00aedb14e9034330",
+                "reference": "8937a764ebd052f7ddf294aa00aedb14e9034330",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/debug": "*",
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC Develop Util for get all app, plugs etc",
+            "keywords": [
+                "dev",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-03 06:43:34"
+        },
+        {
             "name": "pmvc-plugin/dispatcher",
             "version": "0.1.18",
             "source": {
@@ -743,16 +780,16 @@
         },
         {
             "name": "pmvc-plugin/view",
-            "version": "0.3.5",
+            "version": "0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc-plugin/view.git",
-                "reference": "4631bce28b59c3f6cee927bffcbce19c64c6f804"
+                "reference": "fa7726a0f8fd69404e41c6718e506db45685e447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/view/zipball/4631bce28b59c3f6cee927bffcbce19c64c6f804",
-                "reference": "4631bce28b59c3f6cee927bffcbce19c64c6f804",
+                "url": "https://api.github.com/repos/pmvc-plugin/view/zipball/fa7726a0f8fd69404e41c6718e506db45685e447",
+                "reference": "fa7726a0f8fd69404e41c6718e506db45685e447",
                 "shasum": ""
             },
             "require": {
@@ -781,7 +818,7 @@
                 "pmvc",
                 "view"
             ],
-            "time": "2016-08-15 16:28:41"
+            "time": "2016-08-22 09:08:33"
         },
         {
             "name": "pmvc-plugin/view_cli",
@@ -823,16 +860,16 @@
         },
         {
             "name": "pmvc-plugin/view_config_helper",
-            "version": "0.1.8",
+            "version": "0.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc-plugin/view_config_helper.git",
-                "reference": "227b4ad0c0e72f05088c1f19baf2b082a19ce146"
+                "reference": "14241b0d4088281e00064fbdb925ff92f7eeadcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/view_config_helper/zipball/227b4ad0c0e72f05088c1f19baf2b082a19ce146",
-                "reference": "227b4ad0c0e72f05088c1f19baf2b082a19ce146",
+                "url": "https://api.github.com/repos/pmvc-plugin/view_config_helper/zipball/14241b0d4088281e00064fbdb925ff92f7eeadcb",
+                "reference": "14241b0d4088281e00064fbdb925ff92f7eeadcb",
                 "shasum": ""
             },
             "require": {
@@ -858,7 +895,7 @@
                 "plug-in",
                 "pmvc"
             ],
-            "time": "2016-08-20 05:53:23"
+            "time": "2016-08-22 17:34:35"
         },
         {
             "name": "pmvc-plugin/view_react",
