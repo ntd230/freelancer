@@ -1,5 +1,6 @@
 import React, {Component} from 'react'; 
 import {OneColumn} from 'pmvc_react_landing'; 
+import { reactStyle } from 'react-atomic-molecule';
 import Header from '../organisms/Header'; 
 import Footer from '../organisms/Footer'; 
 
@@ -25,4 +26,7 @@ const md = '@media (min-width: 48em)';
 const lg = '@media (min-width: 64em)';
 const xl = '@media (min-width: 80em)';
 const Styles = {
+    mdHeaderNav: reactStyle({
+        float: 'right' 
+    },[md, '.home-menu ul'])
 };

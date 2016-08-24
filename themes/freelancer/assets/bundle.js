@@ -17263,6 +17263,10 @@ webpackJsonp([0],[
 
 	var _reshow = __webpack_require__(324);
 
+	var _reactOrganismGeometryangle = __webpack_require__(359);
+
+	var _reactOrganismGeometryangle2 = _interopRequireDefault(_reactOrganismGeometryangle);
+
 	var Body = (function (_Component) {
 	    _inherits(Body, _Component);
 
@@ -17277,7 +17281,11 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var pageState = _reshow.pageStore.getState();
 	            var I18N = pageState.get('I18N').toJS();
-	            return _react2['default'].createElement(_pmvc_react_landing.ContentWrapper, null);
+	            return _react2['default'].createElement(
+	                _pmvc_react_landing.ContentWrapper,
+	                null,
+	                _react2['default'].createElement(_reactOrganismGeometryangle2['default'], null)
+	            );
 	        }
 	    }]);
 
@@ -17341,11 +17349,13 @@ webpackJsonp([0],[
 
 	var _pmvc_react_landing = __webpack_require__(175);
 
-	var _organismsHeader = __webpack_require__(250);
+	var _reactAtomicMolecule = __webpack_require__(250);
+
+	var _organismsHeader = __webpack_require__(320);
 
 	var _organismsHeader2 = _interopRequireDefault(_organismsHeader);
 
-	var _organismsFooter = __webpack_require__(323);
+	var _organismsFooter = __webpack_require__(358);
 
 	var _organismsFooter2 = _interopRequireDefault(_organismsFooter);
 
@@ -17386,7 +17396,11 @@ webpackJsonp([0],[
 	var md = '@media (min-width: 48em)';
 	var lg = '@media (min-width: 64em)';
 	var xl = '@media (min-width: 80em)';
-	var Styles = {};
+	var Styles = {
+	    mdHeaderNav: (0, _reactAtomicMolecule.reactStyle)({
+	        float: 'right'
+	    }, [md, '.home-menu ul'])
+	};
 	module.exports = exports['default'];
 
 /***/ },
@@ -17488,11 +17502,11 @@ webpackJsonp([0],[
 
 /***/ },
 /* 178 */
-[358, 179, 215, 216, 217, 218, 219, 222, 223, 225, 226, 227, 228, 180, 229, 230, 231, 232, 233, 234, 235, 236, 238, 182, 239, 240, 220, 210, 181, 241, 242, 224, 243, 244, 245, 246, 247, 248],
+[363, 179, 215, 216, 217, 218, 219, 222, 223, 225, 226, 227, 228, 180, 229, 230, 231, 232, 233, 234, 235, 236, 238, 182, 239, 240, 220, 210, 181, 241, 242, 224, 243, 244, 245, 246, 247, 248],
 /* 179 */
-[359, 180, 181],
+[364, 180, 181],
 /* 180 */
-[360, 181, 182],
+[365, 181, 182],
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -17549,9 +17563,9 @@ webpackJsonp([0],[
 
 /***/ },
 /* 182 */
-[361, 183, 209, 178],
+[366, 183, 209, 178],
 /* 183 */
-[362, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208],
+[367, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208],
 /* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18129,7 +18143,7 @@ webpackJsonp([0],[
 
 /***/ },
 /* 209 */
-[363, 178, 210, 211, 212],
+[368, 178, 210, 211, 212],
 /* 210 */
 /***/ function(module, exports) {
 
@@ -18227,7 +18241,7 @@ webpackJsonp([0],[
 
 /***/ },
 /* 212 */
-[364, 213, 214],
+[369, 213, 214],
 /* 213 */
 /***/ function(module, exports) {
 
@@ -18301,37 +18315,37 @@ webpackJsonp([0],[
 
 /***/ },
 /* 215 */
-[365, 181, 182],
+[370, 181, 182],
 /* 216 */
-[366, 181, 182],
+[371, 181, 182],
 /* 217 */
-[367, 181, 182],
+[372, 181, 182],
 /* 218 */
-[368, 181, 182],
+[373, 181, 182],
 /* 219 */
-[369, 182, 181, 220],
+[374, 182, 181, 220],
 /* 220 */
-[370, 221, 210],
+[375, 221, 210],
 /* 221 */
-[371, 210],
+[376, 210],
 /* 222 */
-[372, 182, 181],
+[377, 182, 181],
 /* 223 */
-[373, 181, 215, 224],
+[378, 181, 215, 224],
 /* 224 */
-[374, 181, 182],
+[379, 181, 182],
 /* 225 */
-[375, 178],
+[380, 178],
 /* 226 */
-[376, 178],
+[381, 178],
 /* 227 */
-[377, 181, 182],
+[382, 181, 182],
 /* 228 */
-[378, 181, 182],
+[383, 181, 182],
 /* 229 */
-[379, 182, 181],
+[384, 182, 181],
 /* 230 */
-[380, 220, 182, 181],
+[385, 220, 182, 181],
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18462,7 +18476,7 @@ webpackJsonp([0],[
 
 /***/ },
 /* 232 */
-[381, 181, 182],
+[386, 181, 182],
 /* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18596,11 +18610,11 @@ webpackJsonp([0],[
 
 /***/ },
 /* 234 */
-[382, 181, 182],
+[387, 181, 182],
 /* 235 */
-[383, 181, 182],
+[388, 181, 182],
 /* 236 */
-[384, 181, 232, 237, 220],
+[389, 181, 232, 237, 220],
 /* 237 */
 /***/ function(module, exports) {
 
@@ -18907,9 +18921,9 @@ webpackJsonp([0],[
 
 /***/ },
 /* 238 */
-[385, 232, 181],
+[390, 232, 181],
 /* 239 */
-[386, 181, 182],
+[391, 181, 182],
 /* 240 */
 4,
 /* 241 */
@@ -18954,19 +18968,19 @@ webpackJsonp([0],[
 
 /***/ },
 /* 242 */
-[387, 178],
-/* 243 */
-[388, 181, 182],
-/* 244 */
-[389, 178],
-/* 245 */
-[390, 178],
-/* 246 */
-[391, 178],
-/* 247 */
 [392, 178],
+/* 243 */
+[393, 181, 182],
+/* 244 */
+[394, 178],
+/* 245 */
+[395, 178],
+/* 246 */
+[396, 178],
+/* 247 */
+[397, 178],
 /* 248 */
-[393, 178],
+[398, 178],
 /* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18995,207 +19009,112 @@ webpackJsonp([0],[
 
 /***/ },
 /* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _organismsBrand = __webpack_require__(251);
-
-	var _organismsBrand2 = _interopRequireDefault(_organismsBrand);
-
-	var _organismsHeaderNav = __webpack_require__(252);
-
-	var _organismsHeaderNav2 = _interopRequireDefault(_organismsHeaderNav);
-
-	var _reactAtomicMolecule = __webpack_require__(253);
-
-	var Header = function Header(props) {
-	    return _react2['default'].createElement(
-	        _reactAtomicMolecule.SemanticUI,
-	        { style: Styles.header, className: 'home-menu pure-menu pure-menu-horizontal pure-menu-fixed' },
-	        _react2['default'].createElement(_organismsBrand2['default'], null),
-	        _react2['default'].createElement(_organismsHeaderNav2['default'], { style: Styles.headerNav })
-	    );
-	};
-
-	var Styles = {
-	    header: {
-	        background: '#2d3e50',
-	        padding: '0.5em',
-	        marginBottom: '10px'
-	    },
-	    headerNav: {
-	        display: 'inline-block'
-	    }
-	};
-
-	exports['default'] = Header;
-	module.exports = exports['default'];
-
-/***/ },
+[363, 251, 287, 288, 289, 290, 291, 294, 295, 297, 298, 299, 300, 252, 301, 302, 303, 304, 305, 306, 307, 308, 310, 254, 311, 4, 292, 282, 253, 312, 313, 296, 314, 315, 316, 317, 318, 319],
 /* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var Brand = function Brand(props) {
-	    return _react2['default'].createElement('div', null);
-	};
-
-	exports['default'] = Brand;
-	module.exports = exports['default'];
-
-/***/ },
+[364, 252, 253],
 /* 252 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var HeaderNav = function HeaderNav(props) {
-	    return _react2['default'].createElement('div', null);
-	};
-
-	exports['default'] = HeaderNav;
-	module.exports = exports['default'];
-
-/***/ },
+[365, 253, 254],
 /* 253 */
-[358, 254, 290, 291, 292, 293, 294, 297, 298, 300, 301, 302, 303, 255, 304, 305, 306, 307, 308, 309, 310, 311, 313, 257, 314, 4, 295, 285, 256, 315, 316, 299, 317, 318, 319, 320, 321, 322],
-/* 254 */
-[359, 255, 256],
-/* 255 */
-[360, 256, 257],
-/* 256 */
 181,
-/* 257 */
-[361, 258, 284, 253],
-/* 258 */
-[362, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283],
-/* 259 */
+/* 254 */
+[366, 255, 281, 250],
+/* 255 */
+[367, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280],
+/* 256 */
 184,
-/* 260 */
+/* 257 */
 185,
-/* 261 */
+/* 258 */
 186,
-/* 262 */
+/* 259 */
 187,
-/* 263 */
+/* 260 */
 188,
-/* 264 */
+/* 261 */
 189,
-/* 265 */
+/* 262 */
 190,
-/* 266 */
+/* 263 */
 191,
-/* 267 */
+/* 264 */
 192,
-/* 268 */
+/* 265 */
 193,
-/* 269 */
+/* 266 */
 194,
-/* 270 */
+/* 267 */
 195,
-/* 271 */
+/* 268 */
 196,
-/* 272 */
+/* 269 */
 197,
-/* 273 */
+/* 270 */
 198,
-/* 274 */
+/* 271 */
 199,
-/* 275 */
+/* 272 */
 200,
-/* 276 */
+/* 273 */
 201,
-/* 277 */
+/* 274 */
 202,
-/* 278 */
+/* 275 */
 203,
-/* 279 */
+/* 276 */
 204,
-/* 280 */
+/* 277 */
 205,
-/* 281 */
+/* 278 */
 206,
-/* 282 */
+/* 279 */
 207,
-/* 283 */
+/* 280 */
 208,
-/* 284 */
-[363, 253, 285, 286, 287],
-/* 285 */
+/* 281 */
+[368, 250, 282, 283, 284],
+/* 282 */
 210,
-/* 286 */
+/* 283 */
 211,
-/* 287 */
-[364, 288, 289],
-/* 288 */
+/* 284 */
+[369, 285, 286],
+/* 285 */
 213,
-/* 289 */
+/* 286 */
 214,
+/* 287 */
+[370, 253, 254],
+/* 288 */
+[371, 253, 254],
+/* 289 */
+[372, 253, 254],
 /* 290 */
-[365, 256, 257],
+[373, 253, 254],
 /* 291 */
-[366, 256, 257],
+[374, 254, 253, 292],
 /* 292 */
-[367, 256, 257],
+[375, 293, 282],
 /* 293 */
-[368, 256, 257],
+[376, 282],
 /* 294 */
-[369, 257, 256, 295],
+[377, 254, 253],
 /* 295 */
-[370, 296, 285],
+[378, 253, 287, 296],
 /* 296 */
-[371, 285],
+[379, 253, 254],
 /* 297 */
-[372, 257, 256],
+[380, 250],
 /* 298 */
-[373, 256, 290, 299],
+[381, 250],
 /* 299 */
-[374, 256, 257],
+[382, 253, 254],
 /* 300 */
-[375, 253],
+[383, 253, 254],
 /* 301 */
-[376, 253],
+[384, 254, 253],
 /* 302 */
-[377, 256, 257],
+[385, 292, 254, 253],
 /* 303 */
-[378, 256, 257],
-/* 304 */
-[379, 257, 256],
-/* 305 */
-[380, 295, 257, 256],
-/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19228,7 +19147,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _index = __webpack_require__(253);
+	var _index = __webpack_require__(250);
 
 	function _interopRequireDefault(obj) {
 	    return obj && obj.__esModule ? obj : { "default": obj };
@@ -19313,9 +19232,9 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 307 */
-[381, 256, 257],
-/* 308 */
+/* 304 */
+[386, 253, 254],
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19370,15 +19289,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(256);
+	var _classnames = __webpack_require__(253);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _semantic_ui = __webpack_require__(257);
+	var _semantic_ui = __webpack_require__(254);
 
 	var _semantic_ui2 = _interopRequireDefault(_semantic_ui);
 
-	var _header = __webpack_require__(303);
+	var _header = __webpack_require__(300);
 
 	var _header2 = _interopRequireDefault(_header);
 
@@ -19437,35 +19356,118 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
+/* 306 */
+[387, 253, 254],
+/* 307 */
+[388, 253, 254],
+/* 308 */
+[389, 253, 304, 309, 292],
 /* 309 */
-[382, 256, 257],
-/* 310 */
-[383, 256, 257],
-/* 311 */
-[384, 256, 307, 312, 295],
-/* 312 */
 237,
-/* 313 */
-[385, 307, 256],
-/* 314 */
-[386, 256, 257],
-/* 315 */
+/* 310 */
+[390, 304, 253],
+/* 311 */
+[391, 253, 254],
+/* 312 */
 241,
+/* 313 */
+[392, 250],
+/* 314 */
+[393, 253, 254],
+/* 315 */
+[394, 250],
 /* 316 */
-[387, 253],
+[395, 250],
 /* 317 */
-[388, 256, 257],
+[396, 250],
 /* 318 */
-[389, 253],
+[397, 250],
 /* 319 */
-[390, 253],
+[398, 250],
 /* 320 */
-[391, 253],
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _organismsBrand = __webpack_require__(321);
+
+	var _organismsBrand2 = _interopRequireDefault(_organismsBrand);
+
+	var _organismsHeaderNav = __webpack_require__(322);
+
+	var _organismsHeaderNav2 = _interopRequireDefault(_organismsHeaderNav);
+
+	var _reactAtomicMolecule = __webpack_require__(250);
+
+	var _reshow = __webpack_require__(324);
+
+	var Header = (function (_Component) {
+	    _inherits(Header, _Component);
+
+	    function Header() {
+	        _classCallCheck(this, Header);
+
+	        _get(Object.getPrototypeOf(Header.prototype), 'constructor', this).apply(this, arguments);
+	    }
+
+	    _createClass(Header, [{
+	        key: 'render',
+	        value: function render() {
+	            var pageState = _reshow.pageStore.getState();
+	            return _react2['default'].createElement(
+	                _reactAtomicMolecule.SemanticUI,
+	                { style: Styles.header, className: 'home-menu pure-menu pure-menu-horizontal pure-menu-fixed' },
+	                _react2['default'].createElement(_organismsBrand2['default'], {
+	                    url: pageState.get('freelancerHost'),
+	                    name: pageState.get('freelancerFirstName'),
+	                    meta: pageState.get('freelancerLastName')
+	                }),
+	                _react2['default'].createElement(_organismsHeaderNav2['default'], {
+	                    style: Styles.headerNav,
+	                    className: 'home-menu',
+	                    nav: pageState.get('nav').toJS()
+	                })
+	            );
+	        }
+	    }]);
+
+	    return Header;
+	})(_react.Component);
+
+	var Styles = {
+	    header: {
+	        background: '#2d3e50',
+	        padding: '0.5em',
+	        marginBottom: '10px'
+	    },
+	    headerNav: {
+	        display: 'inline-block'
+	    }
+	};
+
+	exports['default'] = Header;
+	module.exports = exports['default'];
+
+/***/ },
 /* 321 */
-[392, 253],
-/* 322 */
-[393, 253],
-/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19480,11 +19482,145 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var Footer = function Footer(props) {
-	    return _react2['default'].createElement('div', null);
+	var Brand = function Brand(props) {
+	    return _react2['default'].createElement(
+	        'a',
+	        { href: props.url, style: Styles.brand },
+	        _react2['default'].createElement(
+	            'div',
+	            { style: Styles.name },
+	            props.name
+	        ),
+	        props.meta
+	    );
 	};
-	exports['default'] = Footer;
+
+	exports['default'] = Brand;
+
+	var Styles = {
+	    name: {
+	        display: 'inline-block',
+	        fontWeight: 700,
+	        marginRight: 10
+	    },
+	    brand: {
+	        padding: '.5em 1em',
+	        display: 'inline-block',
+	        verticalAlign: 'middle',
+	        color: '#fff',
+	        fontWeight: 400,
+	        fontSize: '120%',
+	        textDecoration: 'none'
+	    }
+	};
 	module.exports = exports['default'];
+
+/***/ },
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactAtomicMolecule = __webpack_require__(250);
+
+	var _moleculesIcoDescription = __webpack_require__(323);
+
+	var _moleculesIcoDescription2 = _interopRequireDefault(_moleculesIcoDescription);
+
+	var Icons = {
+	    description: _react2['default'].createElement(_moleculesIcoDescription2['default'], null)
+	};
+
+	var NavItem = function NavItem(props) {
+	    return _react2['default'].createElement(
+	        _reactAtomicMolecule.Item,
+	        { style: Styles.item },
+	        _react2['default'].createElement(
+	            'a',
+	            { href: props.link, style: Styles.link },
+	            (function () {
+	                if (props.icon) {
+	                    return Icons[props.icon];
+	                }
+	            })(),
+	            props.text
+	        )
+	    );
+	};
+
+	var HeaderNav = function HeaderNav(props) {
+	    return _react2['default'].createElement(
+	        _reactAtomicMolecule.List,
+	        { atom: 'ul', style: props.style },
+	        props.nav.link.map(function (item, key) {
+	            return _react2['default'].createElement(NavItem, { key: key,
+	                link: item,
+	                text: props.nav.text[key],
+	                icon: props.nav.icon[key] ? props.nav.icon[key] : null
+	            });
+	        })
+	    );
+	};
+
+	exports['default'] = HeaderNav;
+
+	var Styles = {
+	    link: {
+	        color: '#fff',
+	        textDecoration: 'none',
+	        padding: '.5em 1em'
+	    },
+	    item: {
+	        listStyle: 'none',
+	        display: 'inline-block'
+	    }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var IcoDescription = function IcoDescription(props) {
+	    return _react2["default"].createElement(
+	        "svg",
+	        props,
+	        _react2["default"].createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
+	        _react2["default"].createElement("path", { d: "M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" })
+	    );
+	};
+
+	IcoDescription.defaultProps = {
+	    width: 24,
+	    height: 24,
+	    viewBox: '0 0 24 24',
+	    fill: '#fff'
+	};
+
+	exports["default"] = IcoDescription;
+	module.exports = exports["default"];
 
 /***/ },
 /* 324 */
@@ -22523,6 +22659,2117 @@ webpackJsonp([0],[
 
 /***/ },
 /* 358 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Footer = function Footer(props) {
+	    return _react2['default'].createElement('div', null);
+	};
+	exports['default'] = Footer;
+	module.exports = exports['default'];
+
+/***/ },
+/* 359 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _GeometryAngle = __webpack_require__(360);
+
+	Object.defineProperty(exports, 'default', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_GeometryAngle)['default'];
+	  }
+	});
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 360 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = (function () {
+	    function defineProperties(target, props) {
+	        for (var i = 0; i < props.length; i++) {
+	            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	        }
+	    }return function (Constructor, protoProps, staticProps) {
+	        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	    };
+	})();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _fss_worker = __webpack_require__(361);
+
+	var _fss_worker2 = _interopRequireDefault(_fss_worker);
+
+	var _fss = __webpack_require__(362);
+
+	var _fss2 = _interopRequireDefault(_fss);
+
+	function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : { "default": obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	    if (!(instance instanceof Constructor)) {
+	        throw new TypeError("Cannot call a class as a function");
+	    }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	    if (!self) {
+	        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	    }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	    if (typeof superClass !== "function" && superClass !== null) {
+	        throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+	    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var GeometryAngle = (function (_Component) {
+	    _inherits(GeometryAngle, _Component);
+
+	    function GeometryAngle() {
+	        _classCallCheck(this, GeometryAngle);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(GeometryAngle).apply(this, arguments));
+	    }
+
+	    _createClass(GeometryAngle, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            var _props = this.props;
+	            var vertex = _props.vertex;
+	            var line = _props.line;
+	            var mesh = _props.mesh;
+	            var lights = _props.lights;
+
+	            (0, _fss_worker2["default"])({
+	                vertex: vertex,
+	                line: line,
+	                mesh: mesh,
+	                lights: lights
+	            }, this.dom);
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+
+	            return _react2["default"].createElement("div", { ref: function ref(dom) {
+	                    return _this2.dom = dom;
+	                }, style: Styles.container });
+	        }
+	    }]);
+
+	    return GeometryAngle;
+	})(_react.Component);
+
+	var Styles = {
+	    container: {
+	        position: 'absolute',
+	        top: 0,
+	        left: 0,
+	        right: 0,
+	        bottom: 0
+	    }
+	};
+
+	GeometryAngle.defaultProps = {
+	    // Set the point attributes for the vertex.
+	    vertex: {
+
+	        // Radius of vertice circle.
+	        radius: 2,
+
+	        fill: "rgba(255, 255, 255, 0.3)",
+
+	        // Fluctuates opacity of vertex.
+	        fluctuationSpeed: 1,
+
+	        fluctuationIntensity: 0.5,
+	        strokeWidth: 0.001,
+	        strokeColor: "rgba(0, 104, 149, 1)",
+
+	        // Instead of setting alpha channel to zero
+	        // Set draw to false to avoid computing.
+	        draw: false
+
+	    },
+
+	    // specify the thickness, color, stroke, etc.
+	    line: {
+
+	        fill: "rgba(255, 255, 255, 0.1)",
+	        thickness: 0,
+	        fluctuationIntensity: 0,
+	        fluctuationSpeed: 0,
+	        draw: false
+
+	    },
+
+	    // handle transparent colors
+	    mesh: {
+
+	        width: 1.6,
+	        height: 1.5,
+
+	        // How far should the mesh vary into z-space.
+	        depth: 6,
+
+	        // Number of columns for the mesh.
+	        columns: undefined,
+
+	        columns_auto: true,
+
+	        // Number of rows for the mesh.
+	        rows: undefined,
+
+	        rows_auto: true,
+	        zoom: 1,
+	        xRange: 0.4,
+	        yRange: 0.2,
+	        zRange: 8.0,
+	        ambient: 'rgba(45, 69, 90, 0.8)',
+	        diffuse: 'rgba(149, 149, 149, 0.43)',
+	        background: 'rgba(92, 121, 117, 1)',
+	        //main color
+	        // background: 'rgba(46, 213, 219, 1)'
+	        speed: 0.0008,
+	        fluctuationSpeed: 0.5,
+	        fluctuationIntensity: 0,
+	        onRender: function onRender() {},
+	        floorPosition: false,
+	        draw: true
+
+	    },
+
+	    lights: {
+	        // How many light sources belong to this light.
+	        count: 0,
+
+	        xyScalar: 0,
+
+	        // Position of light source.
+	        zOffset: 0,
+
+	        // ambient: 'rgba(0, 104, 149, 1)',
+	        // diffuse: 'rgba(0, 104, 149, 1)',
+	        speed: 0,
+	        gravity: 0,
+
+	        // Dampening of light's movements.
+	        dampening: 0,
+	        minLimit: 0,
+	        maxLimit: null,
+	        minDistance: 20,
+	        maxDistance: 400,
+	        autopilot: false,
+	        draw: false, //show circle
+	        bounds: _fss2["default"].Vector3.create(),
+	        step: _fss2["default"].Vector3.create(Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0))
+
+	    }
+	};
+
+	exports["default"] = GeometryAngle;
+	module.exports = exports['default'];
+
+/***/ },
+/* 361 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+	    return typeof obj;
+	} : function (obj) {
+	    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
+	};
+
+	var _extends = Object.assign || function (target) {
+	    for (var i = 1; i < arguments.length; i++) {
+	        var source = arguments[i];for (var key in source) {
+	            if (Object.prototype.hasOwnProperty.call(source, key)) {
+	                target[key] = source[key];
+	            }
+	        }
+	    }return target;
+	};
+
+	var _fss = __webpack_require__(362);
+
+	var _fss2 = _interopRequireDefault(_fss);
+
+	function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : { "default": obj };
+	}
+
+	var FSS_Worker = function FSS_Worker(opt, k) {
+
+	    opt = opt || {};
+	    var MESH = {},
+	        LIGHT = [{}],
+	        VERTEX = {},
+	        LINE = {};
+
+	    var rgbaToRgb = function rgbaToRgb(rgba) {
+	        try {
+	            var bits = rgba.split("(");
+	        } catch (e) {
+	            return;
+	        }
+	        if (typeof bits[1] !== "undefined") {
+	            bits = bits[1].split(")")[0].split(",");
+	            return "rgb(" + bits[0] + "," + bits[1] + "," + bits[2] + ")";
+	        }
+	        return;
+	    };
+
+	    //------------------------------
+	    // Mesh Properties
+	    //------------------------------
+	    var mesh_default = {
+	        width: 1.2,
+	        height: 1.2,
+	        depth: 10,
+	        columns: undefined,
+	        columns_auto: true,
+	        rows: undefined,
+	        rows_auto: true,
+	        zoom: 1,
+	        xRange: 0.8,
+	        yRange: 0.1,
+	        zRange: 1.0,
+	        ambient: 'rgba(85, 85, 85, 1)',
+	        diffuse: 'rgba(255, 255, 255, 1)',
+	        background: 'rgb(255, 255, 255)',
+	        speed: 0.0002,
+	        fluctuationSpeed: 0.5,
+	        fluctuationIntensity: 0,
+	        onRender: function onRender() {},
+	        floorPosition: false,
+	        draw: true
+	    };
+
+	    var vertex_default = {
+	        radius: 0,
+	        fill: "rgba(0, 0, 0, 0)",
+	        fluctuationSpeed: 0.5,
+	        fluctuationIntensity: 0,
+	        strokeWidth: 0,
+	        strokeColor: "rgba(0, 0, 0, 0)",
+	        draw: false
+	    };
+
+	    var line_default = {
+	        fill: "rgba(0, 0, 0, 0)",
+	        thickness: 1,
+	        fluctuationIntensity: 0,
+	        fluctuationSpeed: 0.5,
+	        draw: false
+	    };
+
+	    //------------------------------
+	    // Light Properties
+	    //------------------------------
+	    var light_default = {
+	        count: 1,
+	        xyScalar: 1,
+	        zOffset: 100,
+	        ambient: 'rgba(255,0,102, 1)',
+	        diffuse: 'rgba(255,136,0, 1)',
+	        speed: 0.010,
+	        gravity: 1200,
+	        dampening: 0.95,
+	        minLimit: 10,
+	        maxLimit: null,
+	        minDistance: 20,
+	        maxDistance: 400,
+	        autopilot: false,
+	        draw: false, //show circle
+	        bounds: _fss2["default"].Vector3.create(),
+	        step: _fss2["default"].Vector3.create(Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0))
+	    };
+
+	    var self = k;
+
+	    var createValues = function createValues(opt) {
+	        opt.mesh = opt.mesh || MESH;
+	        opt.lights = opt.lights || LIGHT;
+	        opt.vertex = opt.vertex || VERTEX;
+	        opt.line = opt.line || LINE;
+
+	        MESH = _extends({}, mesh_default, MESH, opt.mesh);
+	        VERTEX = _extends({}, vertex_default, VERTEX, opt.vertex);
+	        LINE = _extends({}, line_default, LINE, opt.line);
+	        for (var i = 0; i < LIGHT.length; i++) {
+	            LIGHT[i] = _extends({}, light_default, LIGHT[i], opt.lights[i]);
+	        }
+
+	        MESH.columns_auto = typeof opt.mesh.columns === "undefined";
+	        MESH.rows_auto = typeof opt.mesh.rows === "undefined";
+	    };
+	    createValues(opt);
+
+	    var container = document.createElement("div");
+	    container.style.position = "absolute";
+	    container.style.left = "0";
+	    container.style.right = "0";
+	    container.style.top = "0";
+	    container.style.bottom = "0";
+	    container.style.background = MESH.background;
+	    container.style.zIndex = "-100";
+	    container.setAttribute('class', 'fss-output');
+	    self.insertBefore(container, null);
+
+	    //------------------------------
+	    // Render Properties
+	    //------------------------------
+	    var WEBGL = 'webgl';
+	    var CANVAS = 'canvas';
+	    var SVG = 'svg';
+	    var RENDER = {
+	        renderer: CANVAS
+	    };
+
+	    //------------------------------
+	    // UI Properties
+	    //------------------------------
+	    var UI = {
+	        show: true
+	    };
+
+	    //------------------------------
+	    // Global Properties
+	    //------------------------------
+	    var now,
+	        start = Date.now();
+	    var center = _fss2["default"].Vector3.create();
+	    var attractor = _fss2["default"].Vector3.create();
+	    //var container = document.getElementById('container'); -- taken from JQuery element
+	    /* 		var output = document.getElementById('output'); */
+	    var ui = document.getElementById('ui');
+	    var renderer, scene, mesh, geometry, material;
+	    var webglRenderer, canvasRenderer, svgRenderer;
+	    var gui, autopilotController;
+
+	    //------------------------------
+	    // Methods
+	    //------------------------------
+	    function initialise() {
+	        createRenderer();
+	        createScene();
+	        createMesh();
+	        createLights();
+	        addEventListeners();
+	        callbacks.resize(container.offsetWidth, container.offsetHeight);
+	        animate();
+	    }
+
+	    function createRenderer() {
+	        webglRenderer = new _fss2["default"].WebGLRenderer();
+	        canvasRenderer = new _fss2["default"].CanvasRenderer();
+	        svgRenderer = new _fss2["default"].SVGRenderer();
+	        setRenderer(RENDER.renderer);
+	    }
+
+	    function setRenderer(index) {
+	        if (renderer) {
+	            /* 				output.removeChild(renderer.element); */
+	        }
+	        switch (index) {
+	            case WEBGL:
+	                renderer = webglRenderer;
+	                break;
+	            case CANVAS:
+	                renderer = canvasRenderer;
+	                break;
+	            case SVG:
+	                renderer = svgRenderer;
+	                break;
+	        }
+	        renderer.setSize(container.offsetWidth, container.offsetHeight);
+	        container.insertBefore(renderer.element, null);
+
+	        var style = window.getComputedStyle(self);
+
+	        if (style.getPropertyValue('position') == 'static' || style.getPropertyValue('position').length == 0) {
+	            self.style.position = 'relative';
+	        }
+	    }
+
+	    function createScene() {
+	        scene = new _fss2["default"].Scene();
+	        scene.VERTEX = VERTEX;
+	        scene.LINE = LINE;
+	        scene.MESH = MESH;
+	    }
+
+	    function createMesh() {
+	        scene.remove(mesh);
+	        renderer.clear();
+	        geometry = new _fss2["default"].Plane(MESH.width * renderer.width, MESH.height * renderer.height, MESH.columns, MESH.rows);
+	        material = new _fss2["default"].Material(MESH.ambient, MESH.diffuse);
+	        mesh = new _fss2["default"].Mesh(geometry, material);
+	        scene.add(mesh);
+
+	        // Augment vertices for animation
+	        var v, vertex;
+	        for (v = geometry.vertices.length - 1; v >= 0; v--) {
+	            vertex = geometry.vertices[v];
+	            vertex.anchor = _fss2["default"].Vector3.floor(_fss2["default"].Vector3.clone(vertex.position));
+	            vertex.step = _fss2["default"].Vector3.create(Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0));
+	            vertex.time = Math.randomInRange(0, Math.PIM2);
+	        }
+	    }
+
+	    function createLights() {
+	        var l, light;
+	        for (l = scene.lights.length - 1; l >= 0; l--) {
+	            light = scene.lights[l];
+	            scene.remove(light);
+	        }
+	        renderer.clear();
+	        for (l = 0; l < LIGHT.length; l++) {
+	            for (var u = 0; u < LIGHT[l].count; u++) {
+	                light = new _fss2["default"].Light(LIGHT[l].ambient, LIGHT[l].diffuse);
+	                scene.add(light);
+
+	                // Augment light for animation
+	                light.mass = Math.randomInRange(0.5, 1);
+	                light.velocity = _fss2["default"].Vector3.create();
+	                light.acceleration = _fss2["default"].Vector3.create();
+	                light.force = _fss2["default"].Vector3.create();
+
+	                // Ring SVG Circle
+	                light.ring = document.createElementNS(_fss2["default"].SVGNS, 'circle');
+	                light.ring.setAttributeNS(null, 'stroke', light.ambient);
+	                light.ring.setAttributeNS(null, 'stroke-width', '0.5');
+	                light.ring.setAttributeNS(null, 'fill', 'none');
+	                light.ring.setAttributeNS(null, 'r', '10');
+
+	                // Core SVG Circle
+	                light.core = document.createElementNS(_fss2["default"].SVGNS, 'circle');
+	                light.core.setAttributeNS(null, 'fill', light.diffuseHex);
+	                light.core.setAttributeNS(null, 'r', '4');
+	            }
+	        }
+	    }
+	    var callbacks = {
+	        resize: function resize(width, height) {
+
+	            if (typeof width == "undefined" || (typeof width === "undefined" ? "undefined" : _typeof(width)) === undefined) {
+	                width = self.width();
+	            }
+	            if (typeof height == "undefined" || (typeof height === "undefined" ? "undefined" : _typeof(height)) === undefined) {
+	                height = self.height();
+	            }
+	            var ratio_x = width / 1000;
+	            var ratio_y = height / 1000;
+	            var x_tiles = Math.round(ratio_x * 10) * MESH.zoom;
+	            var y_tiles = Math.round(ratio_y * 10) * MESH.zoom;
+	            MESH.columns = MESH.columns_auto === true ? x_tiles : MESH.columns;
+	            MESH.rows = MESH.rows_auto === true ? y_tiles : MESH.rows;
+	            renderer.setSize(width, height);
+	            _fss2["default"].Vector3.set(center, renderer.halfWidth, renderer.halfHeight);
+	            createMesh();
+	        },
+	        update: function update(opt) {
+	            createValues(opt);
+	            scene.vertex = VERTEX;
+	            scene.line = LINE;
+	            //Ambient
+	            for (i = 0, l = scene.meshes.length; i < l; i++) {
+	                scene.meshes[i].material.ambient.set(MESH.ambient);
+	                scene.meshes[i].material.diffuse.set(MESH.diffuse);
+	            }
+	            //width
+	            if (geometry.width !== MESH.width * renderer.width) {
+	                createMesh();
+	            }
+	            if (geometry.height !== MESH.height * renderer.height) {
+	                createMesh();
+	            }
+	            if (geometry.segments !== MESH.columns) {
+	                createMesh();
+	            }
+	            if (geometry.slices !== MESH.rows) {
+	                createMesh();
+	            }
+
+	            var light_index = 0;
+
+	            for (l = 0; l < LIGHT.length; l++) {
+
+	                for (var i = 0; i < LIGHT[l].count; i++) {
+	                    light = scene.lights[light_index];
+	                    light.ambient.set(LIGHT[l].ambient);
+
+	                    light = scene.lights[light_index];
+	                    light.diffuse.set(LIGHT[l].diffuse);
+
+	                    light_index++;
+	                }
+	            }
+
+	            if (scene.lights.length !== light_index) {
+	                createLights();
+	            }
+	        },
+	        animateValues: function animateValues(colors) {
+
+	            var body = document.body,
+	                html = document.documentElement,
+	                scrollTop = (window.pageYOffset || html.scrollTop) - (html.clientTop || 0);
+
+	            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+	            var length = colors.length;
+	            var height = Math.round(height / length); // Height of the segment between two colors
+	            var i = Math.floor(scrollTop / height); // Start color index
+	            var d = scrollTop % height / height; // Which part of the segment between start color and end color is passed
+	            var c1 = colors[i]; // Start color
+	            var c2 = colors[(i + 1) % length]; // End color
+	            var result = [];
+	            for (var i = 0; i < c1.length; i++) {
+	                result[i] = c1[i] + (c2[i] - c1[i]) * d;
+	                if (i !== 3) {
+	                    result[i] = Math.round(result[i]);
+	                }
+	            }
+	            return result;
+	        },
+	        formatRGBA: function formatRGBA(a) {
+	            var string = "rgba(" + a[0] + "," + a[1] + "," + a[2] + "," + a[3] + ")";
+	            return string;
+	        }
+	    };
+
+	    function animate() {
+	        now = Date.now() - start;
+	        update();
+	        render();
+	        requestAnimationFrame(animate);
+	    }
+
+	    function update() {
+	        var ox,
+	            oy,
+	            oz,
+	            l,
+	            light,
+	            v,
+	            vertex,
+	            offset = MESH.depth / 2;
+	        var light_index = 0;
+	        var render_vector = _fss2["default"].Vector3.floor(_fss2["default"].Vector3.create(renderer.halfWidth, renderer.halfHeight, 0));
+
+	        // Animate Lights
+	        for (l = 0; l < LIGHT.length; l++) {
+
+	            for (var i = 0; i < LIGHT[l].count; i++) {
+
+	                light = scene.lights[light_index];
+
+	                // Update Bounds
+	                _fss2["default"].Vector3.copy(LIGHT[l].bounds, center);
+	                _fss2["default"].Vector3.multiplyScalar(LIGHT[l].bounds, LIGHT[l].xyScalar);
+
+	                // Update Attractor
+	                _fss2["default"].Vector3.setZ(attractor, LIGHT[l].zOffset);
+
+	                // Overwrite the Attractor position
+	                if (LIGHT[l].autopilot && typeof LIGHT[l].position === "undefined") {
+	                    ox = Math.sin(LIGHT[l].step[0] * now * LIGHT[l].speed);
+	                    oy = Math.cos(LIGHT[l].step[1] * now * LIGHT[l].speed);
+	                    _fss2["default"].Vector3.set(attractor, LIGHT[l].bounds[0] * ox, LIGHT[l].bounds[1] * oy, LIGHT[l].zOffset);
+	                }
+
+	                // Reset the z position of the light
+	                _fss2["default"].Vector3.setZ(light.position, LIGHT[l].zOffset);
+
+	                if (typeof LIGHT[l].position !== "undefined") {
+	                    _fss2["default"].Vector3.set(light.position);
+	                    _fss2["default"].Vector3.add(light.position, _fss2["default"].Vector3.create(LIGHT[l].position[0], LIGHT[l].position[1], LIGHT[l].zOffset));
+	                } else {
+	                    // Calculate the force Luke!
+	                    var D = Math.clamp(_fss2["default"].Vector3.distanceSquared(light.position, attractor), LIGHT[l].minDistance, LIGHT[l].maxDistance);
+	                    var F = LIGHT[l].gravity * light.mass / D;
+	                    _fss2["default"].Vector3.subtractVectors(light.force, attractor, light.position);
+	                    _fss2["default"].Vector3.normalise(light.force);
+	                    _fss2["default"].Vector3.multiplyScalar(light.force, F);
+	                    // Update the light position
+	                    _fss2["default"].Vector3.set(light.acceleration);
+	                    _fss2["default"].Vector3.add(light.acceleration, light.force);
+	                    _fss2["default"].Vector3.add(light.velocity, light.acceleration);
+	                    _fss2["default"].Vector3.multiplyScalar(light.velocity, LIGHT[l].dampening);
+	                    _fss2["default"].Vector3.limit(light.velocity, LIGHT[l].minLimit, LIGHT[l].maxLimit);
+	                    _fss2["default"].Vector3.add(light.position, light.velocity);
+	                }
+
+	                light_index++;
+	            }
+	        }
+
+	        // Animate Vertices
+	        for (v = geometry.vertices.length - 1; v >= 0; v--) {
+	            vertex = geometry.vertices[v];
+	            ox = Math.sin(vertex.time + vertex.step[0] * now * MESH.speed);
+	            oy = Math.cos(vertex.time + vertex.step[1] * now * MESH.speed);
+	            oz = Math.sin(vertex.time + vertex.step[2] * now * MESH.speed);
+	            vertex.position = _fss2["default"].Vector3.create(MESH.xRange * geometry.segmentWidth * ox, MESH.yRange * geometry.sliceHeight * oy, MESH.zRange * offset * oz - offset);
+	            if (MESH.positionFloor === true) {
+	                vertex.position = _fss2["default"].Vector3.floor(vertex.position);
+	            }
+	            _fss2["default"].Vector3.add(vertex.position, vertex.anchor);
+	            _fss2["default"].Vector3.add(vertex.position, render_vector);
+	        }
+
+	        // Set the Geometry to dirty
+	        geometry.dirty = true;
+	    }
+
+	    function render() {
+	        renderer.render(scene);
+
+	        // Draw Lights
+	        if (LIGHT.draw) {
+	            var l, lx, ly, light;
+	            for (l = scene.lights.length - 1; l >= 0; l--) {
+	                light = scene.lights[l];
+	                lx = light.position[0];
+	                ly = light.position[1];
+	                switch (RENDER.renderer) {
+	                    case CANVAS:
+	                        renderer.context.lineWidth = 0.5;
+	                        renderer.context.beginPath();
+	                        renderer.context.arc(lx, ly, 10, 0, Math.PIM2);
+	                        renderer.context.strokeStyle = light.ambient;
+	                        renderer.context.stroke();
+	                        renderer.context.beginPath();
+	                        renderer.context.arc(lx, ly, 4, 0, Math.PIM2);
+	                        renderer.context.fillStyle = light.diffuse;
+	                        renderer.context.fill();
+	                        break;
+	                    case SVG:
+	                        /* 							lx += renderer.halfWidth; */
+	                        /* 							ly = renderer.halfHeight - ly; */
+	                        light.core.setAttributeNS(null, 'fill', light.diffuse);
+	                        light.core.setAttributeNS(null, 'cx', lx);
+	                        light.core.setAttributeNS(null, 'cy', ly);
+	                        renderer.element.appendChild(light.core);
+	                        light.ring.setAttributeNS(null, 'stroke', light.ambient);
+	                        light.ring.setAttributeNS(null, 'cx', lx);
+	                        light.ring.setAttributeNS(null, 'cy', ly);
+	                        renderer.element.appendChild(light.ring);
+	                        break;
+	                }
+	            }
+	        }
+	        MESH.onRender(scene, renderer.context);
+	    }
+
+	    function addEventListeners() {
+	        if (window.attachEvent) {
+	            window.addEventHandler = window.attachEvent;
+	        }
+	        window.addEventListener('resize', onWindowResize, false);
+	        self.addEventListener('click', onMouseClick, false);
+	        self.addEventListener('mousemove', onMouseMove, true);
+	    }
+
+	    //------------------------------
+	    // Callbacks
+	    //------------------------------
+	    function onMouseClick(event) {
+	        _fss2["default"].Vector3.set(attractor, event.x, event.y);
+	        /* 			FSS.Vector3.subtract(attractor, center); */
+	        LIGHT.autopilot = !LIGHT.autopilot;
+	    }
+
+	    function onMouseMove(event) {
+	        _fss2["default"].Vector3.set(attractor, event.x, event.y);
+	        /* 			FSS.Vector3.subtract(attractor, center); */
+	    }
+
+	    function onWindowResize(event) {
+	        callbacks.resize(self.offsetWidth, self.offsetHeight);
+	        render();
+	    }
+
+	    // Let there be light!
+	    initialise();
+	    return callbacks;
+	};
+
+	exports["default"] = FSS_Worker;
+	module.exports = exports['default'];
+
+/***/ },
+/* 362 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var FSS = {
+	    FRONT: 0,
+	    BACK: 1,
+	    DOUBLE: 2,
+	    SVGNS: 'http://www.w3.org/2000/svg'
+	};
+
+	/**
+	 * @class Array
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Array = typeof Float32Array === 'function' ? Float32Array : Array;
+
+	/**
+	 * @class Utils
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Utils = {
+	    isNumber: function isNumber(value) {
+	        return !isNaN(parseFloat(value)) && isFinite(value);
+	    }
+	};
+
+	/**
+	 * Request Animation Frame Polyfill.
+	 * @author Paul Irish
+	 * @see https://gist.github.com/paulirish/1579671
+	 */
+	(function () {
+
+	    var lastTime = 0;
+	    var vendors = ['ms', 'moz', 'webkit', 'o'];
+
+	    for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+	        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+	        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+	    }
+
+	    if (!window.requestAnimationFrame) {
+	        window.requestAnimationFrame = function (callback, element) {
+	            var currentTime = new Date().getTime();
+	            var timeToCall = Math.max(0, 16 - (currentTime - lastTime));
+	            var id = window.setTimeout(function () {
+	                callback(currentTime + timeToCall);
+	            }, timeToCall);
+	            lastTime = currentTime + timeToCall;
+	            return id;
+	        };
+	    }
+
+	    if (!window.cancelAnimationFrame) {
+	        window.cancelAnimationFrame = function (id) {
+	            clearTimeout(id);
+	        };
+	    }
+	})();
+
+	/**
+	 * @object Math Augmentation
+	 * @author Matthew Wagerfield
+	 */
+	Math.PIM2 = Math.PI * 2;
+	Math.PID2 = Math.PI / 2;
+	Math.randomInRange = function (min, max) {
+	    return min + (max - min) * Math.random();
+	};
+	Math.clamp = function (value, min, max) {
+	    value = Math.max(value, min);
+	    value = Math.min(value, max);
+	    return value;
+	};
+
+	/**
+	 * @object Vector3
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Vector3 = {
+	    create: function create(x, y, z) {
+	        var vector = new FSS.Array(3);
+	        this.set(vector, x, y, z);
+	        return vector;
+	    },
+	    clone: function clone(a) {
+	        var vector = this.create();
+	        this.copy(vector, a);
+	        return vector;
+	    },
+	    set: function set(target, x, y, z) {
+	        target[0] = x || 0;
+	        target[1] = y || 0;
+	        target[2] = z || 0;
+	        return this;
+	    },
+	    setX: function setX(target, x) {
+	        target[0] = x || 0;
+	        return this;
+	    },
+	    setY: function setY(target, y) {
+	        target[1] = y || 0;
+	        return this;
+	    },
+	    setZ: function setZ(target, z) {
+	        target[2] = z || 0;
+	        return this;
+	    },
+	    copy: function copy(target, a) {
+	        target[0] = a[0];
+	        target[1] = a[1];
+	        target[2] = a[2];
+	        return this;
+	    },
+	    add: function add(target, a) {
+	        target[0] += a[0];
+	        target[1] += a[1];
+	        target[2] += a[2];
+	        return this;
+	    },
+	    addVectors: function addVectors(target, a, b) {
+	        target[0] = a[0] + b[0];
+	        target[1] = a[1] + b[1];
+	        target[2] = a[2] + b[2];
+	        return this;
+	    },
+	    addScalar: function addScalar(target, s) {
+	        target[0] += s;
+	        target[1] += s;
+	        target[2] += s;
+	        return this;
+	    },
+	    subtract: function subtract(target, a) {
+	        target[0] -= a[0];
+	        target[1] -= a[1];
+	        target[2] -= a[2];
+	        return this;
+	    },
+	    subtractVectors: function subtractVectors(target, a, b) {
+	        target[0] = a[0] - b[0];
+	        target[1] = a[1] - b[1];
+	        target[2] = a[2] - b[2];
+	        return this;
+	    },
+	    subtractScalar: function subtractScalar(target, s) {
+	        target[0] -= s;
+	        target[1] -= s;
+	        target[2] -= s;
+	        return this;
+	    },
+	    multiply: function multiply(target, a) {
+	        target[0] *= a[0];
+	        target[1] *= a[1];
+	        target[2] *= a[2];
+	        return this;
+	    },
+	    multiplyVectors: function multiplyVectors(target, a, b) {
+	        target[0] = a[0] * b[0];
+	        target[1] = a[1] * b[1];
+	        target[2] = a[2] * b[2];
+	        return this;
+	    },
+	    multiplyScalar: function multiplyScalar(target, s) {
+	        target[0] *= s;
+	        target[1] *= s;
+	        target[2] *= s;
+	        return this;
+	    },
+	    divide: function divide(target, a) {
+	        target[0] /= a[0];
+	        target[1] /= a[1];
+	        target[2] /= a[2];
+	        return this;
+	    },
+	    divideVectors: function divideVectors(target, a, b) {
+	        target[0] = a[0] / b[0];
+	        target[1] = a[1] / b[1];
+	        target[2] = a[2] / b[2];
+	        return this;
+	    },
+	    divideScalar: function divideScalar(target, s) {
+	        if (s !== 0) {
+	            target[0] /= s;
+	            target[1] /= s;
+	            target[2] /= s;
+	        } else {
+	            target[0] = 0;
+	            target[1] = 0;
+	            target[2] = 0;
+	        }
+	        return this;
+	    },
+	    cross: function cross(target, a) {
+	        var x = target[0];
+	        var y = target[1];
+	        var z = target[2];
+	        target[0] = y * a[2] - z * a[1];
+	        target[1] = z * a[0] - x * a[2];
+	        target[2] = x * a[1] - y * a[0];
+	        return this;
+	    },
+	    crossVectors: function crossVectors(target, a, b) {
+	        target[0] = a[1] * b[2] - a[2] * b[1];
+	        target[1] = a[2] * b[0] - a[0] * b[2];
+	        target[2] = a[0] * b[1] - a[1] * b[0];
+	        return this;
+	    },
+	    min: function min(target, value) {
+	        if (target[0] < value) {
+	            target[0] = value;
+	        }
+	        if (target[1] < value) {
+	            target[1] = value;
+	        }
+	        if (target[2] < value) {
+	            target[2] = value;
+	        }
+	        return this;
+	    },
+	    max: function max(target, value) {
+	        if (target[0] > value) {
+	            target[0] = value;
+	        }
+	        if (target[1] > value) {
+	            target[1] = value;
+	        }
+	        if (target[2] > value) {
+	            target[2] = value;
+	        }
+	        return this;
+	    },
+	    clamp: function clamp(target, min, max) {
+	        this.min(target, min);
+	        this.max(target, max);
+	        return this;
+	    },
+	    limit: function limit(target, min, max) {
+	        var length = this.length(target);
+	        if (min !== null && length < min) {
+	            this.setLength(target, min);
+	        } else if (max !== null && length > max) {
+	            this.setLength(target, max);
+	        }
+	        return this;
+	    },
+	    dot: function dot(a, b) {
+	        return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+	    },
+	    normalise: function normalise(target) {
+	        return this.divideScalar(target, this.length(target));
+	    },
+	    negate: function negate(target) {
+	        return this.multiplyScalar(target, -1);
+	    },
+	    distanceSquared: function distanceSquared(a, b) {
+	        var dx = a[0] - b[0];
+	        var dy = a[1] - b[1];
+	        var dz = a[2] - b[2];
+	        return dx * dx + dy * dy + dz * dz;
+	    },
+	    distance: function distance(a, b) {
+	        return Math.sqrt(this.distanceSquared(a, b));
+	    },
+	    lengthSquared: function lengthSquared(a) {
+	        return a[0] * a[0] + a[1] * a[1] + a[2] * a[2];
+	    },
+	    length: function length(a) {
+	        return Math.sqrt(this.lengthSquared(a));
+	    },
+	    setLength: function setLength(target, l) {
+	        var length = this.length(target);
+	        if (length !== 0 && l !== length) {
+	            this.multiplyScalar(target, l / length);
+	        }
+	        return this;
+	    },
+	    floor: function floor(target) {
+	        target[0] = Math.floor(target[0]);
+	        target[1] = Math.floor(target[1]);
+	        target[2] = Math.floor(target[2]);
+	        return target;
+	    }
+	};
+
+	/**
+	 * @object Vector4
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Vector4 = {
+	    create: function create(x, y, z, w) {
+	        var vector = new FSS.Array(4);
+	        this.set(vector, x, y, z);
+	        return vector;
+	    },
+	    set: function set(target, x, y, z, w) {
+	        target[0] = x || 0;
+	        target[1] = y || 0;
+	        target[2] = z || 0;
+	        target[3] = w || 0;
+	        return this;
+	    },
+	    setX: function setX(target, x) {
+	        target[0] = x || 0;
+	        return this;
+	    },
+	    setY: function setY(target, y) {
+	        target[1] = y || 0;
+	        return this;
+	    },
+	    setZ: function setZ(target, z) {
+	        target[2] = z || 0;
+	        return this;
+	    },
+	    setW: function setW(target, w) {
+	        target[3] = w || 0;
+	        return this;
+	    },
+	    add: function add(target, a) {
+	        target[0] += a[0];
+	        target[1] += a[1];
+	        target[2] += a[2];
+	        target[3] += a[3];
+	        return this;
+	    },
+	    multiplyVectors: function multiplyVectors(target, a, b) {
+	        target[0] = a[0] * b[0];
+	        target[1] = a[1] * b[1];
+	        target[2] = a[2] * b[2];
+	        target[3] = a[3] * b[3];
+	        return this;
+	    },
+	    multiplyScalar: function multiplyScalar(target, s) {
+	        target[0] *= s;
+	        target[1] *= s;
+	        target[2] *= s;
+	        target[3] *= s;
+	        return this;
+	    },
+	    min: function min(target, value) {
+	        if (target[0] < value) {
+	            target[0] = value;
+	        }
+	        if (target[1] < value) {
+	            target[1] = value;
+	        }
+	        if (target[2] < value) {
+	            target[2] = value;
+	        }
+	        if (target[3] < value) {
+	            target[3] = value;
+	        }
+	        return this;
+	    },
+	    max: function max(target, value) {
+	        if (target[0] > value) {
+	            target[0] = value;
+	        }
+	        if (target[1] > value) {
+	            target[1] = value;
+	        }
+	        if (target[2] > value) {
+	            target[2] = value;
+	        }
+	        if (target[3] > value) {
+	            target[3] = value;
+	        }
+	        return this;
+	    },
+	    clamp: function clamp(target, min, max) {
+	        this.min(target, min);
+	        this.max(target, max);
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Color
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Color = function (color, opacity) {
+	    this.rgba = [];
+	    this.color = color || '#000000';
+	    this.opacity = FSS.Utils.isNumber(opacity) ? opacity : 1;
+	    this.set(this.color, this.opacity);
+	};
+
+	FSS.Color.prototype = {
+	    set: function set(color, opacity) {
+	        if (color.indexOf("#") === -1) {
+	            if (color.indexOf('rgb(') === 0) {
+	                var pars = color.indexOf(',');
+	                this.rgba[0] = parseInt(color.substr(4, pars));
+	                this.rgba[1] = parseInt(color.substr(pars + 1, color.indexOf(',', pars)));
+	                this.rgba[2] = parseInt(color.substr(color.indexOf(',', pars + 1) + 1, color.indexOf(')')));
+	                this.rgba[3] = 1;
+	            } else if (color.indexOf('rgba(') === 0) {
+
+	                var pars = color.indexOf(',');
+	                var repars = color.indexOf(',', pars + 1);
+	                this.rgba[0] = parseInt(color.substr(5, pars));
+	                this.rgba[1] = parseInt(color.substr(pars + 1, repars));
+	                this.rgba[2] = parseInt(color.substr(color.indexOf(',', pars + 1) + 1, color.indexOf(',', repars)));
+	                this.rgba[3] = parseFloat(color.substr(color.indexOf(',', repars + 1) + 1, color.indexOf(')')));
+	            }
+	        } else {
+	            color = color.replace('#', '');
+	            var size = color.length / 3;
+	            this.rgba[0] = parseInt(color.substring(size * 0, size * 1), 16) / 255;
+	            this.rgba[1] = parseInt(color.substring(size * 1, size * 2), 16) / 255;
+	            this.rgba[2] = parseInt(color.substring(size * 2, size * 3), 16) / 255;
+	            this.rgba[3] = FSS.Utils.isNumber(opacity) ? opacity : this.rgba[3];
+	        }
+
+	        return this;
+	    },
+	    //    hexify: function (channel) {
+	    //        var hex = Math.ceil(channel * 255).toString(16);
+	    //        if (hex.length === 1) {
+	    //            hex = '0' + hex;
+	    //        }
+	    //        return hex;
+	    //    },
+	    format: function format() {
+	        return "rgba(" + this.rgba[0] + "," + this.rgba[1] + "," + this.rgba[2] + "," + this.rgba[3] + ")"; //this.hex
+	        //        var r = this.hexify(this.rgba[0]);
+	        //        var g = this.hexify(this.rgba[1]);
+	        //        var b = this.hexify(this.rgba[2]);
+	        //        this.hex = '#' + r + g + b;
+	        //        return this.hex;
+	    }
+	};
+
+	/**
+	 * @class Object
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Object = function () {
+	    this.position = FSS.Vector3.create();
+	};
+
+	FSS.Object.prototype = {
+	    setPosition: function setPosition(x, y, z) {
+	        FSS.Vector3.set(this.position, x, y, z);
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Light
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Light = function (ambient, diffuse) {
+	    FSS.Object.call(this);
+	    this.ambient = new FSS.Color(ambient || '#FFFFFF');
+	    this.diffuse = new FSS.Color(diffuse || '#FFFFFF');
+	    this.ray = FSS.Vector3.create();
+	};
+
+	FSS.Light.prototype = Object.create(FSS.Object.prototype);
+
+	/**
+	 * @class Vertex
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Vertex = function (x, y, z) {
+	    this.position = FSS.Vector3.create(x, y, z);
+	};
+
+	FSS.Vertex.prototype = {
+	    setPosition: function setPosition(x, y, z) {
+	        FSS.Vector3.set(this.position, x, y, z);
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Triangle
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Triangle = function (a, b, c) {
+	    this.a = a || new FSS.Vertex();
+	    this.b = b || new FSS.Vertex();
+	    this.c = c || new FSS.Vertex();
+	    this.vertices = [this.a, this.b, this.c];
+	    this.u = FSS.Vector3.create();
+	    this.v = FSS.Vector3.create();
+	    this.centroid = FSS.Vector3.create();
+	    this.normal = FSS.Vector3.create();
+	    this.color = new FSS.Color();
+	    this.polygon = document.createElementNS(FSS.SVGNS, 'polygon');
+	    this.polygon.setAttributeNS(null, 'stroke-linejoin', 'round');
+	    this.polygon.setAttributeNS(null, 'stroke-miterlimit', '1');
+	    this.polygon.setAttributeNS(null, 'stroke-width', '1');
+	    this.computeCentroid();
+	    this.computeNormal();
+	};
+
+	FSS.Triangle.prototype = {
+	    computeCentroid: function computeCentroid() {
+	        this.centroid[0] = this.a.position[0] + this.b.position[0] + this.c.position[0];
+	        this.centroid[1] = this.a.position[1] + this.b.position[1] + this.c.position[1];
+	        this.centroid[2] = this.a.position[2] + this.b.position[2] + this.c.position[2];
+	        FSS.Vector3.divideScalar(this.centroid, 3);
+	        return this;
+	    },
+	    computeNormal: function computeNormal() {
+	        FSS.Vector3.subtractVectors(this.u, this.b.position, this.a.position);
+	        FSS.Vector3.subtractVectors(this.v, this.c.position, this.a.position);
+	        FSS.Vector3.crossVectors(this.normal, this.u, this.v);
+	        FSS.Vector3.normalise(this.normal);
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Geometry
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Geometry = function () {
+	    this.vertices = [];
+	    this.triangles = [];
+	    this.dirty = false;
+	};
+
+	FSS.Geometry.prototype = {
+	    update: function update() {
+	        if (this.dirty) {
+	            var t, triangle;
+	            for (t = this.triangles.length - 1; t >= 0; t--) {
+	                triangle = this.triangles[t];
+	                triangle.computeCentroid();
+	                triangle.computeNormal();
+	            }
+	            this.dirty = false;
+	        }
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Plane
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Plane = function (width, height, segments, slices) {
+	    FSS.Geometry.call(this);
+	    this.width = width || 100;
+	    this.height = height || 100;
+	    this.segments = segments || 4;
+	    this.slices = slices || 4;
+	    this.segmentWidth = this.width / this.segments;
+	    this.sliceHeight = this.height / this.slices;
+
+	    // Cache Variables
+	    var x,
+	        y,
+	        v0,
+	        v1,
+	        v2,
+	        v3,
+	        vertex,
+	        triangle,
+	        vertices = [],
+	        offsetX = this.width * -0.5,
+	        offsetY = this.height * 0.5;
+
+	    // Add Vertices
+	    for (x = 0; x <= this.segments; x++) {
+	        vertices.push([]);
+	        for (y = 0; y <= this.slices; y++) {
+	            vertex = new FSS.Vertex(offsetX + x * this.segmentWidth, offsetY - y * this.sliceHeight);
+	            vertices[x].push(vertex);
+	            this.vertices.push(vertex);
+	        }
+	    }
+
+	    // Add Triangles
+	    var t0 = void 0;
+	    var t1 = void 0;
+	    for (x = 0; x < this.segments; x++) {
+	        for (y = 0; y < this.slices; y++) {
+	            v0 = vertices[x + 0][y + 0];
+	            v1 = vertices[x + 0][y + 1];
+	            v2 = vertices[x + 1][y + 0];
+	            v3 = vertices[x + 1][y + 1];
+	            t0 = new FSS.Triangle(v0, v1, v2);
+	            t1 = new FSS.Triangle(v2, v1, v3);
+	            this.triangles.push(t0, t1);
+	        }
+	    }
+	};
+
+	FSS.Plane.prototype = Object.create(FSS.Geometry.prototype);
+
+	/**
+	 * @class Material
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Material = function (ambient, diffuse) {
+	    this.ambient = new FSS.Color(ambient || 'rgba(68,68,68, 1)');
+	    this.diffuse = new FSS.Color(diffuse || 'rgba(255,255,255, 1)');
+	    this.slave = new FSS.Color();
+	};
+
+	/**
+	 * @class Mesh
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Mesh = function (geometry, material) {
+	    FSS.Object.call(this);
+	    this.geometry = geometry || new FSS.Geometry();
+	    this.material = material || new FSS.Material();
+	    this.side = FSS.FRONT;
+	    this.visible = true;
+	};
+
+	FSS.Mesh.prototype = Object.create(FSS.Object.prototype);
+
+	FSS.Mesh.prototype.update = function (lights, calculate) {
+	    var t, triangle, l, light, illuminance, light_count;
+	    light_count = lights.length;
+
+	    // Update Geometry
+	    this.geometry.update();
+
+	    // Calculate the triangle colors
+	    if (calculate) {
+
+	        // Iterate through Triangles
+	        for (t = this.geometry.triangles.length - 1; t >= 0; t--) {
+	            triangle = this.geometry.triangles[t];
+
+	            // Reset Triangle Color
+	            FSS.Vector4.set(triangle.color.rgba);
+
+	            // Iterate through Lights
+	            for (l = lights.length - 1; l >= 0; l--) {
+	                light = lights[l];
+
+	                // Calculate Illuminance
+	                FSS.Vector3.subtractVectors(light.ray, light.position, triangle.centroid);
+	                FSS.Vector3.normalise(light.ray);
+	                illuminance = FSS.Vector3.dot(triangle.normal, light.ray);
+	                if (this.side === FSS.FRONT) {
+	                    illuminance = Math.max(illuminance, 0);
+	                } else if (this.side === FSS.BACK) {
+	                    illuminance = Math.abs(Math.min(illuminance, 0));
+	                } else if (this.side === FSS.DOUBLE) {
+	                    illuminance = Math.max(Math.abs(illuminance), 0);
+	                }
+
+	                //               Calculate Ambient Light
+	                for (var i = 0; i < 3; i++) {
+	                    this.material.slave.rgba[i] = 1 / light_count * this.material.ambient.rgba[i] * (1 / light_count * light.ambient.rgba[i]) / 128;
+	                    if (i !== 3) {
+	                        this.material.slave.rgba[i] = Math.round(this.material.slave.rgba[i]);
+	                    }
+	                }
+	                /* 				Add the resultant values to the triangle color vector. Not required to factor illuminance because it is ambient light. */
+	                FSS.Vector4.add(triangle.color.rgba, this.material.slave.rgba);
+
+	                // Calculate Diffuse Light
+	                for (var i = 0; i < 3; i++) {
+	                    this.material.slave.rgba[i] = 1 / light_count * this.material.diffuse.rgba[i] * (1 / light_count) * light.diffuse.rgba[i] / 128;
+	                    if (i !== 3) {
+	                        this.material.slave.rgba[i] = Math.round(this.material.slave.rgba[i]);
+	                    }
+	                }
+
+	                //              FSS.Vector4.multiplyVectors(this.material.slave.rgba, this.material.diffuse.rgba, light.diffuse.rgba);
+	                //              FSS.Vector4.multiplyScalar(this.material.slave.rgba, illuminance);
+	                for (var i = 0; i < 3; i++) {
+	                    this.material.slave.rgba[i] = Math.round(this.material.slave.rgba[i] * illuminance);
+	                }
+	                FSS.Vector4.add(triangle.color.rgba, this.material.slave.rgba);
+	            }
+
+	            // Clamp & Format Color
+	            FSS.Vector4.clamp(triangle.color.rgba, 0, 255);
+	            triangle.color.rgba[3] = this.material.diffuse.rgba[3]; //Math.min(triangle.color.rgba[3], 1);
+	        }
+	    }
+	    return this;
+	};
+
+	/**
+	 * @class Scene
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Scene = function () {
+	    this.meshes = [];
+	    this.lights = [];
+	};
+
+	FSS.Scene.prototype = {
+	    add: function add(object) {
+	        if (object instanceof FSS.Mesh && ! ~this.meshes.indexOf(object)) {
+	            this.meshes.push(object);
+	        } else if (object instanceof FSS.Light && ! ~this.lights.indexOf(object)) {
+	            this.lights.push(object);
+	        }
+	        return this;
+	    },
+	    remove: function remove(object) {
+	        if (object instanceof FSS.Mesh && ~this.meshes.indexOf(object)) {
+	            this.meshes.splice(this.meshes.indexOf(object), 1);
+	        } else if (object instanceof FSS.Light && ~this.lights.indexOf(object)) {
+	            this.lights.splice(this.lights.indexOf(object), 1);
+	        }
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Renderer
+	 * @author Matthew Wagerfield
+	 */
+	FSS.Renderer = function () {
+	    this.width = 0;
+	    this.height = 0;
+	    this.halfWidth = 0;
+	    this.halfHeight = 0;
+	};
+
+	FSS.Renderer.prototype = {
+	    setSize: function setSize(width, height) {
+	        if (this.width === width && this.height === height) return;
+	        this.width = width;
+	        this.height = height;
+	        this.halfWidth = this.width * 0.5;
+	        this.halfHeight = this.height * 0.5;
+	        return this;
+	    },
+	    clear: function clear() {
+	        return this;
+	    },
+	    render: function render(scene) {
+	        return this;
+	    }
+	};
+
+	/**
+	 * @class Canvas Renderer
+	 * @author Matthew Wagerfield
+	 */
+	FSS.CanvasRenderer = function () {
+	    FSS.Renderer.call(this);
+	    this.element = document.createElement('canvas');
+	    /* 	this.element.style.display = 'block'; */
+	    this.element.style.zIndex = "-100";
+	    this.element.style.pointerEvents = "none";
+	    this.context = this.element.getContext('2d');
+	    this.setSize(this.element.width, this.element.height);
+	};
+
+	FSS.CanvasRenderer.prototype = Object.create(FSS.Renderer.prototype);
+
+	FSS.CanvasRenderer.prototype.setSize = function (width, height) {
+	    FSS.Renderer.prototype.setSize.call(this, width, height);
+	    this.element.width = width;
+	    this.element.height = height;
+	    this.context.setTransform(1, 0, 0, 1, 0, 0);
+	    return this;
+	};
+
+	FSS.CanvasRenderer.prototype.clear = function () {
+	    FSS.Renderer.prototype.clear.call(this);
+	    this.context.clearRect(0, 0, this.width, this.height);
+	    return this;
+	};
+
+	var opacity = [];
+	FSS.CanvasRenderer.prototype.render = function (scene) {
+	    FSS.Renderer.prototype.render.call(this, scene);
+	    var m, mesh, t, triangle, color;
+	    var pi2 = 2 * Math.PI;
+
+	    // Clear Context
+	    this.clear();
+
+	    // Configure Context
+	    this.context.lineJoin = 'round';
+	    this.context.lineWidth = 0;
+
+	    // Update Meshes
+	    for (m = scene.meshes.length - 1; m >= 0; m--) {
+	        mesh = scene.meshes[m];
+	        if (typeof opacity[m] == "undefined") {
+	            opacity[m] = [];
+	        }
+	        if (mesh.visible) {
+	            mesh.update(scene.lights, true);
+
+	            // Render Triangles
+	            for (t = mesh.geometry.triangles.length - 1; t >= 0; t--) {
+
+	                var now = Date.now();
+	                if (typeof opacity[m][t] === "undefined") {
+	                    opacity[m][t] = {};
+	                    opacity[m][t].step = FSS.Vector3.create(Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0), Math.randomInRange(0.2, 1.0));
+	                    opacity[m][t].time = Math.randomInRange(0, Math.PIM2);
+	                    opacity[m][t].line = 0;
+	                } else {
+	                    opacity[m][t].line = Math.sin(opacity[m][t].time + opacity[m][t].step[0] * now * (scene.LINE.fluctuationSpeed / 100)) * scene.LINE.fluctuationIntensity;
+	                    opacity[m][t].vertex = Math.sin(opacity[m][t].time + opacity[m][t].step[0] * now * (scene.VERTEX.fluctuationSpeed / 100)) * scene.VERTEX.fluctuationIntensity;
+	                    opacity[m][t].mesh = Math.sin(opacity[m][t].time + opacity[m][t].step[0] * now * (scene.MESH.fluctuationSpeed / 100)) * scene.MESH.fluctuationIntensity;
+	                }
+
+	                triangle = mesh.geometry.triangles[t];
+	                if (scene.MESH.draw !== false) {
+	                    c = triangle.color.rgba;
+	                    color = "rgba(" + c[0] + "," + c[1] + ", " + c[2] + "," + c[3] + ")";
+
+	                    this.context.beginPath();
+	                    this.context.moveTo(triangle.a.position[0], triangle.a.position[1]);
+	                    this.context.lineTo(triangle.b.position[0], triangle.b.position[1]);
+	                    this.context.lineTo(triangle.c.position[0], triangle.c.position[1]);
+	                    this.context.closePath();
+	                    this.context.fillStyle = color; //Color of triangle
+	                    this.context.fill();
+	                }
+
+	                if (scene.LINE.draw !== false) {
+	                    var c = new FSS.Color(scene.LINE.fill);
+	                    c = c.rgba;
+	                    c[3] = c[3] * (1 - opacity[m][t].line);
+	                    c = "rgba(" + c[0] + "," + c[1] + ", " + c[2] + "," + c[3] + ")";
+
+	                    this.context.beginPath();
+	                    this.context.moveTo(triangle.a.position[0], triangle.a.position[1]);
+	                    this.context.lineTo(triangle.b.position[0], triangle.b.position[1]);
+	                    this.context.lineWidth = scene.LINE.thickness;
+	                    this.context.fillStyle = c;
+	                    this.context.fill();
+	                    this.context.strokeStyle = c;
+	                    this.context.stroke();
+	                }
+
+	                if (scene.VERTEX.draw !== false) {
+	                    //                    var grd = this.context.createRadialGradient(triangle.a.position[0], triangle.a.position[1], scene.vertex.radius + 100, triangle.a.position[0], triangle.a.position[1], scene.vertex.radius + 105);
+	                    // light blue
+	                    //                    grd.addColorStop(0, '#8ED6FF');
+	                    // dark blue
+	                    //                    grd.addColorStop(1, '#004CB3');
+
+	                    var c = new FSS.Color(scene.VERTEX.fill);
+	                    c = c.rgba;
+	                    c[3] = c[3] * (1 - opacity[m][t].vertex);
+	                    c = "rgba(" + c[0] + "," + c[1] + ", " + c[2] + "," + c[3] + ")";
+	                    var c1 = new FSS.Color(scene.VERTEX.strokeColor);
+	                    c1 = c1.rgba;
+	                    c1[3] = c1[3] * (1 - opacity[m][t].vertex);
+	                    c1 = "rgba(" + c1[0] + "," + c1[1] + ", " + c1[2] + "," + c1[3] + ")";
+	                    this.context.beginPath();
+	                    this.context.arc(triangle.a.position[0], triangle.a.position[1], scene.VERTEX.radius, 0, pi2, false);
+	                    this.context.fillStyle = c; //scene.VERTEX.fill;
+	                    this.context.fill();
+	                    this.context.lineWidth = scene.VERTEX.strokeWidth;
+	                    this.context.strokeStyle = c1;
+	                    this.context.stroke();
+	                }
+	            }
+	        }
+	    }
+	    return this;
+	};
+
+	/**
+	 * @class WebGL Renderer
+	 * @author Matthew Wagerfield
+	 */
+	FSS.WebGLRenderer = function () {
+	    FSS.Renderer.call(this);
+	    this.element = document.createElement('canvas');
+	    this.element.style.display = 'block';
+
+	    // Set initial vertex and light count
+	    this.vertices = null;
+	    this.lights = null;
+
+	    // Create parameters object
+	    var parameters = {
+	        preserveDrawingBuffer: false,
+	        premultipliedAlpha: true,
+	        antialias: true,
+	        stencil: true,
+	        alpha: true
+	    };
+
+	    // Create and configure the gl context
+	    this.gl = this.getContext(this.element, parameters);
+
+	    // Set the internal support flag
+	    this.unsupported = !this.gl;
+
+	    // Setup renderer
+	    if (this.unsupported) {
+	        return 'WebGL is not supported by your browser.';
+	    } else {
+	        this.gl.clearColor(0.0, 0.0, 0.0, 0.0);
+	        this.gl.enable(this.gl.DEPTH_TEST);
+	        this.setSize(this.element.width, this.element.height);
+	    }
+	};
+
+	FSS.WebGLRenderer.prototype = Object.create(FSS.Renderer.prototype);
+
+	FSS.WebGLRenderer.prototype.getContext = function (canvas, parameters) {
+	    var context = false;
+	    try {
+	        if (!(context = canvas.getContext('experimental-webgl', parameters))) {
+	            throw 'Error creating WebGL context.';
+	        }
+	    } catch (error) {
+	        console.error(error);
+	    }
+	    return context;
+	};
+
+	FSS.WebGLRenderer.prototype.setSize = function (width, height) {
+	    FSS.Renderer.prototype.setSize.call(this, width, height);
+	    if (this.unsupported) return;
+
+	    // Set the size of the canvas element
+	    this.element.width = width;
+	    this.element.height = height;
+
+	    // Set the size of the gl viewport
+	    this.gl.viewport(0, 0, width, height);
+	    return this;
+	};
+
+	FSS.WebGLRenderer.prototype.clear = function () {
+	    FSS.Renderer.prototype.clear.call(this);
+	    if (this.unsupported) return;
+	    this.gl.clear(this.gl.COLOR_BUFFER_BIT | this.gl.DEPTH_BUFFER_BIT);
+	    return this;
+	};
+
+	FSS.WebGLRenderer.prototype.render = function (scene) {
+	    FSS.Renderer.prototype.render.call(this, scene);
+	    if (this.unsupported) return;
+	    var m,
+	        mesh,
+	        t,
+	        tl,
+	        triangle,
+	        l,
+	        light,
+	        attribute,
+	        uniform,
+	        buffer,
+	        data,
+	        location,
+	        update = false,
+	        lights = scene.lights.length,
+	        index,
+	        v,
+	        vl,
+	        vetex,
+	        vertices = 0;
+
+	    // Clear context
+	    this.clear();
+
+	    // Build the shader program
+	    if (this.lights !== lights) {
+	        this.lights = lights;
+	        if (this.lights > 0) {
+	            this.buildProgram(lights);
+	        } else {
+	            return;
+	        }
+	    }
+
+	    // Update program
+	    if (!!this.program) {
+
+	        // Increment vertex counter
+	        for (m = scene.meshes.length - 1; m >= 0; m--) {
+	            mesh = scene.meshes[m];
+	            if (mesh.geometry.dirty) update = true;
+	            mesh.update(scene.lights, false);
+	            vertices += mesh.geometry.triangles.length * 3;
+	        }
+
+	        // Compare vertex counter
+	        if (update || this.vertices !== vertices) {
+	            this.vertices = vertices;
+
+	            // Build buffers
+	            for (attribute in this.program.attributes) {
+	                buffer = this.program.attributes[attribute];
+	                buffer.data = new FSS.Array(vertices * buffer.size);
+
+	                // Reset vertex index
+	                index = 0;
+
+	                // Update attribute buffer data
+	                var vertex = void 0;
+	                for (m = scene.meshes.length - 1; m >= 0; m--) {
+	                    mesh = scene.meshes[m];
+
+	                    for (t = 0, tl = mesh.geometry.triangles.length; t < tl; t++) {
+	                        triangle = mesh.geometry.triangles[t];
+
+	                        for (v = 0, vl = triangle.vertices.length; v < vl; v++) {
+	                            vertex = triangle.vertices[v];
+	                            switch (attribute) {
+	                                case 'side':
+	                                    this.setBufferData(index, buffer, mesh.side);
+	                                    break;
+	                                case 'position':
+	                                    this.setBufferData(index, buffer, vertex.position);
+	                                    break;
+	                                case 'centroid':
+	                                    this.setBufferData(index, buffer, triangle.centroid);
+	                                    break;
+	                                case 'normal':
+	                                    this.setBufferData(index, buffer, triangle.normal);
+	                                    break;
+	                                case 'ambient':
+	                                    this.setBufferData(index, buffer, mesh.material.ambient.rgba);
+	                                    break;
+	                                case 'diffuse':
+	                                    this.setBufferData(index, buffer, mesh.material.diffuse.rgba);
+	                                    break;
+	                            }
+	                            index++;
+	                        }
+	                    }
+	                }
+
+	                // Upload attribute buffer data
+	                this.gl.bindBuffer(this.gl.ARRAY_BUFFER, buffer.buffer);
+	                this.gl.bufferData(this.gl.ARRAY_BUFFER, buffer.data, this.gl.DYNAMIC_DRAW);
+	                this.gl.enableVertexAttribArray(buffer.location);
+	                this.gl.vertexAttribPointer(buffer.location, buffer.size, this.gl.FLOAT, false, 0, 0);
+	            }
+	        }
+
+	        // Build uniform buffers
+	        this.setBufferData(0, this.program.uniforms.resolution, [this.width, this.height, this.width]);
+	        for (l = lights - 1; l >= 0; l--) {
+	            light = scene.lights[l];
+	            this.setBufferData(l, this.program.uniforms.lightPosition, light.position);
+	            this.setBufferData(l, this.program.uniforms.lightAmbient, light.ambient.rgba);
+	            this.setBufferData(l, this.program.uniforms.lightDiffuse, light.diffuse.rgba);
+	        }
+
+	        // Update uniforms
+	        for (uniform in this.program.uniforms) {
+	            buffer = this.program.uniforms[uniform];
+	            location = buffer.location;
+	            data = buffer.data;
+	            switch (buffer.structure) {
+	                case '3f':
+	                    this.gl.uniform3f(location, data[0], data[1], data[2]);
+	                    break;
+	                case '3fv':
+	                    this.gl.uniform3fv(location, data);
+	                    break;
+	                case '4fv':
+	                    this.gl.uniform4fv(location, data);
+	                    break;
+	            }
+	        }
+	    }
+
+	    // Draw those lovely triangles
+	    this.gl.drawArrays(this.gl.TRIANGLES, 0, this.vertices);
+	    return this;
+	};
+
+	FSS.WebGLRenderer.prototype.setBufferData = function (index, buffer, value) {
+	    if (FSS.Utils.isNumber(value)) {
+	        buffer.data[index * buffer.size] = value;
+	    } else {
+	        for (var i = value.length - 1; i >= 0; i--) {
+	            buffer.data[index * buffer.size + i] = value[i];
+	        }
+	    }
+	};
+
+	/**
+	 * Concepts taken from three.js WebGLRenderer
+	 * @see https://github.com/mrdoob/three.js/blob/master/src/renderers/WebGLRenderer.js
+	 */
+	FSS.WebGLRenderer.prototype.buildProgram = function (lights) {
+	    if (this.unsupported) return;
+
+	    // Create shader source
+	    var vs = FSS.WebGLRenderer.VS(lights);
+	    var fs = FSS.WebGLRenderer.FS(lights);
+
+	    // Derive the shader fingerprint
+	    var code = vs + fs;
+
+	    // Check if the program has already been compiled
+	    if (!!this.program && this.program.code === code) return;
+
+	    // Create the program and shaders
+	    var program = this.gl.createProgram();
+	    var vertexShader = this.buildShader(this.gl.VERTEX_SHADER, vs);
+	    var fragmentShader = this.buildShader(this.gl.FRAGMENT_SHADER, fs);
+
+	    // Attach an link the shader
+	    this.gl.attachShader(program, vertexShader);
+	    this.gl.attachShader(program, fragmentShader);
+	    this.gl.linkProgram(program);
+
+	    // Add error handling
+	    if (!this.gl.getProgramParameter(program, this.gl.LINK_STATUS)) {
+	        var error = this.gl.getError();
+	        var status = this.gl.getProgramParameter(program, this.gl.VALIDATE_STATUS);
+	        console.error('Could not initialise shader.\nVALIDATE_STATUS: ' + status + '\nERROR: ' + error);
+	        return null;
+	    }
+
+	    // Delete the shader
+	    this.gl.deleteShader(fragmentShader);
+	    this.gl.deleteShader(vertexShader);
+
+	    // Set the program code
+	    program.code = code;
+
+	    // Add the program attributes
+	    program.attributes = {
+	        side: this.buildBuffer(program, 'attribute', 'aSide', 1, 'f'),
+	        position: this.buildBuffer(program, 'attribute', 'aPosition', 3, 'v3'),
+	        centroid: this.buildBuffer(program, 'attribute', 'aCentroid', 3, 'v3'),
+	        normal: this.buildBuffer(program, 'attribute', 'aNormal', 3, 'v3'),
+	        ambient: this.buildBuffer(program, 'attribute', 'aAmbient', 4, 'v4'),
+	        diffuse: this.buildBuffer(program, 'attribute', 'aDiffuse', 4, 'v4')
+	    };
+
+	    // Add the program uniforms
+	    program.uniforms = {
+	        resolution: this.buildBuffer(program, 'uniform', 'uResolution', 3, '3f', 1),
+	        lightPosition: this.buildBuffer(program, 'uniform', 'uLightPosition', 3, '3fv', lights),
+	        lightAmbient: this.buildBuffer(program, 'uniform', 'uLightAmbient', 4, '4fv', lights),
+	        lightDiffuse: this.buildBuffer(program, 'uniform', 'uLightDiffuse', 4, '4fv', lights)
+	    };
+
+	    // Set the renderer program
+	    this.program = program;
+
+	    // Enable program
+	    this.gl.useProgram(this.program);
+
+	    // Return the program
+	    return program;
+	};
+
+	FSS.WebGLRenderer.prototype.buildShader = function (type, source) {
+	    if (this.unsupported) return;
+
+	    // Create and compile shader
+	    var shader = this.gl.createShader(type);
+	    this.gl.shaderSource(shader, source);
+	    this.gl.compileShader(shader);
+
+	    // Add error handling
+	    if (!this.gl.getShaderParameter(shader, this.gl.COMPILE_STATUS)) {
+	        console.error(this.gl.getShaderInfoLog(shader));
+	        return null;
+	    }
+
+	    // Return the shader
+	    return shader;
+	};
+
+	FSS.WebGLRenderer.prototype.buildBuffer = function (program, type, identifier, size, structure, count) {
+	    var buffer = {
+	        buffer: this.gl.createBuffer(),
+	        size: size,
+	        structure: structure,
+	        data: null
+	    };
+
+	    // Set the location
+	    switch (type) {
+	        case 'attribute':
+	            buffer.location = this.gl.getAttribLocation(program, identifier);
+	            break;
+	        case 'uniform':
+	            buffer.location = this.gl.getUniformLocation(program, identifier);
+	            break;
+	    }
+
+	    // Create the buffer if count is provided
+	    if (!!count) {
+	        buffer.data = new FSS.Array(count * size);
+	    }
+
+	    // Return the buffer
+	    return buffer;
+	};
+
+	FSS.WebGLRenderer.VS = function (lights) {
+	    var shader = [
+	    // Precision
+	    'precision mediump float;',
+	    // Lights
+	    '#define LIGHTS ' + lights,
+	    // Attributes
+	    'attribute float aSide;', 'attribute vec3 aPosition;', 'attribute vec3 aCentroid;', 'attribute vec3 aNormal;', 'attribute vec4 aAmbient;', 'attribute vec4 aDiffuse;',
+	    // Uniforms
+	    'uniform vec3 uResolution;', 'uniform vec3 uLightPosition[LIGHTS];', 'uniform vec4 uLightAmbient[LIGHTS];', 'uniform vec4 uLightDiffuse[LIGHTS];',
+	    // Varyings
+	    'varying vec4 vColor;',
+	    // Main
+	    'void main() {',
+	    // Create color
+	    'vColor = vec4(0.0);',
+	    // Calculate the vertex position
+	    'vec3 position = aPosition / uResolution * 2.0;',
+	    // Iterate through lights
+	    'for (int i = 0; i < LIGHTS; i++) {', 'vec3 lightPosition = uLightPosition[i];', 'vec4 lightAmbient = uLightAmbient[i];', 'vec4 lightDiffuse = uLightDiffuse[i];',
+	    // Calculate illuminance
+	    'vec3 ray = normalize(lightPosition - aCentroid);', 'float illuminance = dot(aNormal, ray);', 'if (aSide == 0.0) {', 'illuminance = max(illuminance, 0.0);', '} else if (aSide == 1.0) {', 'illuminance = abs(min(illuminance, 0.0));', '} else if (aSide == 2.0) {', 'illuminance = max(abs(illuminance), 0.0);', '}',
+	    // Calculate ambient light
+	    'vColor += aAmbient * lightAmbient;',
+	    // Calculate diffuse light
+	    'vColor += aDiffuse * lightDiffuse * illuminance;', '}',
+	    // Clamp color
+	    'vColor = clamp(vColor, 0.0, 1.0);',
+	    // Set gl_Position
+	    'gl_Position = vec4(position, 1.0);', '}'
+
+	    // Return the shader
+	    ].join('\n');
+	    return shader;
+	};
+
+	FSS.WebGLRenderer.FS = function (lights) {
+	    var shader = [
+	    // Precision
+	    'precision mediump float;',
+	    // Varyings
+	    'varying vec4 vColor;',
+	    // Main
+	    'void main() {',
+	    // Set gl_FragColor
+	    'gl_FragColor = vColor;', '}'
+
+	    // Return the shader
+	    ].join('\n');
+	    return shader;
+	};
+
+	/**
+	 * @class SVG Renderer
+	 * @author Matthew Wagerfield
+	 */
+	FSS.SVGRenderer = function () {
+	    FSS.Renderer.call(this);
+	    this.element = document.createElementNS(FSS.SVGNS, 'svg');
+	    this.element.setAttribute('xmlns', FSS.SVGNS);
+	    this.element.setAttribute('version', '1.1');
+	    this.element.style.display = 'block';
+	    this.setSize(300, 150);
+	};
+
+	FSS.SVGRenderer.prototype = Object.create(FSS.Renderer.prototype);
+
+	FSS.SVGRenderer.prototype.setSize = function (width, height) {
+	    FSS.Renderer.prototype.setSize.call(this, width, height);
+	    this.element.setAttribute('width', width);
+	    this.element.setAttribute('height', height);
+	    return this;
+	};
+
+	FSS.SVGRenderer.prototype.clear = function () {
+	    FSS.Renderer.prototype.clear.call(this);
+	    for (var i = this.element.childNodes.length - 1; i >= 0; i--) {
+	        this.element.removeChild(this.element.childNodes[i]);
+	    }
+	    return this;
+	};
+
+	FSS.SVGRenderer.prototype.render = function (scene) {
+	    FSS.Renderer.prototype.render.call(this, scene);
+	    var m, mesh, t, triangle, points, style;
+
+	    // Update Meshes
+	    for (m = scene.meshes.length - 1; m >= 0; m--) {
+	        mesh = scene.meshes[m];
+	        if (mesh.visible) {
+	            mesh.update(scene.lights, true);
+
+	            // Render Triangles
+	            for (t = mesh.geometry.triangles.length - 1; t >= 0; t--) {
+	                triangle = mesh.geometry.triangles[t];
+	                if (triangle.polygon.parentNode !== this.element) {
+	                    this.element.appendChild(triangle.polygon);
+	                }
+	                points = this.formatPoint(triangle.a) + ' ';
+	                points += this.formatPoint(triangle.b) + ' ';
+	                points += this.formatPoint(triangle.c);
+	                style = this.formatStyle(triangle.color.format());
+	                triangle.polygon.setAttributeNS(null, 'points', points);
+	                triangle.polygon.setAttributeNS(null, 'style', style);
+	            }
+	        }
+	    }
+	    return this;
+	};
+
+	FSS.SVGRenderer.prototype.formatPoint = function (vertex) {
+	    return vertex.position[0] + ',' + vertex.position[1];
+	};
+
+	FSS.SVGRenderer.prototype.formatStyle = function (color) {
+	    var style = 'fill:' + color + ';';
+	    style += 'stroke:' + color + ';';
+	    return style;
+	};
+	exports['default'] = FSS;
+	module.exports = exports['default'];
+
+/***/ },
+/* 363 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__, __webpack_module_template_argument_9__, __webpack_module_template_argument_10__, __webpack_module_template_argument_11__, __webpack_module_template_argument_12__, __webpack_module_template_argument_13__, __webpack_module_template_argument_14__, __webpack_module_template_argument_15__, __webpack_module_template_argument_16__, __webpack_module_template_argument_17__, __webpack_module_template_argument_18__, __webpack_module_template_argument_19__, __webpack_module_template_argument_20__, __webpack_module_template_argument_21__, __webpack_module_template_argument_22__, __webpack_module_template_argument_23__, __webpack_module_template_argument_24__, __webpack_module_template_argument_25__, __webpack_module_template_argument_26__, __webpack_module_template_argument_27__, __webpack_module_template_argument_28__, __webpack_module_template_argument_29__, __webpack_module_template_argument_30__, __webpack_module_template_argument_31__, __webpack_module_template_argument_32__, __webpack_module_template_argument_33__, __webpack_module_template_argument_34__, __webpack_module_template_argument_35__, __webpack_module_template_argument_36__) {
 
 	'use strict';
@@ -22884,7 +25131,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 359 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -22912,7 +25159,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 360 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -23038,7 +25285,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 361 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	'use strict';
@@ -23252,7 +25499,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 362 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__, __webpack_module_template_argument_9__, __webpack_module_template_argument_10__, __webpack_module_template_argument_11__, __webpack_module_template_argument_12__, __webpack_module_template_argument_13__, __webpack_module_template_argument_14__, __webpack_module_template_argument_15__, __webpack_module_template_argument_16__, __webpack_module_template_argument_17__, __webpack_module_template_argument_18__, __webpack_module_template_argument_19__, __webpack_module_template_argument_20__, __webpack_module_template_argument_21__, __webpack_module_template_argument_22__, __webpack_module_template_argument_23__, __webpack_module_template_argument_24__) {
 
 	'use strict';
@@ -23491,7 +25738,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 363 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	'use strict';
@@ -23562,7 +25809,7 @@ webpackJsonp([0],[
 	module.exports = ReactStyle;
 
 /***/ },
-/* 364 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -23683,7 +25930,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 365 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -23770,7 +26017,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 366 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -23859,7 +26106,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 367 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -23949,7 +26196,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 368 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24039,7 +26286,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 369 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	'use strict';
@@ -24133,7 +26380,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 370 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	/*jslint browser: true*/
@@ -24191,7 +26438,7 @@ webpackJsonp([0],[
 	module.exports = createStyle;
 
 /***/ },
-/* 371 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	/*jslint browser: true*/
@@ -24213,7 +26460,7 @@ webpackJsonp([0],[
 	module.exports = Style;
 
 /***/ },
-/* 372 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24288,7 +26535,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 373 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	'use strict';
@@ -24407,7 +26654,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 374 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24527,7 +26774,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 375 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -24606,7 +26853,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 376 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	"use strict";
@@ -24715,7 +26962,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 377 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24804,7 +27051,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 378 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24894,7 +27141,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 379 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -24922,7 +27169,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 380 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	'use strict';
@@ -25002,7 +27249,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 381 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25089,7 +27336,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 382 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25179,7 +27426,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 383 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25268,7 +27515,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 384 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	'use strict';
@@ -25346,7 +27593,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 385 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25374,7 +27621,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 386 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25461,7 +27708,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 387 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -25610,7 +27857,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 388 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -25767,7 +28014,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 389 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	"use strict";
@@ -25829,7 +28076,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 390 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	"use strict";
@@ -25977,7 +28224,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 391 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	"use strict";
@@ -26040,7 +28287,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 392 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -26194,7 +28441,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 393 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
