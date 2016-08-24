@@ -3,6 +3,7 @@ import Freelancer from '../templates/Freelancer';
 import { ContentWrapper, ContentBlock} from 'pmvc_react_landing';
 import { pageStore } from 'reshow'; 
 import Geometryangle from 'react-organism-geometryangle';
+import Me from '../organisms/Me';
 
 class Body extends Component
 {
@@ -12,6 +13,7 @@ class Body extends Component
         const I18N = pageState.get('I18N').toJS();
         return (
             <ContentWrapper>
+                <Me />
                 <Geometryangle />
             </ContentWrapper>
         );
