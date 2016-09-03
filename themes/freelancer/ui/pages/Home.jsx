@@ -7,14 +7,34 @@ import Me from '../organisms/Me';
 
 class Body extends Component
 {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            me: null,
+            geometryangle: null 
+        };
+    }
+
+    componentDidMount()
+    {
+        this.setState({
+            me: <Me />,
+            geometryangle: <Geometryangle /> 
+        });
+    }
+
     render()
     {
         const pageState = pageStore.getState();
         const I18N = pageState.get('I18N').toJS();
+        const state = this.state;
         return (
             <ContentWrapper>
-                <Me />
-                <Geometryangle />
+                <ContentBlock style={{height:"600px"}}>
+                    {state.me} 
+                    {state.geometryangle} 
+                </ContentBlock>
             </ContentWrapper>
         );
     }

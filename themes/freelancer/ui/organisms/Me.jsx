@@ -15,7 +15,7 @@ const Me = (props) => (
 );
 
 Me.defaultProps = {
-    width: '100%',
+    height: '100%',
     viewBox: '0 0 902 1064',
     fill: '#fff'
 };

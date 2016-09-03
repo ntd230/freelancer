@@ -17274,22 +17274,39 @@ webpackJsonp([0],[
 	var Body = (function (_Component) {
 	    _inherits(Body, _Component);
 
-	    function Body() {
+	    function Body(props) {
 	        _classCallCheck(this, Body);
 
-	        _get(Object.getPrototypeOf(Body.prototype), 'constructor', this).apply(this, arguments);
+	        _get(Object.getPrototypeOf(Body.prototype), 'constructor', this).call(this, props);
+	        this.state = {
+	            me: null,
+	            geometryangle: null
+	        };
 	    }
 
 	    _createClass(Body, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.setState({
+	                me: _react2['default'].createElement(_organismsMe2['default'], null),
+	                geometryangle: _react2['default'].createElement(_reactOrganismGeometryangle2['default'], null)
+	            });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var pageState = _reshow.pageStore.getState();
 	            var I18N = pageState.get('I18N').toJS();
+	            var state = this.state;
 	            return _react2['default'].createElement(
 	                _pmvc_react_landing.ContentWrapper,
 	                null,
-	                _react2['default'].createElement(_organismsMe2['default'], null),
-	                _react2['default'].createElement(_reactOrganismGeometryangle2['default'], null)
+	                _react2['default'].createElement(
+	                    _pmvc_react_landing.ContentBlock,
+	                    { style: { height: "600px" } },
+	                    state.me,
+	                    state.geometryangle
+	                )
 	            );
 	        }
 	    }]);
@@ -23485,7 +23502,9 @@ webpackJsonp([0],[
 	 * @see https://gist.github.com/paulirish/1579671
 	 */
 	(function () {
-
+	    if ('undefined' === typeof window) {
+	        return;
+	    }
 	    var lastTime = 0;
 	    var vendors = ['ms', 'moz', 'webkit', 'o'];
 
@@ -24806,7 +24825,7 @@ webpackJsonp([0],[
 	};
 
 	Me.defaultProps = {
-	    width: '100%',
+	    height: '100%',
 	    viewBox: '0 0 902 1064',
 	    fill: '#fff'
 	};

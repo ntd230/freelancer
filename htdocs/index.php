@@ -5,6 +5,7 @@ include_once('../vendor/autoload.php');
     ,'dispatcher'=>null
     ,'error'=>['all']
     ,'debug'=>null
+    ,'dev'=>null
     ,'dotenv'=>['../.env']
     ,'app_action_router'=>null
     ,'view_config_helper'=>null
