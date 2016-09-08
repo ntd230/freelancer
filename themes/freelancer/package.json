@@ -1,8 +1,7 @@
 {
-  "name": "react-pmvc",
+  "name": "pmvc_react_freelancer",
   "version": "0.0.0",
-  "description": "A very simple implementation of server-side React rendering",
-  "repository": "pmvc-theme/hello_react",
+  "description": "Freelancer theme base on react",
   "keywords": [
     "react",
     "reactjs"
@@ -13,6 +12,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-organism-geometryangle": "^0.0.2",
+    "organism-react-typing": "*",
     "reshow": "*"
   },
   "devDependencies": {

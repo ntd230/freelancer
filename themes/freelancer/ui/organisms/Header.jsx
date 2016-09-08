@@ -28,9 +28,10 @@ class Header extends Component
 
 const Styles = {
     header: {
-        background: '#2d3e50',
-        padding: '0.5em',
-        marginBottom: '10px'
+        background: 'transparent',
+        position: 'fixed',
+        zIndex: '2',
+        width: '100%'
     },
     headerNav: {
         display: 'inline-block'
