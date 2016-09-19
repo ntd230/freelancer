@@ -3,10 +3,11 @@ import Freelancer from '../templates/Freelancer';
 import { ContentWrapper, ContentBlock, SplashBlock } from 'pmvc_react_landing';
 import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
-import Geometryangle from 'react-organism-geometryangle';
+import Geometryangle from 'organism-react-geometryangle';
 import Me from '../organisms/Me';
 import Introduce from '../organisms/Introduce';
-import SvgBlackBlock from '../organisms/SvgBlackBlock';
+import HeaderContent from '../organisms/HeaderContent';
+import Portfolio from '../organisms/Portfolio';
 
 class Body extends Component
 {
@@ -33,6 +34,7 @@ class Body extends Component
         const I18N = pageState.get('I18N').toJS();
         const state = this.state;
         const introduce = pageState.get('introduce').toJS();
+        const section = pageState.get('section').toJS();
         return (
             <SemanticUI>
                 <SplashBlock>
@@ -41,9 +43,9 @@ class Body extends Component
                     <Introduce {...introduce} />
                 </SplashBlock>
                 <ContentWrapper style={Styles.contentWrapper}>
-                    <SvgBlackBlock>
-                        test
-                    </SvgBlackBlock>
+                    <HeaderContent {...section.design} />
+                    <Portfolio />
+                    
                 </ContentWrapper>
             </SemanticUI>
         );

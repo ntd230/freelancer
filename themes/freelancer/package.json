@@ -11,8 +11,12 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-organism-geometryangle": "^0.0.2",
+    "organism-react-geometryangle": "*",
     "organism-react-typing": "*",
+    "organism-react-tag-highlight": "^0.0.1",
+    "organism-react-animate": "*",
+    "organism-react-scroll-nav": "*",
+    "react-atomic-molecule": "^0.0.26",
     "reshow": "*"
   },
   "devDependencies": {
