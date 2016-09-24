@@ -1,8 +1,9 @@
 import React, {Component} from 'react'; 
-import SvgBlackBlock from '../organisms/SvgBlackBlock';
 import { Header, Content } from 'react-atomic-molecule';
 import HighLighter from 'organism-react-tag-highlight';
 import { ContentBlock } from 'pmvc_react_landing';
+
+import SvgBlackBlock from '../molecules/SvgBlackBlock';
 
 const HeaderContent = (props) => ( 
     <SvgBlackBlock style={Styles.container}>

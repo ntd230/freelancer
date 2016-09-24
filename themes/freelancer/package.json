@@ -1,5 +1,5 @@
 {
-  "name": "pmvc_react_freelancer",
+  "name": "",
   "version": "0.0.0",
   "description": "Freelancer theme base on react",
   "keywords": [
@@ -15,8 +15,11 @@
     "organism-react-typing": "*",
     "organism-react-tag-highlight": "^0.0.1",
     "organism-react-animate": "*",
-    "organism-react-scroll-nav": "*",
+    "organism-react-scroll-nav": "^0.0.3",
+    "organism-react-scroll-animate": "^0.0.2",
     "react-atomic-molecule": "^0.0.26",
+    "react-atomic-organism": "*",
+    "ra-icon-magnifier": "*",
     "reshow": "*"
   },
   "devDependencies": {

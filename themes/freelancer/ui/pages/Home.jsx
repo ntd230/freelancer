@@ -1,13 +1,14 @@
 import React, {Component} from 'react'; 
-import Freelancer from '../templates/Freelancer'; 
 import { ContentWrapper, ContentBlock, SplashBlock } from 'pmvc_react_landing';
 import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
 import Geometryangle from 'organism-react-geometryangle';
+
+import HeaderContent from '../molecules/HeaderContent';
 import Me from '../organisms/Me';
 import Introduce from '../organisms/Introduce';
-import HeaderContent from '../organisms/HeaderContent';
 import Portfolio from '../organisms/Portfolio';
+import Freelancer from '../templates/Freelancer'; 
 
 class Body extends Component
 {
@@ -44,8 +45,7 @@ class Body extends Component
                 </SplashBlock>
                 <ContentWrapper style={Styles.contentWrapper}>
                     <HeaderContent {...section.design} />
-                    <Portfolio />
-                    
+                    <Portfolio {...section.portfolio} />
                 </ContentWrapper>
             </SemanticUI>
         );

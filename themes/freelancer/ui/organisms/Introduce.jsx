@@ -37,6 +37,7 @@ const Styles = {
         borderLeft: 'none',
         borderRight: 'none',
         display: 'inline',
+        whiteSpace: "nowrap"
     }, 
     bd: {
         font: '50px/1.5 Montserrat,sans-serif',
