@@ -15,6 +15,7 @@
         "pmvc-plugin/default_forward": "*",
         "pmvc-plugin/view": "*",
         "pmvc-plugin/view_react": "*",
+        "pmvc-plugin/view_json": "*",
         "pmvc-plugin/view_cli": "*",
         "pmvc-plugin/view_config_helper": "*",
         "pmvc-app/hello_app": "*",

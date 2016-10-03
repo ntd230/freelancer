@@ -19,7 +19,11 @@ const PortfolioContent = (props)=>{
     const I18N = pageState.get('I18N').toJS(); 
     const one = arrPortfolio[props.name];
     return (
-        <PortfolioModal show={true} center={false}>
+        <PortfolioModal
+            show={true}
+            center={false}
+            closeCallBack={props.closeCallBack}
+        >
             <div style={Styles.container}>
                 <Header style={assign(
                     Styles.year,

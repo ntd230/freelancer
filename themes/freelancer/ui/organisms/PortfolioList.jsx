@@ -1,33 +1,69 @@
 import React, {Component} from 'react'; 
 import {ZoomIn} from 'ra-icon-magnifier';
-import Immutable from 'immutable';
-import { List, reactStyle } from 'react-atomic-molecule';
+import { 
+    List,
+    AutoInjectComponent,
+    reactStyle 
+} from 'react-atomic-molecule';
 
 import { HoverDimmerCardView } from 'react-atomic-organism';
 
+import { 
+    dispatch,
+    pageStore,
+    Container
+} from 'reshow';
+
 import {
-    PopupModal,
-    PopupClick
+    popupDispatch
 } from 'organism-react-popup';
 
 import PortfolioContent from '../organisms/PortfolioContent';
 
 let injects;
 
-class PortfolioList extends Component
+class PortfolioList extends AutoInjectComponent
 {
+   static getStores()
+   {
+       return [pageStore];
+   }
+
+   static calculateState(prevState, props)
+   {
+        const state = pageStore.getState();
+        const portfolioId = state.get('portfolioId');
+        if (portfolioId) {
+            popupDispatch({
+                type: 'dom/update',
+                params: {
+                    popup: <PortfolioContent
+                        name={portfolioId}
+                        closeCallBack={()=>{
+                            dispatch({
+                                type: 'config/set',
+                                params: {
+                                    portfolioId: '' 
+                                },
+                                url: '/index.php/index/'
+                            });
+                        }}
+                    />
+                }
+            });
+        } else {
+            popupDispatch({type: 'dom/close'});
+        }
+        return prevState;
+   }
+
     constructor(props) 
     {
         super(props);
-        if (!injects) {
-            injects = {};
-            InjectStyles.forEach((item, key)=>{
-                injects[key] = reactStyle.apply(
-                    null,
-                    item
-                );
-            });
-        }
+        injects = this.autoInject(
+            injects,
+            InjectStyles
+        );
     }
 
     render()
@@ -36,27 +72,35 @@ class PortfolioList extends Component
         return (
             <List type="card" styles={injects.cards}>   
             {image.map((item, num)=>
-                <PopupClick
+                <HoverDimmerCardView
                     key={num}
                     imageSrc={item}
                     header={title[num]}
                     style={Styles.card}
-                    container={<HoverDimmerCardView />}
-                    popup={()=>{
-                        return <PortfolioContent 
-                            name={keys[num]} 
-                        />;
+                    onClick={(e)=>{
+                        dispatch({
+                            type: 'config/set',
+                            params: {
+                                portfolioId: keys[num]
+                            },
+                            url: '/index.php/index/'+keys[num]
+                        });
                     }}
                 >
                     <ZoomIn style={Styles.zoom} />
-                </PopupClick>
+                </HoverDimmerCardView>
             )}
             </List>
         );
     }
 }
 
-export default PortfolioList;
+const PortfolioListContainer = Container.create(
+    PortfolioList,
+    { withProps:true }
+);
+
+export default PortfolioListContainer;
 
 const Styles = {
     card: {
@@ -69,7 +113,7 @@ const Styles = {
     },
 };
 
-const InjectStyles = Immutable.Map({
+const InjectStyles = { 
     cardHeader: [
         {color: '#fff'},
         '.ui.cards>.card>.content>.header'
@@ -77,4 +121,4 @@ const InjectStyles = Immutable.Map({
     cards: [{
         justifyContent: ['center']
     }]
-});
+};

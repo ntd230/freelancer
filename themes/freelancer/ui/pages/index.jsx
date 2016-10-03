@@ -1,21 +1,31 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import Home from './Home';
-import Reshow from 'reshow'; 
+import {ClientRoute} from 'reshow'; 
 
-class Index extends Component
-{
+const Index = (props) => {
+    let themes = {
+        home: <Home />,
+    };
+    return (
+        <ClientRoute
+            themes={themes}
+            {...props}
+            parseUrl={(url)=>{
+                if ('undefined' !== typeof document) {
+                    url = document.URL;
+                    const params = url.split('/');
+                    const last = params.length-1;
+                    if (params[last]) {
+                        return {
+                            portfolioId: params[last]
+                        };
+                    }
+                }
+                return {portfolioId:''};
+            }}
 
-   render(){
-        let themes = {
-            home: <Home />,
-        };
-        return (
-            <Reshow
-                themes={themes}
-                {...this.props}
-            />
-        );  
-    }
-}
+        />
+    );  
+};
 
 export default Index;

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "03b987da1869eabef6b9762a413a6597",
-    "content-hash": "ce3e4fbe9c95f37c1f73c25a2162004a",
+    "hash": "85ea877194eb48fe69028389449322df",
+    "content-hash": "682c6735f870c63c51c0eeebffc37e56",
     "packages": [
         {
             "name": "mouf/nodejs-installer",
@@ -896,6 +896,44 @@
                 "pmvc"
             ],
             "time": "2016-08-22 17:34:35"
+        },
+        {
+            "name": "pmvc-plugin/view_json",
+            "version": "0.5.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/view_json.git",
+                "reference": "ea5e35a13fa5946a16b6cec0879039d8f94bf856"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/view_json/zipball/ea5e35a13fa5946a16b6cec0879039d8f94bf856",
+                "reference": "ea5e35a13fa5946a16b6cec0879039d8f94bf856",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc-plugin/controller": "*",
+                "pmvc-plugin/view": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "PMVC json template engine",
+            "homepage": "https://github.com/pmvc-plugin/view_json",
+            "keywords": [
+                "json",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2016-08-13 10:01:00"
         },
         {
             "name": "pmvc-plugin/view_react",

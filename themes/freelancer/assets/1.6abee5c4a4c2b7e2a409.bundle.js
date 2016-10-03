@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 358:
+/***/ 378:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8,7 +8,7 @@ webpackJsonp([1],{
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
 	    return typeof obj;
 	} : function (obj) {
-	    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
+	    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
 	};
 
 	// dlog 0.1.1

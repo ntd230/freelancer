@@ -9,6 +9,7 @@ include_once('../vendor/autoload.php');
     ,'dotenv'=>['../.env']
     ,'app_action_router'=>null
     ,'view_config_helper'=>null
+    ,'view_json'=>null
     ,'cache_header'=>[[0]]
 ]);
 $controller = \PMVC\plug('controller');

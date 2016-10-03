@@ -7,7 +7,7 @@ $paths=[
 
 ${_INIT_CONFIG}=[
     'paths'=>$paths,
-    'assetsRoot'=>'/react/assets',
+    'assetsRoot'=>'/assets/',
     'staticVersion'=>time(),
     'webpackVendor'=>[]
 ];
