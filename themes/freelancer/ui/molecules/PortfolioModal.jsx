@@ -3,10 +3,21 @@ import {
     PopupModal
 } from 'organism-react-popup';
 
-import {XIco, assign} from 'react-atomic-molecule';
+import {assign, lazyInject, XIco} from 'react-atomic-molecule';
+
+let injects;
 
 class PortfolioModal extends Component
 {
+    constructor(props) 
+    {
+        super(props);
+        injects = lazyInject(
+            injects,
+            InjectStyles
+        );
+    }
+
     componentWillReceiveProps(newProps)
     {
         this.setState({
@@ -74,7 +85,8 @@ const Styles = {
     fullScreen: {
         color: '#000',
         top: 0,
-        width: '100%'
+        width: '100%',
+        marginBottom: 0
     },
     x: {
         width: '70px',
@@ -87,4 +99,13 @@ const Styles = {
     xIcoHover: {
         opacity: '.3'
     }
+};
+
+const InjectStyles = {
+    fullScreen: [
+        {
+            margin: '3.5rem 0 0 !important'
+        },
+        '.modals.dimmer .ui.scrolling.modal'
+    ]
 };

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {ZoomIn} from 'ra-icon-magnifier';
 import { 
     List,
-    AutoInjectComponent,
+    lazyInject,
     reactStyle 
 } from 'react-atomic-molecule';
 
@@ -22,7 +22,7 @@ import PortfolioContent from '../organisms/PortfolioContent';
 
 let injects;
 
-class PortfolioList extends AutoInjectComponent
+class PortfolioList extends Component 
 {
    static getStores()
    {
@@ -60,7 +60,7 @@ class PortfolioList extends AutoInjectComponent
     constructor(props) 
     {
         super(props);
-        injects = this.autoInject(
+        injects = lazyInject(
             injects,
             InjectStyles
         );

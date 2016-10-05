@@ -28,5 +28,5 @@ const xl = '@media (min-width: 80em)';
 const Styles = {
     mdHeaderNav: reactStyle({
         float: 'right' 
-    },[md, '.home-menu ul'])
+    },[md, '.page-header ul'])
 };

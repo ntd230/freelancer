@@ -62,7 +62,7 @@ const PortfolioContent = (props)=>{
                 )}>
                     {one.pages.map((item,key)=>
                         <Browser style={Styles.monitor} key={key}>
-                            <img style={{display:'block'}} src={item} /> 
+                            <img style={{display:'block', borderRadius:'10px' }} src={item} /> 
                         </Browser>
                     )}
                 </div>

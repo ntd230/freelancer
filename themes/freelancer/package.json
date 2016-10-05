@@ -24,10 +24,10 @@
     "pmvc_react_landing": "^0.0.2",
     "ra-icon-magnifier": "*",
     "react": "^15.1.0",
-    "react-atomic-molecule": "^0.0.32",
+    "react-atomic-molecule": "^0.0.34",
     "react-atomic-organism": "^0.0.3",
     "react-dom": "^15.1.0",
-    "reshow": "*"
+    "reshow": "0.0.10"
   },
   "devDependencies": {
     "webpack": "^1.13.0",

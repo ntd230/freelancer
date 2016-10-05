@@ -1,16 +1,16 @@
 import React, {Component} from 'react'; 
+import { reactStyle, SemanticUI } from 'react-atomic-molecule';
+import { pageStore } from 'reshow'; 
+import { PageHeader } from 'pmvc_react_landing';
 import Brand from '../organisms/Brand'; 
 import HeaderNav from '../organisms/HeaderNav'; 
-import { reactStyle, SemanticUI } from 'react-atomic-molecule';
-
-import { pageStore } from 'reshow'; 
 
 class Header extends Component 
 {
     render(){
         const pageState = pageStore.getState();
         return (
-            <SemanticUI style={Styles.header} className="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <PageHeader>
                 <Brand 
                     url={pageState.get('freelancerHost')}
                     name={pageState.get('freelancerFirstName')}
@@ -21,18 +21,12 @@ class Header extends Component
                     className="home-menu"
                     nav={pageState.get('nav').toJS()}
                 />
-            </SemanticUI>
+            </PageHeader>
         );
     }
 }
 
 const Styles = {
-    header: {
-        background: 'transparent',
-        position: 'fixed',
-        zIndex: '2',
-        width: '100%'
-    },
     headerNav: {
         display: 'inline-block'
     }
