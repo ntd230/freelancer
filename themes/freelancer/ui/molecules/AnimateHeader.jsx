@@ -4,7 +4,7 @@ import { Header } from 'react-atomic-molecule';
 
 const AnimateHeader = (props) => ( 
     <Animate once={true} enter="fadeInLeft-600">
-        <Header {...props} style={Styles.text}/>
+        {()=>{ return <Header {...props} style={Styles.text}/>; }}
     </Animate>
 );
 

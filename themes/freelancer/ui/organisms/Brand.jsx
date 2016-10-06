@@ -16,11 +16,11 @@ const Styles = {
         marginRight: 10
     },
     brand: {
-        padding: '.5em 1em',
+        padding: '0',
         display: 'inline-block',
         verticalAlign: 'middle',
         color: '#fff',
-        fontWeight: 400,
+        fontWeight: 200,
         fontSize: '120%',
         textDecoration: 'none'
     }

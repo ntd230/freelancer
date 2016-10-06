@@ -3,6 +3,7 @@ import { ContentWrapper, ContentBlock, SplashBlock } from 'pmvc_react_landing';
 import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
 import Geometryangle from 'organism-react-geometryangle';
+import { ScrollSpy } from 'organism-react-scroll-nav';
 
 import HeaderContent from '../molecules/HeaderContent';
 import Me from '../organisms/Me';
@@ -44,7 +45,9 @@ class Body extends Component
                     <Introduce {...introduce} />
                 </SplashBlock>
                 <ContentWrapper style={Styles.contentWrapper}>
-                    <HeaderContent {...section.design} />
+                    <ScrollSpy id="slogan">
+                        <HeaderContent {...section.design} />
+                    </ScrollSpy>
                     <Portfolio {...section.portfolio} />
                 </ContentWrapper>
             </SemanticUI>
