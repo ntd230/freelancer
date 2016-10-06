@@ -9,9 +9,16 @@ const Icons = {
 };
 
 const NavItem = (props) => (
-    <Item style={Styles.item}>
+    <Item style={Styles.item} {...props}>
         <a href={props.link} style={Styles.link}>
-            {()=>{if(props.icon){return Icons[props.icon];}}()}
+            {()=>{if(props.icon){
+                return React.cloneElement(
+                    Icons[props.icon],
+                    {
+                        style: Styles.icon
+                    }
+                );
+            }}()}
             {props.text}
         </a>
     </Item>
@@ -37,10 +44,19 @@ const Styles = {
     link: {
         color: '#fff',
         textDecoration: 'none',
-        padding: '.5em 1em'
+        padding: '1.75rem 0.938rem 0.938em',
+        textTransform: 'uppercase',
+        fontSize: '0.875rem',
     },
     item: {
         listStyle: 'none',
         display: 'inline-block'
+    },
+    icon: {
+        width: 16,
+        height: 16,
+        position: 'relative',
+        top: 3,
+        marginRight: 7,
     }
 };

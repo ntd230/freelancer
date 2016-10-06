@@ -12,8 +12,8 @@ export default Brand;
 const Styles = {
     name: {
         display: 'inline-block',
-        fontWeight:700,
-        marginRight: 10
+        fontWeight:600,
+        marginRight: 9,
     },
     brand: {
         padding: '0',
@@ -21,7 +21,10 @@ const Styles = {
         verticalAlign: 'middle',
         color: '#fff',
         fontWeight: 200,
-        fontSize: '120%',
+        letterSpacing: '0.081rem',
+        fontSize: '1.375rem',
+        fontFamily: 'Raleway, sans-serif',
+        textTransform: 'uppercase',
         textDecoration: 'none'
     }
 };

@@ -12,7 +12,7 @@
     "organism-react-animate": "*",
     "organism-react-geometryangle": "*",
     "organism-react-popup": "^0.0.7",
-    "organism-react-scroll-animate": "^0.0.7",
+    "organism-react-scroll-animate": "^0.0.8",
     "organism-react-scroll-nav": "^0.0.16",
     "organism-react-tag-highlight": "^0.0.1",
     "organism-react-typing": "*",

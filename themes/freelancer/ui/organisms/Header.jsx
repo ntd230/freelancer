@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { reactStyle, SemanticUI } from 'react-atomic-molecule';
+import { assign, reactStyle, SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
 import { PageHeader } from 'pmvc_react_landing';
 import { ScrollReceiver } from 'organism-react-scroll-nav';
@@ -9,9 +9,15 @@ import HeaderNav from '../organisms/HeaderNav';
 
 const HandleScroll = (props)=>
 {
-    const {scrollInfo, ...others} = props;
-    console.log(scrollInfo);
-    return <PageHeader {...others} />;
+    let {scrollInfo, style, ...others} = props;
+    if (scrollInfo.active ||
+        (!scrollInfo.isOnScreen && scrollInfo.isShown)
+       ) {
+       style = assign({}, style, Styles.containerActive);
+    }
+    return <PageHeader {...others} style={style} styles={ reactStyle({
+        transition: ['padding 300ms linear'] 
+    })} />;
 }
 
 const Header = (props)=>{
@@ -44,7 +50,11 @@ const Styles = {
         margin:0
     },
     container: {
-        padding: '3rem 0 0 3rem'
+        padding: '3.9rem 3rem 0'
+    },
+    containerActive: {
+        padding: '1.75rem 1.75rem 1.875rem',
+        background: '#000'
     }
 };
 

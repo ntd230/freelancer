@@ -47,8 +47,8 @@ class Body extends Component
                 <ContentWrapper style={Styles.contentWrapper}>
                     <ScrollSpy id="slogan">
                         <HeaderContent {...section.design} />
+                        <Portfolio {...section.portfolio} />
                     </ScrollSpy>
-                    <Portfolio {...section.portfolio} />
                 </ContentWrapper>
             </SemanticUI>
         );
