@@ -27,7 +27,7 @@
     "react-atomic-molecule": "^0.0.34",
     "react-atomic-organism": "^0.0.3",
     "react-dom": "^15.1.0",
-    "reshow": "0.0.10"
+    "reshow": "^0.0.13"
   },
   "devDependencies": {
     "webpack": "^1.13.0",

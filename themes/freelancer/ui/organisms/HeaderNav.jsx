@@ -8,21 +8,28 @@ const Icons = {
     description: <IcoDescription />
 };
 
-const NavItem = (props) => (
-    <Item style={Styles.item} {...props}>
-        <a href={props.link} style={Styles.link}>
-            {()=>{if(props.icon){
-                return React.cloneElement(
-                    Icons[props.icon],
-                    {
-                        style: Styles.icon
-                    }
-                );
-            }}()}
-            {props.text}
+const NavItem = (props) => {
+    const {link, text, icon, ...others} = props;
+    return (
+    <Item style={Styles.item} {...others}>
+        <a href={link} style={Styles.link}>
+            {()=>{
+                if(icon){
+                    return React.cloneElement(
+                        Icons[icon],
+                        {
+                            style: Styles.icon
+                        }
+                    );
+                } else {
+                    return null;
+                }
+            }()}
+            {text}
         </a>
     </Item>
-)
+    );
+};
 
 const HeaderNav = (props) => (
     <List atom="ul" style={props.style}>
