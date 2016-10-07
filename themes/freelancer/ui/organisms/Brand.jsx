@@ -1,7 +1,11 @@
 import React, {Component} from 'react'; 
 
 const Brand = (props) => (
-    <a href={props.url} style={Styles.brand}>
+    <a
+        href={props.url}
+        style={Styles.brand}
+        className={props.className}
+    >
         <div style={Styles.name}>{props.name}</div>
         {props.meta}
     </a>
@@ -25,6 +29,7 @@ const Styles = {
         fontSize: '1.375rem',
         fontFamily: 'Raleway, sans-serif',
         textTransform: 'uppercase',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        paddingTop: '1.75rem'
     }
 };

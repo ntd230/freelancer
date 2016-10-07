@@ -24,9 +24,26 @@ export default class Freelancer extends Component
 const sm = '@media (min-width: 35.5em)';
 const md = '@media (min-width: 48em)';
 const lg = '@media (min-width: 64em)';
+const lgMax = '@media (max-width: 64em)';
 const xl = '@media (min-width: 80em)';
 const Styles = {
-    mdHeaderNav: reactStyle({
-        float: 'right' 
-    },[md, '.page-header ul'])
+    lgMaxHeader: reactStyle({
+        padding: '1rem 1.75rem 1.875rem !important',
+        background: '#000 !important',
+        height: '60px',
+        boxSizing: 'border-box',
+        overflow: 'hidden'
+    }, [lgMax, '.page-header']),
+    lgMaxHeaderOn: reactStyle({
+        height: 'auto',
+    }, [lgMax, '.page-header.on']),
+    lgMaxHeaderNavLi: reactStyle({
+        display: 'block !important' 
+    }, [lgMax, '.page-header ul li']),
+    lgMaxBrand: reactStyle({
+        paddingTop: '0 !important' 
+    }, [lgMax, '.brand']),
+    lgMaxHamburger: reactStyle({
+        display: 'block !important' 
+    }, [lgMax, '.hamburger']),
 };

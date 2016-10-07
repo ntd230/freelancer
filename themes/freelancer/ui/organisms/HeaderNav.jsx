@@ -32,7 +32,11 @@ const NavItem = (props) => {
 };
 
 const HeaderNav = (props) => (
-    <List atom="ul" style={props.style}>
+    <List
+        atom="ul"
+        style={props.style}
+        className={props.className}
+    >
         { 
             props.nav.link.map((item, key)=>
                 <NavItem key={key} 
@@ -54,6 +58,7 @@ const Styles = {
         padding: '1.75rem 0.938rem 0.938em',
         textTransform: 'uppercase',
         fontSize: '0.875rem',
+        display: 'block',
     },
     item: {
         listStyle: 'none',
