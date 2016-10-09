@@ -1,4 +1,4 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import {ZoomIn} from 'ra-icon-magnifier';
 import { 
     List,
@@ -15,46 +15,41 @@ import {
 } from 'reshow';
 
 import {
-    popupDispatch
+    PopupMonitor
 } from 'organism-react-popup';
 
 import PortfolioContent from '../organisms/PortfolioContent';
 
 let injects;
 
-class PortfolioList extends Component 
+class PortfolioList extends PopupMonitor 
 {
    static getStores()
    {
        return [pageStore];
    }
 
-   static calculateState(prevState, props)
+   static get popupKey()
    {
         const state = pageStore.getState();
         const portfolioId = state.get('portfolioId');
-        if (portfolioId) {
-            popupDispatch({
-                type: 'dom/update',
-                params: {
-                    popup: <PortfolioContent
-                        name={portfolioId}
-                        closeCallBack={()=>{
-                            dispatch({
-                                type: 'config/set',
-                                params: {
-                                    portfolioId: '' 
-                                },
-                                url: '/index.php/index/'
-                            });
-                        }}
-                    />
-                }
-            });
-        } else {
-            popupDispatch({type: 'dom/close'});
-        }
-        return prevState;
+        return portfolioId;
+   }
+
+   static getPopupElement(key)
+   {
+        return <PortfolioContent
+            name={key}
+            closeCallBack={()=>{
+                dispatch({
+                    type: 'config/set',
+                    params: {
+                        portfolioId: '' 
+                    },
+                    url: '/index.php/index/'
+                });
+            }}
+        />;
    }
 
     constructor(props) 

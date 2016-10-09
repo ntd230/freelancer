@@ -1,10 +1,10 @@
 import React, {Component} from 'react'; 
 
-import { PopupDom } from "organism-react-popup"
+import { PopupElement } from "organism-react-popup"
 
 const Footer = (props) => (
     <div>
-        <PopupDom />
+        <PopupElement />
     </div>
 );
 export default Footer;
