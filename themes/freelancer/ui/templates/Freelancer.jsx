@@ -30,12 +30,12 @@ const Styles = {
     lgMaxHeader: reactStyle({
         padding: '1rem 1.75rem 1.875rem !important',
         background: '#000 !important',
-        height: '60px',
+        maxHeight: '60px',
         boxSizing: 'border-box',
         overflow: 'hidden'
     }, [lgMax, '.page-header']),
     lgMaxHeaderOn: reactStyle({
-        height: 'auto',
+        maxHeight: '100%',
     }, [lgMax, '.page-header.on']),
     lgMaxHeaderNavLi: reactStyle({
         display: 'block !important' 

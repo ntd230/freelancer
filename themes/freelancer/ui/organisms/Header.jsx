@@ -8,7 +8,7 @@ import {
 import { pageStore } from 'reshow'; 
 import { PageHeader } from 'pmvc_react_landing';
 import { ScrollReceiver } from 'organism-react-scroll-nav';
-import { HamburgerIcon } from 'ra-icon-hamburger';
+import { XIcon as HamburgerIcon } from 'ra-icon-hamburger';
 
 import Brand from '../organisms/Brand'; 
 import HeaderNav from '../organisms/HeaderNav'; 
@@ -21,9 +21,12 @@ const HandleScroll = (props)=>
        ) {
        style = assign({}, style, Styles.containerActive);
     }
-    return <PageHeader {...others} style={style} styles={ reactStyle({
-        transition: ['padding 300ms linear'] 
-    })} />;
+    return <PageHeader {...others} style={style} styles={reactStyle({
+        transition: [[
+            'padding 300ms linear',
+            'max-height 300ms ease-in-out'
+        ].join(', ')] 
+    },null,false)} />;
 }
 
 class Header extends Component
@@ -67,6 +70,7 @@ class Header extends Component
             <HamburgerIcon
                 className="hamburger" 
                 style={Styles.HamburgerIcon}
+                on={this.state.on}
                 onClick={(()=>{
                     const on = this.state.on ? false : true;
                     this.setState({
