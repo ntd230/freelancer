@@ -3,9 +3,18 @@ import {OneColumn} from 'pmvc_react_landing';
 import { reactStyle } from 'react-atomic-molecule';
 import Header from '../organisms/Header'; 
 import Footer from '../organisms/Footer'; 
+import { scrollDispatch } from 'organism-react-scroll-nav';
 
 export default class Freelancer extends Component
 {
+    constructor(props)
+    {
+        super(props);
+        scrollDispatch({
+            scrollMargin: 50
+        });
+    }
+
     render(){
         const {column, ...rest} = this.props;
         switch(column)

@@ -54,6 +54,7 @@ class Header extends Component
             container={<HandleScroll />}
             style={Styles.container}
             className={classes}
+            scrollMargin={0}
         >
             <Brand 
                 url={pageState.get('freelancerHost')}
