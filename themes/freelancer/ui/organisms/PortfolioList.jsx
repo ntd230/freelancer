@@ -18,6 +18,7 @@ import {
     PopupMonitor
 } from 'organism-react-popup';
 
+
 import PortfolioContent from '../organisms/PortfolioContent';
 
 let injects;
@@ -38,7 +39,11 @@ class PortfolioList extends PopupMonitor
 
    static getPopupElement(key)
    {
-        return <PortfolioContent
+        return (
+        <PortfolioContent
+            appear="fadeIn-500"
+            enter="fadeIn-500"
+            leave="fadeOut-500"
             name={key}
             closeCallBack={()=>{
                 dispatch({
@@ -49,7 +54,8 @@ class PortfolioList extends PopupMonitor
                     url: '/index.php/index/'
                 });
             }}
-        />;
+        />
+        );
    }
 
     constructor(props) 

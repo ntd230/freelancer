@@ -20,9 +20,8 @@ const PortfolioContent = (props)=>{
     const one = arrPortfolio[props.name];
     return (
         <PortfolioModal
+            {...props}
             show={true}
-            center={false}
-            closeCallBack={props.closeCallBack}
         >
             <div style={Styles.container}>
                 <Header style={assign(
