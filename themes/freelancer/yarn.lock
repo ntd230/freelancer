@@ -374,8 +374,8 @@ chalk@^1.0.0, chalk@^1.1.1:
     supports-color "^2.0.0"
 
 chokidar@^1.0.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.0.tgz#90c32ad4802901d7713de532dc284e96a63ad058"
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
   dependencies:
     anymatch "^1.3.0"
     async-each "^1.0.0"
@@ -618,7 +618,7 @@ events@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
-exenv@^1.2.0:
+exenv@^1.2.0, exenv@>=1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.1.tgz#75de1c8dee02e952b102aa17f8875973e0df14f9"
 
@@ -941,8 +941,8 @@ indexof@0.0.1:
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
 inflight@^1.0.4:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.5.tgz#db3204cd5a9de2e6cd890b85c6e2f66bcf4f620a"
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
   dependencies:
     once "^1.3.0"
     wrappy "1"
@@ -1341,7 +1341,7 @@ object-assign@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
 
-object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@^4.0.1, object-assign@^4.1.0, object-assign@>=4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
 
@@ -1371,12 +1371,13 @@ optimist@~0.6.0:
     minimist "~0.0.1"
     wordwrap "~0.0.2"
 
-organism-react-ajax@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/organism-react-ajax/-/organism-react-ajax-0.0.4.tgz#13425bc77bf7a244995aa9c873c749c554412a51"
+organism-react-ajax@>=0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/organism-react-ajax/-/organism-react-ajax-0.0.12.tgz#a55713f4561cf32b93a732fbf5f478302c5b9dbf"
   dependencies:
     flux "^2.1.1"
     immutable "^3.7.4"
+    react-atomic-molecule ">=0.0.42"
     superagent "^0.21.0"
 
 organism-react-animate@*, organism-react-animate@>=0.0.4, organism-react-animate@>=0.0.7:
@@ -1407,9 +1408,9 @@ organism-react-popup@>=0.0.11:
     react-addons-css-transition-group "*"
     react-atomic-molecule ">=0.0.40"
 
-organism-react-scroll-animate@>=0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.10.tgz#ad9300ef5e380d029b778eb1c4f7fed7e78a048a"
+organism-react-scroll-animate@>=0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.11.tgz#6703949aae59941fe8a3e927a463b94e90ac6a21"
   dependencies:
     organism-react-animate ">=0.0.4"
     organism-react-scroll-nav ">=0.0.18"
@@ -1506,8 +1507,8 @@ pmvc_react_landing@>=0.0.5:
     react-atomic-molecule ">=0.0.39"
 
 preact-compat@^3.4.2:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.7.1.tgz#559c555c5ce0fcab9e24aab19bb79103d86fbfc1"
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.8.2.tgz#8410c34318adf90f2a80c716b83e0cf97dc1c90e"
   dependencies:
     preact-render-to-string "^3.2.1"
     preact-transition-group "^1.1.0"
@@ -1623,19 +1624,19 @@ react-addons-css-transition-group@*:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.3.2.tgz#d8fa52bec9bb61bdfde8b9e4652b80297cbff667"
 
-react-atomic-atom@^0.0.14:
+react-atomic-atom@^0.0.14, react-atomic-atom@>=0.0.14:
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-0.0.14.tgz#24dd872d0c192ea6de70499c97a85224d0772794"
 
-react-atomic-molecule@*, react-atomic-molecule@>=0.0.39, react-atomic-molecule@>=0.0.40:
-  version "0.0.40"
-  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-0.0.40.tgz#1c80fa0dbaef792cc6d2a7091fb61405358b7526"
+react-atomic-molecule@*, react-atomic-molecule@>=0.0.39, react-atomic-molecule@>=0.0.40, react-atomic-molecule@>=0.0.42:
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-0.0.42.tgz#426db9f57028a0ea97a7066f4a3e39bbca795b1a"
   dependencies:
     classnames "*"
-    exenv "^1.2.0"
+    exenv ">=1.2.0"
     hyphenate-style-name "1.0.0"
-    object-assign "^4.0.1"
-    react-atomic-atom "^0.0.14"
+    object-assign ">=4.0.1"
+    react-atomic-atom ">=0.0.14"
 
 react-atomic-molecule@^0.0.39:
   version "0.0.39"
@@ -1820,12 +1821,12 @@ request@2.x:
     tunnel-agent "~0.4.1"
 
 reshow@>=0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/reshow/-/reshow-0.0.13.tgz#bb773c35014c5ef69637388d970cef186c8dd46a"
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/reshow/-/reshow-0.0.24.tgz#ac084f921eab736bc5598c3913370987b06ad47e"
   dependencies:
     flux "^2.1.1"
     immutable "^3.7.4"
-    organism-react-ajax "^0.0.4"
+    organism-react-ajax ">=0.0.12"
 
 resolve@^1.1.6:
   version "1.1.7"

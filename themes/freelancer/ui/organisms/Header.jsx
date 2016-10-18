@@ -15,10 +15,8 @@ import HeaderNav from '../organisms/HeaderNav';
 
 const HandleScroll = (props)=>
 {
-    let {scrollInfo, style, ...others} = props;
-    if (scrollInfo.active ||
-        (!scrollInfo.isOnScreen && scrollInfo.isShown)
-       ) {
+    let {targetInfo, style, ...others} = props;
+    if (targetInfo.active || targetInfo.atTop) {
        style = assign({}, style, Styles.containerActive);
     }
     return <PageHeader {...others} style={style} styles={reactStyle({
@@ -52,9 +50,10 @@ class Header extends Component
         <ScrollReceiver
             targetId="slogan"
             container={<HandleScroll />}
+            scrollMargin={0}
+            /*common props*/
             style={Styles.container}
             className={classes}
-            scrollMargin={0}
         >
             <Brand 
                 url={pageState.get('freelancerHost')}

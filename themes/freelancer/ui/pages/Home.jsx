@@ -39,7 +39,7 @@ class Body extends Component
         const section = pageState.get('section').toJS();
         return (
             <SemanticUI>
-                <SplashBlock>
+                <SplashBlock style={Styles.cover}>
                     {state.me}
                     {state.geometryangle}
                     <Introduce {...introduce} />
@@ -73,5 +73,10 @@ export default Home;
 const Styles = {
     contentWrapper: {
         top: '100%'
+    },
+    cover: {
+        minHeight: 350
     }
+
+
 };
