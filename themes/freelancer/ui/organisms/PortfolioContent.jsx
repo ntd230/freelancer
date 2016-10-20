@@ -31,7 +31,7 @@ const PortfolioContent = (props)=>{
                             one.color1
                     }
                 )}>{one.year}</Header>
-                <Header style={Styles.title}>{one.title}</Header>
+                <Header style={Styles.header}>{one.header}</Header>
                 <Meta atom="dl" style={Styles.meta}>
                     <dt style={Styles.dt}>{I18N.project}</dt>
                     <dd style={Styles.dd}>{one.project}</dd>
@@ -82,7 +82,7 @@ const Styles = {
         paddingBottom: '10px',
         marginBottom: '10px',
     },
-    title: {
+    header: {
         fontSize: '7.5rem',
         fontFamily: 'Montserrat,sans-serif'
     },

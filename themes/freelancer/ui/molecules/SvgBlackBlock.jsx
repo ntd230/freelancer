@@ -19,6 +19,7 @@ export default SvgBlackBlock;
 
 const Styles = {
     container: {
+        color: '#fff',
         padding: '80px 0',
         maxWidth: '100%',
         minHeight: '100px',

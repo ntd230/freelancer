@@ -16,13 +16,13 @@ export default HeaderContent;
 
 const Styles = {
     container: {
-        color: "#fff",
         fontFamily: "Raleway,sans-serif",
         lineHeight: 1.5,
         fontWeight: 200,
     },
     header: {
         fontSize: "2.813rem",
+        textAlign: 'center',
     },
     b: {
         color: "#00ffea",
@@ -30,5 +30,6 @@ const Styles = {
     },
     content: {
         fontSize:'1.25rem',
+        textAlign: 'center',
     }
 };

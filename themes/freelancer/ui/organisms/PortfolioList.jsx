@@ -1,9 +1,8 @@
 import React from 'react'; 
 import {ZoomIn} from 'ra-icon-magnifier';
 import { 
-    List,
     lazyInject,
-    reactStyle 
+    List,
 } from 'react-atomic-molecule';
 
 import { HoverDimmerCardView } from 'react-atomic-organism';
@@ -69,14 +68,14 @@ class PortfolioList extends PopupMonitor
 
     render()
     {
-        const {image, title, keys} = this.props;
+        const {image, header, keys} = this.props;
         return (
-            <List type="card" styles={injects.cards}>   
+            <List type="card" styles={injects.cards} className="portfolio"> 
             {image.map((item, num)=>
                 <HoverDimmerCardView
                     key={num}
                     imageSrc={item}
-                    header={title[num]}
+                    header={header[num]}
                     style={Styles.card}
                     onClick={(e)=>{
                         dispatch({
@@ -117,7 +116,7 @@ const Styles = {
 const InjectStyles = { 
     cardHeader: [
         {color: '#fff'},
-        '.ui.cards>.card>.content>.header'
+        '.portfolio.ui.cards>.card>.content>.header'
     ],
     cards: [{
         justifyContent: ['center']

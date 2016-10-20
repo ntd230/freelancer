@@ -9,6 +9,8 @@ import HeaderContent from '../molecules/HeaderContent';
 import Me from '../organisms/Me';
 import Introduce from '../organisms/Introduce';
 import Portfolio from '../organisms/Portfolio';
+import AboutMe from '../organisms/AboutMe';
+import SkillSet from '../organisms/SkillSet';
 import Freelancer from '../templates/Freelancer'; 
 
 class Body extends Component
@@ -48,6 +50,10 @@ class Body extends Component
                     <ScrollSpy id="slogan">
                         <HeaderContent {...section.design} />
                         <Portfolio {...section.portfolio} />
+                    </ScrollSpy>
+                    <ScrollSpy id="aboutme">
+                        <AboutMe {...section.aboutme} />
+                        <SkillSet {...section.skillset} />
                     </ScrollSpy>
                 </ContentWrapper>
             </SemanticUI>

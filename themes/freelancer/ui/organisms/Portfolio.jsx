@@ -3,30 +3,25 @@ import React, {Component} from 'react';
 import Header from '../molecules/AnimateHeader';
 import Content from '../molecules/AnimateContent';
 import WhiteBlock from '../molecules/WhiteBlock';
-
 import PortfolioList from '../organisms/PortfolioList';
 
-class Portfolio extends Component
+const Portfolio = (props) =>
 {
-
-    render()
-    {
-        const {header, content, card} = this.props;
-        return (
-            <WhiteBlock style={Styles.container}>
-                <div style={Styles.extra}>
-                    <div style={Styles.extraInside} />
-                </div>
-                <Header>
-                    {header}
-                </Header>
-                <Content style={Styles.content}>
-                    {content}
-                </Content>
-                <PortfolioList {...card}/>
-            </WhiteBlock>
-        );
-    }
+    const {header, content, card} = props;
+    return (
+        <WhiteBlock style={Styles.container}>
+            <div style={Styles.extra}>
+                <div style={Styles.extraInside} />
+            </div>
+            <Header>
+                {header}
+            </Header>
+            <Content style={Styles.content}>
+                {content}
+            </Content>
+            <PortfolioList {...card}/>
+        </WhiteBlock>
+    );
 }
 export default Portfolio;
 

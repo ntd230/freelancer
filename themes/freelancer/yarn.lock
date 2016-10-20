@@ -658,7 +658,7 @@ fbemitter@^2.0.0:
   dependencies:
     fbjs "^0.8.4"
 
-fbjs@^0.8.4:
+fbjs@^0.8.0, fbjs@^0.8.4:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.5.tgz#f69ba8a876096cb1b9bffe4d7c1e71c19d39d008"
   dependencies:
@@ -669,14 +669,6 @@ fbjs@^0.8.4:
     object-assign "^4.1.0"
     promise "^7.1.1"
     ua-parser-js "^0.7.9"
-
-fbjs@0.1.0-alpha.7:
-  version "0.1.0-alpha.7"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.1.0-alpha.7.tgz#ad4308b8f232fb3c73603349ea725d1e9c39323c"
-  dependencies:
-    core-js "^1.0.0"
-    promise "^7.0.3"
-    whatwg-fetch "^0.9.0"
 
 filename-regex@^2.0.0:
   version "2.0.0"
@@ -692,13 +684,12 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
-flux@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/flux/-/flux-2.1.1.tgz#2c6ac652d4337488968489c6586f3aff26a38ea4"
+flux@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/flux/-/flux-3.0.0.tgz#7b64905a1db63ae07e56a2f7417c4485a67eedda"
   dependencies:
     fbemitter "^2.0.0"
-    fbjs "0.1.0-alpha.7"
-    immutable "^3.7.4"
+    fbjs "^0.8.0"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -932,7 +923,7 @@ ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
-immutable@^3.7.4, immutable@^3.7.6, immutable@^3.8.1:
+immutable@^3.7.6, immutable@^3.8.0:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
@@ -1372,12 +1363,12 @@ optimist@~0.6.0:
     wordwrap "~0.0.2"
 
 organism-react-ajax@>=0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/organism-react-ajax/-/organism-react-ajax-0.0.12.tgz#a55713f4561cf32b93a732fbf5f478302c5b9dbf"
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/organism-react-ajax/-/organism-react-ajax-0.0.13.tgz#51b15e8404c3a5bd161a308f193fac4726f9578b"
   dependencies:
-    flux "^2.1.1"
-    immutable "^3.7.4"
+    immutable "^3.8.0"
     react-atomic-molecule ">=0.0.42"
+    reduce-flux "*"
     superagent "^0.21.0"
 
 organism-react-animate@*, organism-react-animate@>=0.0.4, organism-react-animate@>=0.0.7:
@@ -1398,15 +1389,14 @@ organism-react-geometryangle@*:
   resolved "https://registry.yarnpkg.com/organism-react-geometryangle/-/organism-react-geometryangle-0.0.0.tgz#018fee6f674d449503268601722de8e8bb155530"
 
 organism-react-popup@>=0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/organism-react-popup/-/organism-react-popup-0.0.11.tgz#cbd9e515073b7267ae5a98cb04f1c161d1ff5c5b"
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/organism-react-popup/-/organism-react-popup-0.0.13.tgz#ae00e5e3b13fceb1dbbef2212cd4b9bbc177a9ba"
   dependencies:
-    flux "^2.1.1"
     getoffset "*"
-    immutable "^3.8.1"
     organism-react-animate "*"
     react-addons-css-transition-group "*"
     react-atomic-molecule ">=0.0.40"
+    reduce-flux "*"
 
 organism-react-scroll-animate@>=0.0.11:
   version "0.0.11"
@@ -1417,14 +1407,14 @@ organism-react-scroll-animate@>=0.0.11:
     react-atomic-molecule "*"
 
 organism-react-scroll-nav@>=0.0.18:
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.0.18.tgz#994460ad60ed0ab1f5d498798a95d515d6eee46b"
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.1.tgz#0a5c249f48cf58f4b77b9b7827b12130787c1fb4"
   dependencies:
-    flux "^2.1.1"
     get-scroll-info ">=0.0.10"
     getoffset "*"
-    immutable "^3.8.1"
+    immutable "^3.8.0"
     react-atomic-molecule "*"
+    reduce-flux "*"
     smooth-scroll-to ">=0.0.4"
 
 organism-react-tag-highlight@>=0.0.1:
@@ -1548,7 +1538,7 @@ process@^0.11.0, process@~0.11.0:
   version "0.11.9"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.9.tgz#7bd5ad21aa6253e7da8682264f1e11d11c0318c1"
 
-promise@^7.0.3, promise@^7.1.1:
+promise@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
   dependencies:
@@ -1649,8 +1639,8 @@ react-atomic-molecule@^0.0.39:
     react-atomic-atom "^0.0.14"
 
 react-atomic-organism@>=0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-atomic-organism/-/react-atomic-organism-0.0.3.tgz#6fe93815e8b3878aed66afc3522948943797ba0d"
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-atomic-organism/-/react-atomic-organism-0.0.4.tgz#cb8b9bad49ecaeb5011ff717479fa7f84b4992d1"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1738,6 +1728,12 @@ reduce-component@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/reduce-component/-/reduce-component-1.0.1.tgz#e0c93542c574521bea13df0f9488ed82ab77c5da"
 
+reduce-flux@*:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/reduce-flux/-/reduce-flux-0.0.3.tgz#c3f2e318f796595c2071e29576deeed28f6be815"
+  dependencies:
+    flux "^3.0.0"
+
 regenerate@^1.2.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.3.1.tgz#0300203a5d2fdcf89116dce84275d011f5903f33"
@@ -1820,13 +1816,13 @@ request@2.x:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
 
-reshow@>=0.0.13:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/reshow/-/reshow-0.0.24.tgz#ac084f921eab736bc5598c3913370987b06ad47e"
+reshow@>=0.0.25:
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/reshow/-/reshow-0.0.27.tgz#26b9915bd0696803be6b8d1c46d9b3683ea59469"
   dependencies:
-    flux "^2.1.1"
-    immutable "^3.7.4"
+    immutable "^3.8.0"
     organism-react-ajax ">=0.0.12"
+    reduce-flux "*"
 
 resolve@^1.1.6:
   version "1.1.7"
@@ -2163,10 +2159,6 @@ webpack@^1.13.0:
     uglify-js "~2.6.0"
     watchpack "^0.2.1"
     webpack-core "~0.6.0"
-
-whatwg-fetch@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-0.9.0.tgz#0e3684c6cb9995b43efc9df03e4c365d95fd9cc0"
 
 whatwg-fetch@>=0.10.0:
   version "1.0.0"

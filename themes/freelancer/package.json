@@ -28,7 +28,7 @@
     "react-atomic-molecule": ">=0.0.40",
     "react-atomic-organism": ">=0.0.3",
     "react-dom": "^15.1.0",
-    "reshow": ">=0.0.13"
+    "reshow": ">=0.0.25"
   },
   "devDependencies": {
     "babel-core": "^5.x",
