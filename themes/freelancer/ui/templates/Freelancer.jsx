@@ -33,8 +33,8 @@ export default class Freelancer extends Component
 const sm = '@media (min-width: 35.5em)';
 const md = '@media (min-width: 48em)';
 const lg = '@media (min-width: 64em)';
-const lgMax = '@media (max-width: 64em)';
 const xl = '@media (min-width: 80em)';
+const lgMax = '@media (max-width: 64em)';
 const Styles = {
     lgMaxHeader: reactStyle({
         padding: '1rem 1.75rem 1.875rem !important',
