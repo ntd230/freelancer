@@ -13,6 +13,7 @@ export default WhiteBlock;
 
 const Styles = {
     container: {
-        padding: '80px 0'
+        padding: '80px 0',
+        marginBottom: 0
     }
 };

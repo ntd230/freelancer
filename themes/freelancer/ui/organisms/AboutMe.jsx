@@ -56,6 +56,7 @@ const Styles = {
         color: '#fff',
         textAlign: 'center',
         fontFamily: 'Raleway, sans-serif',
+        margin: '0 auto'
     },
     content: {
         marginBottom: '50px'

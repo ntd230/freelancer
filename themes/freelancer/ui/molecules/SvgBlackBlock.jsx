@@ -1,16 +1,18 @@
 import React from 'react';
-import { ContentBlock } from 'pmvc_react_landing';
 import { assign } from 'react-atomic-molecule';
+import WhiteBlock from '../molecules/WhiteBlock';
 
 const SvgBlackBlock = (props)=>{
     const {style, ...reset} = props; 
     return (
-   <div style={assign(
-        {},
-        Styles.container,
-        style
-    )}>
-       <ContentBlock style={{marginBottom:0}} {...reset} /> 
+    <div
+        style={assign(
+            {},
+            Styles.container,
+            style
+        )}
+    >
+    <WhiteBlock {...reset} />
    </div>
    );
 };
@@ -20,7 +22,6 @@ export default SvgBlackBlock;
 const Styles = {
     container: {
         color: '#fff',
-        padding: '80px 0',
         maxWidth: '100%',
         minHeight: '100px',
         backgroundRepeat: 'repeat',

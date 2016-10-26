@@ -4,6 +4,7 @@ import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
 import Geometryangle from 'organism-react-geometryangle';
 import { ScrollSpy } from 'organism-react-scroll-nav';
+import ScrollAnimate from 'organism-react-scroll-animate';
 
 import HeaderContent from '../molecules/HeaderContent';
 import Me from '../organisms/Me';
@@ -11,6 +12,7 @@ import Introduce from '../organisms/Introduce';
 import Portfolio from '../organisms/Portfolio';
 import AboutMe from '../organisms/AboutMe';
 import SkillSet from '../organisms/SkillSet';
+import Experience from '../organisms/Experience';
 import Freelancer from '../templates/Freelancer'; 
 
 class Body extends Component
@@ -55,6 +57,11 @@ class Body extends Component
                         <AboutMe {...section.aboutme} />
                         <SkillSet {...section.skillset} />
                     </ScrollSpy>
+                    <ScrollAnimate id="experience">
+                    {()=>
+                       <Experience {...section.experience}/> 
+                    }
+                    </ScrollAnimate>
                 </ContentWrapper>
             </SemanticUI>
         );

@@ -11,6 +11,7 @@
   "dependencies": {
     "organism-react-animate": ">=0.0.7",
     "organism-react-apple-device": ">=0.0.1",
+    "organism-react-event-timeline": "*",
     "organism-react-geometryangle": "*",
     "organism-react-popup": ">=0.0.11",
     "organism-react-scroll-animate": ">=0.0.11",
@@ -25,7 +26,7 @@
     "ra-icon-magnifier": "*",
     "rc-css-transition-group": "*",
     "react": "^15.1.0",
-    "react-atomic-molecule": ">=0.0.40",
+    "react-atomic-molecule": "*",
     "react-atomic-organism": ">=0.0.3",
     "react-dom": "^15.1.0",
     "reshow": ">=0.0.25"

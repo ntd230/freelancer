@@ -10,7 +10,7 @@ const CardList = (props) =>
 {
     const {image, header, content} = props;
     return (
-        <List type="card" className="skillset">   
+        <List type="card" className="skillset" styles={injects.cards}> 
             {image.map((item, num)=>
                 <CardView
                     key={num}    
@@ -63,5 +63,10 @@ const InjectStyles = {
             border: 'none'
         },
         '.skillset.ui.cards>.card>.content, .ui.card>.content'
+    ],
+    cards: [
+        {
+            justifyContent: ['center']
+        }
     ]
 };
