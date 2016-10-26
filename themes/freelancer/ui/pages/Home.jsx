@@ -13,6 +13,7 @@ import Portfolio from '../organisms/Portfolio';
 import AboutMe from '../organisms/AboutMe';
 import SkillSet from '../organisms/SkillSet';
 import Experience from '../organisms/Experience';
+import Contact from '../organisms/Contact';
 import Freelancer from '../templates/Freelancer'; 
 
 class Body extends Component
@@ -62,6 +63,9 @@ class Body extends Component
                        <Experience {...section.experience}/> 
                     }
                     </ScrollAnimate>
+                    <ScrollSpy id="contact">
+                        <Contact />
+                    </ScrollSpy>
                 </ContentWrapper>
             </SemanticUI>
         );

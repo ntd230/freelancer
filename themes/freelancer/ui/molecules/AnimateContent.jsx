@@ -1,6 +1,6 @@
 import React, {Component} from 'react'; 
 import Animate from "organism-react-scroll-animate";
-import { assing, Description } from 'react-atomic-molecule';
+import { assign, Description } from 'react-atomic-molecule';
 
 const AnimateContent = (props) => ( 
     <Animate once={true} enter="fadeInRight-600">

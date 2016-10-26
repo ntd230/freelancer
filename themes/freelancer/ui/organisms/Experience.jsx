@@ -13,7 +13,7 @@ const Experience = (props)=>
         console.log(item);
         arrEvent.push({
             header: item,
-            description: events.content[k],
+            description: events.content[k].split('[br]'),
             from: events.from[k].split(','),
             to: events.to[k].split(',')
         });
@@ -21,7 +21,7 @@ const Experience = (props)=>
     return (
        <div style={Styles.container}>
        <WhiteBlock>
-            <Header>
+            <Header style={Styles.header}>
                 {header}
             </Header>
             <Content style={Styles.content}>
@@ -41,6 +41,8 @@ const Styles = {
     container: {
         background: 'url(http://freelancer.ntd230.com/photos/pattern.svg)',
         color: '#fff',
-    }
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+    },
 };
 

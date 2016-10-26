@@ -1,10 +1,20 @@
 import React, {Component} from 'react'; 
 import Animate from "organism-react-scroll-animate";
-import { Header } from 'react-atomic-molecule';
+import { assign, Header } from 'react-atomic-molecule';
 
 const AnimateHeader = (props) => ( 
     <Animate once={true} enter="fadeInLeft-600">
-        {()=>{ return <Header {...props} style={Styles.text}/>; }}
+        {()=>
+            <Header 
+                {...props}
+                style={assign(
+                    {},
+                    Styles.text,
+                    props.style
+                )}
+                ui={false}
+            />
+        }
     </Animate>
 );
 

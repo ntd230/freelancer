@@ -1379,8 +1379,8 @@ organism-react-apple-device@>=0.0.1:
     react-atomic-molecule "*"
 
 organism-react-event-timeline@*:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/organism-react-event-timeline/-/organism-react-event-timeline-0.0.5.tgz#8edbcbaf51e5c55e93297ea47d8285bfd81ba435"
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/organism-react-event-timeline/-/organism-react-event-timeline-0.0.7.tgz#8d068bc770ece8e4096f6745e87a07bdca008c37"
   dependencies:
     colorlib "*"
     organism-react-scroll-animate "*"
@@ -1409,8 +1409,8 @@ organism-react-scroll-animate@*, organism-react-scroll-animate@>=0.0.11:
     react-atomic-molecule "*"
 
 organism-react-scroll-nav@>=0.0.18:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.4.tgz#94f659be592b8b1d5d2f527fe78cc5a2c158022f"
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.5.tgz#61063dd3fe94cf5a35b8c4c6183a82a22fabe722"
   dependencies:
     get-scroll-info ">=0.0.10"
     getoffset "*"
@@ -1625,8 +1625,8 @@ react-atomic-atom@>=0.0.14:
   resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-0.0.15.tgz#a389fd60104c650ac4f64febdcc7c4c303d84f4f"
 
 react-atomic-molecule@*, react-atomic-molecule@>=0.0.39, react-atomic-molecule@>=0.0.40, react-atomic-molecule@>=0.0.42:
-  version "0.0.46"
-  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-0.0.46.tgz#3da3c9e806f6492f2b7650f5fcfaa4deaabc6a09"
+  version "0.0.48"
+  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-0.0.48.tgz#c9c743765b2449d8d020a7a1f0b4858fbb628649"
   dependencies:
     classnames "*"
     exenv ">=1.2.0"

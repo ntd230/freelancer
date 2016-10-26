@@ -7,7 +7,9 @@ import SvgBlackBlock from '../molecules/SvgBlackBlock';
 
 const HeaderContent = (props) => ( 
     <SvgBlackBlock style={Styles.container}>
-        <Header style={Styles.header}><HighLighter bStyle={Styles.b}>{props.header}</HighLighter></Header>
+        <Header ui={false} style={Styles.header}>
+            <HighLighter bStyle={Styles.b}>{props.header}</HighLighter>
+        </Header>
         <Content style={Styles.content}>{props.content}</Content>
     </SvgBlackBlock>
 );
