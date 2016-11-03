@@ -29,7 +29,8 @@
     "react-atomic-molecule": "*",
     "react-atomic-organism": ">=0.0.3",
     "react-dom": "^15.1.0",
-    "reshow": ">=0.0.25"
+    "reshow": ">=0.0.25",
+    "ricon": "*"
   },
   "devDependencies": {
     "babel-core": "^5.x",

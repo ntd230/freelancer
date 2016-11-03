@@ -64,7 +64,7 @@ class Body extends Component
                     }
                     </ScrollAnimate>
                     <ScrollSpy id="contact">
-                        <Contact />
+                        <Contact {...section.contact} />
                     </ScrollSpy>
                 </ContentWrapper>
             </SemanticUI>
