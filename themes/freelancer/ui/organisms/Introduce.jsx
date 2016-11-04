@@ -1,24 +1,43 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Typing from "organism-react-typing";
 
-const Introduce = (props) => (
-    <div style={Styles.container}>
-        <div className="hd" style={Styles.hd}>
-            {props.hd}
-        </div>
-        <div className="bd" style={Styles.bd}>
-            {props.bd.fixed}
-            <Typing color="#fff">
-                {props.bd.animation.map((item, key)=>(
-                    <div key={key}>{item}</div>
-                ))}
-            </Typing>
-        </div>
-        <div className="ft" style={Styles.ft}>
-            {props.ft}
-        </div>
-    </div>
-);
+class Introduce extends Component
+{
+    componentWillReceiveProps(nextProps)
+    {
+        if (nextProps.isRun) {
+            this.type.start();
+        } else {
+            this.type.stop();
+        }
+    }
+
+    render()
+    {
+        const props = this.props;
+        return (
+            <div style={Styles.container}>
+                <div className="hd" style={Styles.hd}>
+                    {props.hd}
+                </div>
+                <div className="bd" style={Styles.bd}>
+                    {props.bd.fixed}
+                    <Typing
+                        color="#fff"
+                        ref={el=>this.type=el}
+                    >
+                        {props.bd.animation.map((item, key)=>(
+                            <div key={key}>{item}</div>
+                        ))}
+                    </Typing>
+                </div>
+                <div className="ft" style={Styles.ft}>
+                    {props.ft}
+                </div>
+            </div>
+        );
+    }
+}
 
 export default Introduce;
 

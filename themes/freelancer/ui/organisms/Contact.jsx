@@ -1,15 +1,16 @@
 import React from 'react'; 
-
-import Section from '../molecules/WhiteBlock';
 import { 
    mixClass,
+   lazyInject,
    DividingHeader,
    Form,
-   InputBox,
-   Field
+   Field,
+   Button
 } from 'react-atomic-molecule';
-
+import { pageStore } from 'reshow'; 
 import PhoneIcon from 'ricon/Phone';
+
+import Section from '../molecules/WhiteBlock';
 
 const Header = (props) =>
     <DividingHeader
@@ -46,6 +47,8 @@ const Tel = (props) =>
 
 const ContactForm = (props) =>
 {
+    const pageState = pageStore.getState();
+    const I18N = pageState.get('I18N').toJS();
     const classes = mixClass(
         props.className,
         'contact-form'
@@ -59,20 +62,45 @@ const ContactForm = (props) =>
             <Header>
                 {header}
             </Header>
-            <Field fieldClassName="two">
-                <InputBox />     
-                <InputBox />     
-                <InputBox />     
-            </Field>
-            <Field fieldClassName="two">
-                <Field atom="textarea"/>
-            </Field>
+            <div className="pure-g">
+                <div style={Styles.formCol} className="pure-u-1 pure-u-md-1-2">
+                    <Field 
+                        atom="input"
+                        style={Styles.input}
+                        placeholder={I18N.yourName}
+                    />     
+                    <Field 
+                        atom="input"
+                        style={Styles.input}
+                        placeholder={I18N.yourEmailAddress}
+                    />     
+                    <Field 
+                        atom="input"
+                        style={Styles.input}
+                        placeholder={I18N.yourPhone}
+                    />     
+                </div>
+                <div style={Styles.formCol} className="pure-u-1 pure-u-md-1-2">
+                    <Field
+                        atom="textarea"
+                        placeholder={I18N.yourMessage}
+                        style={Styles.textarea}
+                    />
+                    <Button className="primary right floated huge">
+                        {I18N.submit}
+                    </Button>
+                </div>
+            </div>
         </Form>
     );
 }
 
 const Contact = (props) =>
 {
+    injects = lazyInject (
+        injects,
+        InjectStyles
+    );
     const {tel, form} = props;
     return (
         <Section 
@@ -120,5 +148,29 @@ const Styles = {
         fontSize: '1.063rem',
         whiteSpace: 'nowrap',
         marginBottom: 15
+    },
+    formCol: {
+        boxSizing: 'border-box',
+        padding: 15
+    },
+    input: {
+        marginBottom: 20,
+        height: 60,
+    },
+    textarea: {
+        height: 270
     }
+};
+
+
+let injects;
+const InjectStyles = {
+    inputTextarea: [
+        {
+            background: '#3d3d3d',
+            color: '#f3f3f3',
+            fontSize: '.875rem',
+        },
+        '#contact form input, #contact form textarea'
+    ]
 };

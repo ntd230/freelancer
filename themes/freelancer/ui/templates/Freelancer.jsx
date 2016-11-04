@@ -23,7 +23,6 @@ export default class Freelancer extends Component
             default:
                 return <OneColumn
                     {...rest}
-                    footer={<Footer />}
                     header={<Header />}
                 />;
         }

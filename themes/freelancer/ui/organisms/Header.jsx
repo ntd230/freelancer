@@ -19,12 +19,16 @@ const HandleScroll = (props)=>
     if (targetInfo.active || targetInfo.atTop) {
        style = assign({}, style, Styles.containerActive);
     }
-    return <PageHeader {...others} style={style} styles={reactStyle({
-        transition: [[
-            'padding 300ms linear',
-            'max-height 300ms ease-in-out'
-        ].join(', ')] 
-    },null,false)} />;
+    return <PageHeader
+        {...others}
+        style={style}
+        styles={reactStyle({
+            transition: [[
+                'padding 300ms linear',
+                'max-height 300ms ease-in-out'
+            ].join(', ')] 
+        },null,false)}
+    />;
 }
 
 class Header extends Component
@@ -49,8 +53,8 @@ class Header extends Component
     return (
         <ScrollReceiver
             targetId="slogan"
-            container={<HandleScroll />}
             scrollMargin={0}
+            container={<HandleScroll />}
             /*common props*/
             style={Styles.container}
             className={classes}

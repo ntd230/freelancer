@@ -1,39 +1,22 @@
 import React, {Component} from 'react'; 
-import { ContentWrapper, ContentBlock, SplashBlock } from 'pmvc_react_landing';
+import { ContentWrapper, ContentBlock } from 'pmvc_react_landing';
 import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
-import Geometryangle from 'organism-react-geometryangle';
 import { ScrollSpy } from 'organism-react-scroll-nav';
 import ScrollAnimate from 'organism-react-scroll-animate';
 
 import HeaderContent from '../molecules/HeaderContent';
-import Me from '../organisms/Me';
-import Introduce from '../organisms/Introduce';
+import Cover from '../organisms/Cover';
 import Portfolio from '../organisms/Portfolio';
 import AboutMe from '../organisms/AboutMe';
 import SkillSet from '../organisms/SkillSet';
 import Experience from '../organisms/Experience';
 import Contact from '../organisms/Contact';
 import Freelancer from '../templates/Freelancer'; 
+import Footer from '../organisms/Footer'; 
 
 class Body extends Component
 {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            me: null,
-            geometryangle: null 
-        };
-    }
-
-    componentDidMount()
-    {
-        this.setState({
-            me: <Me />,
-            geometryangle: <Geometryangle /> 
-        });
-    }
 
     render()
     {
@@ -44,11 +27,7 @@ class Body extends Component
         const section = pageState.get('section').toJS();
         return (
             <SemanticUI>
-                <SplashBlock style={Styles.cover}>
-                    {state.me}
-                    {state.geometryangle}
-                    <Introduce {...introduce} />
-                </SplashBlock>
+                <Cover introduce={introduce}/>
                 <ContentWrapper style={Styles.contentWrapper}>
                     <ScrollSpy id="slogan">
                         <HeaderContent {...section.design} />
@@ -66,6 +45,7 @@ class Body extends Component
                     <ScrollSpy id="contact">
                         <Contact {...section.contact} />
                     </ScrollSpy>
+                    <Footer />
                 </ContentWrapper>
             </SemanticUI>
         );
@@ -91,9 +71,4 @@ const Styles = {
     contentWrapper: {
         top: '100%'
     },
-    cover: {
-        minHeight: 350
-    }
-
-
 };

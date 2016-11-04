@@ -36,6 +36,12 @@ class Experience extends Component
                 </Content>
                 <EventTimeline
                     events={arrEvent}
+                    animate={{
+                        enter: 'fadeInLeft'
+                    }}
+                    evenAnimate={{
+                        enter: 'fadeInRight'
+                    }}
                 />
            </WhiteBlock>
            </div>

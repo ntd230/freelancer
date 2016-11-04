@@ -395,10 +395,8 @@ clone@^1.0.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149"
 
 code-point-at@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.0.1.tgz#1104cd34f9b5b45d3eba88f1babc1924e1ce35fb"
-  dependencies:
-    number-is-nan "^1.0.0"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
 colorlib@*:
   version "0.0.0"
@@ -1395,8 +1393,8 @@ organism-react-event-timeline@*:
     react-atomic-molecule "*"
 
 organism-react-geometryangle@*:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/organism-react-geometryangle/-/organism-react-geometryangle-0.0.0.tgz#018fee6f674d449503268601722de8e8bb155530"
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/organism-react-geometryangle/-/organism-react-geometryangle-0.0.3.tgz#e4d68da4475e8a52964ee27bcc74c874e8a549bc"
 
 organism-react-popup@>=0.0.11:
   version "0.0.13"
@@ -1434,8 +1432,8 @@ organism-react-tag-highlight@>=0.0.1:
     react-atomic-molecule "*"
 
 organism-react-typing@*:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.0.tgz#3f49802e9f9ae53eb39d622f9f9574684a0caa7b"
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.2.tgz#2f1205fb897ec4aa5d2810026298be793c4e0aae"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1633,8 +1631,8 @@ react-atomic-atom@^0.0.14:
   resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-0.0.14.tgz#24dd872d0c192ea6de70499c97a85224d0772794"
 
 react-atomic-molecule@*, react-atomic-molecule@>=0.0.39, react-atomic-molecule@>=0.0.40, react-atomic-molecule@>=0.0.42:
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-0.0.56.tgz#b429b2d4383251a799c31870a096a9a0b87efe22"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-1.0.3.tgz#500a7dcb26cd4caae79d28a4b6bf1063932c9e74"
   dependencies:
     classnames "*"
     exenv "1.2.1"
@@ -1794,8 +1792,8 @@ repeating@^1.1.0, repeating@^1.1.2:
     is-finite "^1.0.0"
 
 request@^2.75.0:
-  version "2.76.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.76.0.tgz#be44505afef70360a0436955106be3945d95560e"
+  version "2.78.0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.78.0.tgz#e1c8dec346e1c81923b24acdb337f11decabe9cc"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
