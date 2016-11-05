@@ -49,7 +49,7 @@ class Cover extends Component
 const ScrollCover = (props) =>
     <ScrollReceiver
         {...props}
-        targetId="slogan"
+        targetId="design"
         scrollMargin={0}
         container={<Cover />}
     />

@@ -773,7 +773,7 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-get-scroll-info@^0.0.10, get-scroll-info@>=0.0.10:
+get-scroll-info@*, get-scroll-info@>=0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/get-scroll-info/-/get-scroll-info-0.0.10.tgz#49902e86f80b8a7c59f1e3fcbc007928879d6fd3"
 
@@ -1415,15 +1415,15 @@ organism-react-scroll-animate@*, organism-react-scroll-animate@>=0.0.11:
     react-atomic-molecule "*"
 
 organism-react-scroll-nav@>=0.0.18:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.5.tgz#61063dd3fe94cf5a35b8c4c6183a82a22fabe722"
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.6.tgz#3d62eb4146c5ecbcdd22024fb203bc8f10686b8d"
   dependencies:
     get-scroll-info ">=0.0.10"
     getoffset "*"
     immutable "^3.8.0"
     react-atomic-molecule "*"
     reduce-flux "*"
-    smooth-scroll-to ">=0.0.4"
+    smooth-scroll-to "*"
 
 organism-react-tag-highlight@>=0.0.1:
   version "0.0.1"
@@ -1886,11 +1886,11 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-smooth-scroll-to@>=0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/smooth-scroll-to/-/smooth-scroll-to-0.0.4.tgz#69bedeaf4c79f3c759c0d69e823d345b24226f99"
+smooth-scroll-to@*:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/smooth-scroll-to/-/smooth-scroll-to-0.0.5.tgz#3e740af6faf636aefd74a82e8a6742dcd66d6b09"
   dependencies:
-    get-scroll-info "^0.0.10"
+    get-scroll-info "*"
 
 sntp@1.x.x:
   version "1.0.9"

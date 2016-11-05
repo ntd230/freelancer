@@ -52,7 +52,8 @@ class Header extends Component
     );
     return (
         <ScrollReceiver
-            targetId="slogan"
+            id="header"
+            targetId="design"
             scrollMargin={0}
             container={<HandleScroll />}
             /*common props*/

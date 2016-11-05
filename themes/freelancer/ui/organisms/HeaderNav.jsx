@@ -1,6 +1,6 @@
 import React, {Component} from 'react'; 
-
 import { List, Item } from 'react-atomic-molecule';
+import {SmoothScrollLink} from 'organism-react-scroll-nav';
 
 import IcoDescription from '../molecules/IcoDescription';
 
@@ -10,9 +10,18 @@ const Icons = {
 
 const NavItem = (props) => {
     const {link, text, icon, ...others} = props;
+    let targetId;
+    if (0 === link.indexOf('#')) {
+        targetId = link.substr(1);
+    }
     return (
     <Item style={Styles.item} {...others}>
-        <a href={link} style={Styles.link}>
+        <SmoothScrollLink 
+            href={link} 
+            style={Styles.link}
+            targetId={targetId}
+            scrollRefId="header"
+        >
             {()=>{
                 if(icon){
                     return React.cloneElement(
@@ -26,7 +35,7 @@ const NavItem = (props) => {
                 }
             }()}
             {text}
-        </a>
+        </SmoothScrollLink>
     </Item>
     );
 };

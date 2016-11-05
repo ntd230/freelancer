@@ -29,15 +29,15 @@ class Body extends Component
             <SemanticUI>
                 <Cover introduce={introduce}/>
                 <ContentWrapper style={Styles.contentWrapper}>
-                    <ScrollSpy id="slogan">
+                    <ScrollSpy id="design">
                         <HeaderContent {...section.design} />
                         <Portfolio {...section.portfolio} />
                     </ScrollSpy>
-                    <ScrollSpy id="aboutme">
+                    <ScrollSpy id="about-me">
                         <AboutMe {...section.aboutme} />
                         <SkillSet {...section.skillset} />
                     </ScrollSpy>
-                    <ScrollAnimate id="experience">
+                    <ScrollAnimate id="experience" testScrollTo={true}>
                     {()=>
                        <Experience {...section.experience}/> 
                     }
