@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Geometryangle from 'organism-react-geometryangle';
 import { SplashBlock } from 'pmvc_react_landing';
 import { ScrollReceiver } from 'organism-react-scroll-nav';
+import { pageStore } from 'reshow'; 
 
 import Me from '../organisms/Me';
 import Introduce from '../organisms/Introduce';
@@ -35,7 +36,8 @@ class Cover extends Component
     
     render()
     {
-        const {introduce} = this.props;
+        const pageState = pageStore.getState();
+        const introduce = pageState.get('introduce').toJS();
         return (
         <SplashBlock style={Styles.cover}>
             <Me />

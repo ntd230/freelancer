@@ -1,6 +1,5 @@
 import React, {Component} from 'react'; 
 
-import { PopupElement } from "organism-react-popup"
 import { pageStore } from 'reshow'; 
 
 const Footer = (props) => { 
@@ -9,7 +8,6 @@ const Footer = (props) => {
     return (
     <div style={Styles.container}>
         {I18N.footerText}
-        <PopupElement />
     </div>
     )
 };

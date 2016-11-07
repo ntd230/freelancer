@@ -33,12 +33,20 @@ const HandleScroll = (props)=>
 
 class Header extends Component
 {
+    handleOn()
+    {
+        this.setState({
+            on: !this.state.on
+        });
+    }
+
     constructor(props) 
     {
         super(props);
         this.state = {
             on: false
         };
+        this.handleOn = this.handleOn.bind(this);
     }
 
     render()
@@ -71,17 +79,13 @@ class Header extends Component
                 className="home-menu"
                 nav={pageState.get('nav').toJS()}
                 className="pure-u-1 pure-u-lg-5-8"
+                handleOn={this.handleOn}
             />
             <HamburgerIcon
                 className="hamburger" 
                 style={Styles.HamburgerIcon}
                 on={this.state.on}
-                onClick={(()=>{
-                    const on = this.state.on ? false : true;
-                    this.setState({
-                        on: on
-                    });
-                }).bind(this)}
+                onClick={this.handleOn}
             />
         </ScrollReceiver>
     );
@@ -91,7 +95,7 @@ export default Header;
 
 const Styles = {
     container: {
-        padding: '2.15rem 3rem 0'
+        padding: '1.07rem 3rem'
     },
     headerNav: {
         padding:0,
@@ -99,7 +103,7 @@ const Styles = {
         whiteSpace: 'nowrap'
     },
     containerActive: {
-        padding: '0 1.75rem 1rem',
+        padding: '0 1.75rem',
         background: '#000'
     },
     HamburgerIcon: {

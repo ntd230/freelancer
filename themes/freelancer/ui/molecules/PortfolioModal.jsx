@@ -3,7 +3,8 @@ import {
     PopupModal
 } from 'organism-react-popup';
 
-import {assign, lazyInject, XIco} from 'react-atomic-molecule';
+import {assign, lazyInject} from 'react-atomic-molecule';
+import XIco from 'ricon/X';
 
 let injects;
 

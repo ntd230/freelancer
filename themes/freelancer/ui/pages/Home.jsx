@@ -1,5 +1,4 @@
 import React, {Component} from 'react'; 
-import { ContentWrapper, ContentBlock } from 'pmvc_react_landing';
 import { SemanticUI } from 'react-atomic-molecule';
 import { pageStore } from 'reshow'; 
 import { ScrollSpy } from 'organism-react-scroll-nav';
@@ -23,47 +22,38 @@ class Body extends Component
         const pageState = pageStore.getState();
         const I18N = pageState.get('I18N').toJS();
         const state = this.state;
-        const introduce = pageState.get('introduce').toJS();
         const section = pageState.get('section').toJS();
         return (
             <SemanticUI>
-                <Cover introduce={introduce}/>
-                <ContentWrapper style={Styles.contentWrapper}>
-                    <ScrollSpy id="design">
-                        <HeaderContent {...section.design} />
-                        <Portfolio {...section.portfolio} />
-                    </ScrollSpy>
-                    <ScrollSpy id="about-me">
-                        <AboutMe {...section.aboutme} />
-                        <SkillSet {...section.skillset} />
-                    </ScrollSpy>
-                    <ScrollAnimate id="experience" testScrollTo={true}>
-                    {()=>
-                       <Experience {...section.experience}/> 
-                    }
-                    </ScrollAnimate>
-                    <ScrollSpy id="contact">
-                        <Contact {...section.contact} />
-                    </ScrollSpy>
-                    <Footer />
-                </ContentWrapper>
+                <ScrollSpy id="design">
+                    <HeaderContent {...section.design} />
+                    <Portfolio {...section.portfolio} />
+                </ScrollSpy>
+                <ScrollSpy id="about-me">
+                    <AboutMe {...section.aboutme} />
+                    <SkillSet {...section.skillset} />
+                </ScrollSpy>
+                <ScrollAnimate id="experience" testScrollTo={true}>
+                {()=>
+                   <Experience {...section.experience}/> 
+                }
+                </ScrollAnimate>
+                <ScrollSpy id="contact">
+                    <Contact {...section.contact} />
+                </ScrollSpy>
             </SemanticUI>
         );
     }
 }
 
-class Home extends Component
-{
-    render()
-    {
-        let body = <Body />;
-        return (
-            <Freelancer
-                body={body}
-            />
-        );
-    }
-}
+const Home = (props) =>
+<Freelancer
+    cover={<Cover />}
+    body={<Body />}
+    contentWrapper={{
+        style: Styles.contentWrapper
+    }}
+/>
 
 export default Home;
 

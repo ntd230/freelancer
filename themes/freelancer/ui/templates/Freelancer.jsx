@@ -1,9 +1,10 @@
 import React, {Component} from 'react'; 
 import {OneColumn} from 'pmvc_react_landing'; 
 import { reactStyle } from 'react-atomic-molecule';
+import { PopupElement } from "organism-react-popup"
+import { scrollDispatch } from 'organism-react-scroll-nav';
 import Header from '../organisms/Header'; 
 import Footer from '../organisms/Footer'; 
-import { scrollDispatch } from 'organism-react-scroll-nav';
 
 export default class Freelancer extends Component
 {
@@ -24,6 +25,8 @@ export default class Freelancer extends Component
                 return <OneColumn
                     {...rest}
                     header={<Header />}
+                    footer={<Footer />}
+                    last={<PopupElement />}
                 />;
         }
     }
@@ -36,7 +39,7 @@ const xl = '@media (min-width: 80em)';
 const lgMax = '@media (max-width: 64em)';
 const Styles = {
     lgMaxHeader: reactStyle({
-        padding: '1rem 1.75rem 1.875rem !important',
+        padding: '0 !important',
         background: '#000 !important',
         maxHeight: '60px',
         boxSizing: 'border-box',
@@ -49,7 +52,9 @@ const Styles = {
         display: 'block !important' 
     }, [lgMax, '.page-header ul li']),
     lgMaxBrand: reactStyle({
-        paddingTop: '0 !important' 
+        height: '60px',
+        paddingLeft: '1.75rem',
+        position: 'relative'
     }, [lgMax, '.brand']),
     lgMaxHamburger: reactStyle({
         display: 'block !important' 

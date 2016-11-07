@@ -1415,8 +1415,8 @@ organism-react-scroll-animate@*, organism-react-scroll-animate@>=0.0.11:
     react-atomic-molecule "*"
 
 organism-react-scroll-nav@>=0.0.18:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.6.tgz#3d62eb4146c5ecbcdd22024fb203bc8f10686b8d"
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.8.tgz#be7a4377867e2f4ac57600bfca97f5e3c317f8b8"
   dependencies:
     get-scroll-info ">=0.0.10"
     getoffset "*"
@@ -1499,14 +1499,14 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
 pmvc_react_landing@>=0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/pmvc_react_landing/-/pmvc_react_landing-0.0.5.tgz#3bd867f8991e25a826e83fbb7d940c0921351b8b"
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/pmvc_react_landing/-/pmvc_react_landing-0.0.8.tgz#554cee1dfd22bcd12a61565eaec725f30666c27c"
   dependencies:
     react-atomic-molecule ">=0.0.39"
 
 preact-compat@^3.4.2:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.9.0.tgz#fd19b70b94f91b851d3b3989250415e6f845773c"
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.9.1.tgz#43fa9bda0663e6bdef15e091902fd71aee133395"
   dependencies:
     preact-render-to-string "^3.2.1"
     preact-transition-group "^1.1.0"
@@ -1887,8 +1887,8 @@ slash@^1.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
 smooth-scroll-to@*:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/smooth-scroll-to/-/smooth-scroll-to-0.0.5.tgz#3e740af6faf636aefd74a82e8a6742dcd66d6b09"
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/smooth-scroll-to/-/smooth-scroll-to-0.0.9.tgz#9defb988e137e5301da826ef4075e796637bbf3e"
   dependencies:
     get-scroll-info "*"
 
@@ -2080,8 +2080,8 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.3.tgz#3da382f670f25ded78d7b3d1792119bca0b7132d"
 
 ua-parser-js@^0.7.9:
-  version "0.7.10"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.10.tgz#917559ddcce07cbc09ece7d80495e4c268f4ef9f"
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.11.tgz#3741e2dd2fb09251a960f9ef076cd0cc72eaf6a0"
 
 uglify-js@~2.7.3:
   version "2.7.4"
