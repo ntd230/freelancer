@@ -29,6 +29,7 @@ const NavItem = (props) => {
         <a 
             href={link} 
             style={style}
+            className="nav-link"
         >
             {thisIcon}
             {text}

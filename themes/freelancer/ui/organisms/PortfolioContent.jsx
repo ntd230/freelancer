@@ -18,8 +18,12 @@ const PortfolioContent = (props)=>{
     const arrPortfolio = pageState.get('portfolio').toJS();
     const I18N = pageState.get('I18N').toJS(); 
     const one = arrPortfolio[props.name];
+    if (!one) {
+        return null;
+    }
     return (
         <PortfolioModal
+            center={false}
             {...props}
             show={true}
         >
@@ -51,8 +55,8 @@ const PortfolioContent = (props)=>{
                     {background: one.color1},
                     Styles.demo
                 )}>
-                    <Monitor style={Styles.monitor}>
-                        <img style={{display:'block'}} src={one.cover} /> 
+                    <Monitor>
+                        <img className="pure-img" src={one.cover} /> 
                     </Monitor>
                 </div>
                 <div style={assign(
@@ -60,8 +64,8 @@ const PortfolioContent = (props)=>{
                     Styles.demo
                 )}>
                     {one.pages.map((item,key)=>
-                        <Browser style={Styles.monitor} key={key}>
-                            <img style={{display:'block', borderRadius:'10px' }} src={item} /> 
+                        <Browser key={key}>
+                            <img className="pure-img" src={item} /> 
                         </Browser>
                     )}
                 </div>
@@ -116,10 +120,7 @@ const Styles = {
     tech: {
         marginBottom: '2.5rem'
     },
-    monitor: {
-        display: 'inline-block'
-    },
     demo: {
-        padding: '5rem'
+        padding: '1rem'
     }
 };

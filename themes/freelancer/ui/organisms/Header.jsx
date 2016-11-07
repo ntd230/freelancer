@@ -69,7 +69,7 @@ class Header extends Component
             className={classes}
         >
             <Brand 
-                url={pageState.get('freelancerHost')}
+                url={pageState.get('brandUrl')}
                 name={pageState.get('freelancerFirstName')}
                 meta={pageState.get('freelancerLastName')}
                 className="brand pure-u-1 pure-u-lg-3-8"

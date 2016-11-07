@@ -20,7 +20,6 @@ import {
 
 import PortfolioContent from '../organisms/PortfolioContent';
 
-let injects;
 
 class PortfolioList extends PopupMonitor 
 {
@@ -113,6 +112,7 @@ const Styles = {
     },
 };
 
+let injects;
 const InjectStyles = { 
     cardHeader: [
         {color: '#fff'},

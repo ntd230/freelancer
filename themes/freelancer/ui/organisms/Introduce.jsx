@@ -16,7 +16,7 @@ class Introduce extends Component
     {
         const props = this.props;
         return (
-            <div style={Styles.container}>
+            <div style={Styles.container} className="introduce">
                 <div className="hd" style={Styles.hd}>
                     {props.hd}
                 </div>

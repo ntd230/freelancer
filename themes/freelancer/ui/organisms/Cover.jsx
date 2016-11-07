@@ -39,8 +39,8 @@ class Cover extends Component
         const pageState = pageStore.getState();
         const introduce = pageState.get('introduce').toJS();
         return (
-        <SplashBlock style={Styles.cover}>
-            <Me />
+        <SplashBlock style={Styles.container}>
+            <Me style={Styles.hero}/>
             <Geometryangle ref={geo=>this.geo=geo}/> 
             <Introduce isRun={this.state.isRun} {...introduce} />
         </SplashBlock>
@@ -60,8 +60,12 @@ export default ScrollCover;
 
 
 const Styles = {
-    cover: {
+    container: {
         minHeight: 350,
         background: '#8e7481'
+    },
+    hero: {
+        maxWidth: '100%',
+        maxHeight: '100%',
     }
 };

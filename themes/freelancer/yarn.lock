@@ -1379,8 +1379,8 @@ organism-react-animate@*, organism-react-animate@>=0.0.4, organism-react-animate
     react-atomic-molecule "*"
 
 organism-react-apple-device@>=0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/organism-react-apple-device/-/organism-react-apple-device-0.0.1.tgz#84e01e20f3deb8b1b16afdf3020bae6f88abec90"
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/organism-react-apple-device/-/organism-react-apple-device-0.0.3.tgz#bdd0b95a5cabd71512e161a66d213faa97a16b58"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1432,8 +1432,8 @@ organism-react-tag-highlight@>=0.0.1:
     react-atomic-molecule "*"
 
 organism-react-typing@*:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.2.tgz#2f1205fb897ec4aa5d2810026298be793c4e0aae"
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.3.tgz#ba83f65b4f80ead159f25fc0a2be2b799b78b896"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1631,8 +1631,8 @@ react-atomic-atom@^0.0.14:
   resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-0.0.14.tgz#24dd872d0c192ea6de70499c97a85224d0772794"
 
 react-atomic-molecule@*, react-atomic-molecule@>=0.0.39, react-atomic-molecule@>=0.0.40, react-atomic-molecule@>=0.0.42:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-1.0.3.tgz#500a7dcb26cd4caae79d28a4b6bf1063932c9e74"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-atomic-molecule/-/react-atomic-molecule-1.0.4.tgz#396d653b0904a67124dad74ade25a8b6573d6790"
   dependencies:
     classnames "*"
     exenv "1.2.1"

@@ -121,7 +121,8 @@ const Styles = {
     container: {
         background: '#2b2b2b',
         maxWidth: '100%',
-        color: '#fff'
+        color: '#fff',
+        overflow: 'hidden',
     },
     inside: {
         maxWidth: '930px',
@@ -132,6 +133,7 @@ const Styles = {
         fontSize: '1.063rem',
         fontFamily: 'Raleway,sans-serif',
         boxSizing: 'border-box',
+        margin: '0 0 50px',
     },
     phoneIcon: {
         width: 40,

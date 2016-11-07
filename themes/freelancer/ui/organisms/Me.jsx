@@ -15,9 +15,7 @@ const Me = (props) => (
 );
 
 Me.defaultProps = {
-    height: '100%',
-    viewBox: '0 0 902 1064',
-    fill: '#fff'
+    viewBox: '0 0 902 1064'
 };
 
 export default Me;
