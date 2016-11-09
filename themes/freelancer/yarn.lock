@@ -496,7 +496,13 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@^2.1.1, debug@~2.2.0, debug@2:
+debug@^2.1.1, debug@2:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.0.tgz#3912dc55d7167fc3af17d2b85c13f93deaedaa43"
+  dependencies:
+    ms "0.7.2"
+
+debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
@@ -698,8 +704,8 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
 
 form-data@~2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.1.1.tgz#4adf0342e1a79afa1e84c8c320a9ffc82392a1f3"
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.1.2.tgz#89c3534008b97eada4cbb157d58f6f5df025eae4"
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
@@ -1244,6 +1250,10 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
+ms@0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
+
 nan@^2.3.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
@@ -1372,15 +1382,16 @@ organism-react-ajax@>=0.0.12:
     superagent "^0.21.0"
 
 organism-react-animate@*, organism-react-animate@>=0.0.4, organism-react-animate@>=0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/organism-react-animate/-/organism-react-animate-0.0.7.tgz#c534e915ef90ea788631a3438007c5e37f0ccbcd"
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/organism-react-animate/-/organism-react-animate-0.0.10.tgz#260e43cf429461ce1228df605f6d3b8761ee85b3"
   dependencies:
+    keyframe-css "*"
     react-addons-css-transition-group "*"
     react-atomic-molecule "*"
 
 organism-react-apple-device@>=0.0.1:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/organism-react-apple-device/-/organism-react-apple-device-0.0.3.tgz#bdd0b95a5cabd71512e161a66d213faa97a16b58"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/organism-react-apple-device/-/organism-react-apple-device-0.0.6.tgz#0085e6d4faebad508b5aec22b43daca73ba3783e"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1407,16 +1418,16 @@ organism-react-popup@>=0.0.11:
     reduce-flux "*"
 
 organism-react-scroll-animate@*, organism-react-scroll-animate@>=0.0.11:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.17.tgz#31b436e438ca0682ea84f2c91e8a21895f0ee432"
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.18.tgz#d1af751b3766d66a93d1b9cb155b4b6e57c1cca0"
   dependencies:
     organism-react-animate ">=0.0.4"
     organism-react-scroll-nav ">=0.0.18"
     react-atomic-molecule "*"
 
 organism-react-scroll-nav@>=0.0.18:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.1.8.tgz#be7a4377867e2f4ac57600bfca97f5e3c317f8b8"
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-nav/-/organism-react-scroll-nav-0.2.0.tgz#a24e2b44b4e54e974cd5d7d1c44d46e722b6e968"
   dependencies:
     get-scroll-info ">=0.0.10"
     getoffset "*"
@@ -1432,8 +1443,8 @@ organism-react-tag-highlight@>=0.0.1:
     react-atomic-molecule "*"
 
 organism-react-typing@*:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.3.tgz#ba83f65b4f80ead159f25fc0a2be2b799b78b896"
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/organism-react-typing/-/organism-react-typing-0.0.5.tgz#d502c1dce3a62b675bceffe36715843e07b8fb20"
   dependencies:
     react-atomic-molecule "*"
 
@@ -1623,8 +1634,8 @@ react-addons-css-transition-group@*:
   resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.3.2.tgz#d8fa52bec9bb61bdfde8b9e4652b80297cbff667"
 
 react-atomic-atom@*:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-0.0.15.tgz#a389fd60104c650ac4f64febdcc7c4c303d84f4f"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-atomic-atom/-/react-atomic-atom-1.0.2.tgz#b13322adf38cad56013e79748755c24c020090b4"
 
 react-atomic-atom@^0.0.14:
   version "0.0.14"
