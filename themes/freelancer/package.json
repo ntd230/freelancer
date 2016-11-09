@@ -22,7 +22,6 @@
     "preact": "^6.1.0",
     "preact-compat": "^3.4.2",
     "preact-render-to-string": "*",
-    "ra-icon-hamburger": ">=0.0.2",
     "ra-icon-magnifier": "*",
     "rc-css-transition-group": "*",
     "react": "^15.1.0",

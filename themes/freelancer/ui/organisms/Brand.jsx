@@ -21,7 +21,7 @@ const Brand = (props) => (
             display: 'inline-block',
             color: '#fff',
             textDecoration: 'none',
-        })} 
+        },null, false)} 
         onClick={()=>{smoothScrollTo(0)}}
     >
         <div style={Styles.name}>{props.name}</div>

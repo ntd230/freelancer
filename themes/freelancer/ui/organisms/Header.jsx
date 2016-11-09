@@ -8,7 +8,7 @@ import {
 import { pageStore } from 'reshow'; 
 import { PageHeader } from 'pmvc_react_landing';
 import { ScrollReceiver } from 'organism-react-scroll-nav';
-import { XIcon as HamburgerIcon } from 'ra-icon-hamburger';
+import HamburgerIcon from 'ricon/HamburgerToX';
 
 import Brand from '../organisms/Brand'; 
 import HeaderNav from '../organisms/HeaderNav'; 
@@ -47,6 +47,12 @@ class Header extends Component
             on: false
         };
         this.handleOn = this.handleOn.bind(this);
+        reactStyle({
+           color: '#00ffea !important' 
+        }, '#header a:hover', 'header-link');
+        reactStyle({
+           fill: '#00ffea !important' 
+        }, '#header a:hover svg', 'header-link-svg');
     }
 
     render()
