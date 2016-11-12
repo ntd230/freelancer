@@ -1,4 +1,5 @@
 import React, {Component} from 'react'; 
+import Animate from "organism-react-scroll-animate";
 
 import Header from '../molecules/AnimateHeader';
 import Content from '../molecules/AnimateContent';
@@ -19,7 +20,9 @@ const Portfolio = (props) =>
             <Content style={Styles.content}>
                 {content}
             </Content>
-            <PortfolioList {...card}/>
+            <Animate enter="fadeInDown">
+                <PortfolioList {...card}/>
+            </Animate>
         </WhiteBlock>
     );
 }

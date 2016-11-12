@@ -35405,6 +35405,10 @@
 
 	var _reactAtomicMolecule = __webpack_require__(169);
 
+	var _organismReactScrollAnimate = __webpack_require__(278);
+
+	var _organismReactScrollAnimate2 = _interopRequireDefault(_organismReactScrollAnimate);
+
 	var _organismReactTagHighlight = __webpack_require__(311);
 
 	var _organismReactTagHighlight2 = _interopRequireDefault(_organismReactTagHighlight);
@@ -35420,18 +35424,22 @@
 	        _moleculesSvgBlackBlock2['default'],
 	        { style: Styles.container },
 	        _react2['default'].createElement(
-	            _reactAtomicMolecule.Header,
-	            { ui: false, style: Styles.header },
+	            _organismReactScrollAnimate2['default'],
+	            { enter: 'fadeInDown' },
 	            _react2['default'].createElement(
-	                _organismReactTagHighlight2['default'],
-	                { bStyle: Styles.b },
-	                props.header
+	                _reactAtomicMolecule.Header,
+	                { ui: false, style: Styles.header },
+	                _react2['default'].createElement(
+	                    _organismReactTagHighlight2['default'],
+	                    { bStyle: Styles.b },
+	                    props.header
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                _reactAtomicMolecule.Content,
+	                { style: Styles.content },
+	                props.content
 	            )
-	        ),
-	        _react2['default'].createElement(
-	            _reactAtomicMolecule.Content,
-	            { style: Styles.content },
-	            props.content
 	        )
 	    );
 	};
@@ -38552,6 +38560,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _organismReactScrollAnimate = __webpack_require__(278);
+
+	var _organismReactScrollAnimate2 = _interopRequireDefault(_organismReactScrollAnimate);
+
 	var _moleculesAnimateHeader = __webpack_require__(332);
 
 	var _moleculesAnimateHeader2 = _interopRequireDefault(_moleculesAnimateHeader);
@@ -38591,7 +38603,11 @@
 	            { style: Styles.content },
 	            content
 	        ),
-	        _react2['default'].createElement(_organismsPortfolioList2['default'], card)
+	        _react2['default'].createElement(
+	            _organismReactScrollAnimate2['default'],
+	            { enter: 'fadeInDown' },
+	            _react2['default'].createElement(_organismsPortfolioList2['default'], card)
+	        )
 	    );
 	};
 	exports['default'] = Portfolio;

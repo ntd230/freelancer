@@ -25609,6 +25609,10 @@ webpackJsonp([0],[
 
 	var _reactAtomicMolecule = __webpack_require__(174);
 
+	var _organismReactScrollAnimate = __webpack_require__(283);
+
+	var _organismReactScrollAnimate2 = _interopRequireDefault(_organismReactScrollAnimate);
+
 	var _organismReactTagHighlight = __webpack_require__(308);
 
 	var _organismReactTagHighlight2 = _interopRequireDefault(_organismReactTagHighlight);
@@ -25624,18 +25628,22 @@ webpackJsonp([0],[
 	        _moleculesSvgBlackBlock2['default'],
 	        { style: Styles.container },
 	        _react2['default'].createElement(
-	            _reactAtomicMolecule.Header,
-	            { ui: false, style: Styles.header },
+	            _organismReactScrollAnimate2['default'],
+	            { enter: 'fadeInDown' },
 	            _react2['default'].createElement(
-	                _organismReactTagHighlight2['default'],
-	                { bStyle: Styles.b },
-	                props.header
+	                _reactAtomicMolecule.Header,
+	                { ui: false, style: Styles.header },
+	                _react2['default'].createElement(
+	                    _organismReactTagHighlight2['default'],
+	                    { bStyle: Styles.b },
+	                    props.header
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                _reactAtomicMolecule.Content,
+	                { style: Styles.content },
+	                props.content
 	            )
-	        ),
-	        _react2['default'].createElement(
-	            _reactAtomicMolecule.Content,
-	            { style: Styles.content },
-	            props.content
 	        )
 	    );
 	};
@@ -28950,6 +28958,10 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _organismReactScrollAnimate = __webpack_require__(283);
+
+	var _organismReactScrollAnimate2 = _interopRequireDefault(_organismReactScrollAnimate);
+
 	var _moleculesAnimateHeader = __webpack_require__(329);
 
 	var _moleculesAnimateHeader2 = _interopRequireDefault(_moleculesAnimateHeader);
@@ -28989,7 +29001,11 @@ webpackJsonp([0],[
 	            { style: Styles.content },
 	            content
 	        ),
-	        _react2['default'].createElement(_organismsPortfolioList2['default'], card)
+	        _react2['default'].createElement(
+	            _organismReactScrollAnimate2['default'],
+	            { enter: 'fadeInDown' },
+	            _react2['default'].createElement(_organismsPortfolioList2['default'], card)
+	        )
 	    );
 	};
 	exports['default'] = Portfolio;
