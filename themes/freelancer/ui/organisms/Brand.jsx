@@ -44,5 +44,9 @@ const Styles = {
         fontSize: '1.375rem',
         fontFamily: 'Raleway, sans-serif',
         textTransform: 'uppercase',
+        position: 'relative',
+        height: '60px',
+        paddingLeft: '1.75rem',
+        boxSizing: 'border-box'
     }
 };
