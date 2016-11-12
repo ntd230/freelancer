@@ -37,6 +37,7 @@ class Body extends Component
                     scrollMargin={-100}
                     id="experience"
                     testScrollTo={true}
+                    style={{background:'#3C5B65'}}
                 >
                     {()=><Experience {...section.experience}/>}
                 </ScrollAnimate>

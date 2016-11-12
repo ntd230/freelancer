@@ -1421,8 +1421,8 @@ organism-react-popup@*:
     reduce-flux "*"
 
 organism-react-scroll-animate@*:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.19.tgz#a60f594a2e916bcf4179113637c4de265e49422a"
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/organism-react-scroll-animate/-/organism-react-scroll-animate-0.0.20.tgz#2f89431b2f501292889a1cc3502cd51017c8d5d4"
   dependencies:
     organism-react-animate ">=0.0.4"
     organism-react-scroll-nav ">=0.0.18"

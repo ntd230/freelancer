@@ -17400,7 +17400,8 @@ webpackJsonp([0],[
 	                    {
 	                        scrollMargin: -100,
 	                        id: 'experience',
-	                        testScrollTo: true
+	                        testScrollTo: true,
+	                        style: { background: '#3C5B65' }
 	                    },
 	                    function () {
 	                        return _react2['default'].createElement(_organismsExperience2['default'], section.experience);
@@ -24395,7 +24396,6 @@ webpackJsonp([0],[
 	    }
 	    if (!show) {
 	        thisStyle = {
-	            visibility: 'hidden',
 	            minHeight: minHeight
 	        };
 	    }
