@@ -15,14 +15,14 @@ import HeaderNav from '../organisms/HeaderNav';
 
 const HeaderScroll = (props) => 
 {
+    const pageState = pageStore.getState();
+    const {targetInfo, id, ...others} = props;
     reactStyle({
        color: '#00ffea !important' 
-    }, '#header a:hover', 'header-link');
+    }, '#'+id+' a:hover', 'header-link');
     reactStyle({
        fill: '#00ffea !important' 
-    }, '#header a:hover svg', 'header-link-svg');
-    const pageState = pageStore.getState();
-    const {targetInfo, ...others} = props;
+    }, '#'+id+' a:hover svg', 'header-link-svg');
     let classes;
     if (targetInfo.active || targetInfo.atTop) {
         classes='scrolling';
@@ -45,13 +45,11 @@ const HeaderScroll = (props) =>
                 style={Styles.headerNav}
                 nav={pageState.get('nav').toJS()}
                 className="pure-u-lg-5-8"
+                scrollRefId={id}
             />
         }
         component={PageHeader}
-        getStyle={(props)=>{
-            let {targetInfo, style, ...others} = props;
-            return style;
-        }}
+        id={id}
     />
     );
 

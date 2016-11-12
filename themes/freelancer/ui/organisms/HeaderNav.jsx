@@ -60,7 +60,7 @@ const HeaderNav = (props) => (
                         /*scroll*/
                         container={<NavItem />}
                         targetId={targetId}
-                        scrollRefId="header"
+                        scrollRefId={props.scrollRefId}
                         scrollRefLoc="top"
                     />
                 );

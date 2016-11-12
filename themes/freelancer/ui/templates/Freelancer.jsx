@@ -38,7 +38,8 @@ const Styles = {
     }, '.page-header.active'),
     minLgHeader: reactStyle({
         background: 'transparent !important',
-        padding: '1.07rem 3rem'
+        padding: '1.07rem 3rem',
+        maxHeight: '100% !important',
     }, [min.lg, '.page-header']),
     minLgHeaderScrolling: reactStyle({
         padding: '0 1.75rem !important',
@@ -48,7 +49,8 @@ const Styles = {
         display: 'inline-block' 
     }, [min.lg, '.page-header ul li']),
     minLgBrand: reactStyle({
-        padding: '0 !important'
+        padding: '0 !important',
+        position: 'static !important'
     }, [min.lg, '.page-header .brand']),
     minLgHamburger: reactStyle({
         display: 'none !important' 

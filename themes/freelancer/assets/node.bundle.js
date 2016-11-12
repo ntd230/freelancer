@@ -34903,7 +34903,8 @@
 	    }, '.page-header.active'),
 	    minLgHeader: (0, _reactAtomicMolecule.reactStyle)({
 	        background: 'transparent !important',
-	        padding: '1.07rem 3rem'
+	        padding: '1.07rem 3rem',
+	        maxHeight: '100% !important'
 	    }, [_reactAtomicMolecule.min.lg, '.page-header']),
 	    minLgHeaderScrolling: (0, _reactAtomicMolecule.reactStyle)({
 	        padding: '0 1.75rem !important',
@@ -34913,7 +34914,8 @@
 	        display: 'inline-block'
 	    }, [_reactAtomicMolecule.min.lg, '.page-header ul li']),
 	    minLgBrand: (0, _reactAtomicMolecule.reactStyle)({
-	        padding: '0 !important'
+	        padding: '0 !important',
+	        position: 'static !important'
 	    }, [_reactAtomicMolecule.min.lg, '.page-header .brand']),
 	    minLgHamburger: (0, _reactAtomicMolecule.reactStyle)({
 	        display: 'none !important'
@@ -34960,17 +34962,18 @@
 	var _organismsHeaderNav2 = _interopRequireDefault(_organismsHeaderNav);
 
 	var HeaderScroll = function HeaderScroll(props) {
-	    (0, _reactAtomicMolecule.reactStyle)({
-	        color: '#00ffea !important'
-	    }, '#header a:hover', 'header-link');
-	    (0, _reactAtomicMolecule.reactStyle)({
-	        fill: '#00ffea !important'
-	    }, '#header a:hover svg', 'header-link-svg');
 	    var pageState = _reshow.pageStore.getState();
 	    var targetInfo = props.targetInfo;
+	    var id = props.id;
 
-	    var others = _objectWithoutProperties(props, ['targetInfo']);
+	    var others = _objectWithoutProperties(props, ['targetInfo', 'id']);
 
+	    (0, _reactAtomicMolecule.reactStyle)({
+	        color: '#00ffea !important'
+	    }, '#' + id + ' a:hover', 'header-link');
+	    (0, _reactAtomicMolecule.reactStyle)({
+	        fill: '#00ffea !important'
+	    }, '#' + id + ' a:hover svg', 'header-link-svg');
 	    var classes = undefined;
 	    if (targetInfo.active || targetInfo.atTop) {
 	        classes = 'scrolling';
@@ -34987,17 +34990,11 @@
 	        nav: _react2['default'].createElement(_organismsHeaderNav2['default'], {
 	            style: Styles.headerNav,
 	            nav: pageState.get('nav').toJS(),
-	            className: 'pure-u-lg-5-8'
+	            className: 'pure-u-lg-5-8',
+	            scrollRefId: id
 	        }),
 	        component: _pmvc_react_landing.PageHeader,
-	        getStyle: function (props) {
-	            var targetInfo = props.targetInfo;
-	            var style = props.style;
-
-	            var others = _objectWithoutProperties(props, ['targetInfo', 'style']);
-
-	            return style;
-	        }
+	        id: id
 	    }));
 	};
 
@@ -36243,7 +36240,7 @@
 	                /*scroll*/
 	                container: _react2['default'].createElement(NavItem, null),
 	                targetId: targetId,
-	                scrollRefId: 'header',
+	                scrollRefId: props.scrollRefId,
 	                scrollRefLoc: 'top'
 	            });
 	        })
