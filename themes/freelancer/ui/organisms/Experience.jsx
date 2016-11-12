@@ -53,10 +53,8 @@ export default Experience;
 
 const Styles = {
     container: {
-        background: 'url(http://freelancer.ntd230.com/photos/pattern.svg)',
+        background: 'url(http://freelancer.ntd230.com/photos/pattern.svg) 50% 50% / cover no-repeat #3C5B65',
         color: '#fff',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
     },
 };
 

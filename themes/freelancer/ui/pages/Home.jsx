@@ -33,10 +33,12 @@ class Body extends Component
                     <AboutMe {...section.aboutme} />
                     <SkillSet {...section.skillset} />
                 </ScrollSpy>
-                <ScrollAnimate id="experience" testScrollTo={true}>
-                {()=>
-                   <Experience {...section.experience}/> 
-                }
+                <ScrollAnimate
+                    scrollMargin={-100}
+                    id="experience"
+                    testScrollTo={true}
+                >
+                    {()=><Experience {...section.experience}/>}
                 </ScrollAnimate>
                 <ScrollSpy id="contact">
                     <Contact {...section.contact} />
