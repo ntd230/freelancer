@@ -10,7 +10,7 @@ import { HoverDimmerCardView } from 'react-atomic-organism';
 import { 
     dispatch,
     pageStore,
-    Container
+    reshow
 } from 'reshow';
 
 import {
@@ -94,7 +94,7 @@ class PortfolioList extends PopupMonitor
     }
 }
 
-const PortfolioListContainer = Container.create(
+const PortfolioListContainer = reshow(
     PortfolioList,
     { withProps:true }
 );
