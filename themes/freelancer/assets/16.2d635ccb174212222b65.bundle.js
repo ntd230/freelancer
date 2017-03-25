@@ -1,73 +1,25 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
+webpackJsonp([16],{
+
+/***/ 550:
+/***/ (function(module, exports) {
+
+/**
+ * Check if `obj` is an object.
+ *
+ * @param {Object} obj
+ * @return {Boolean}
+ * @api private
+ */
+
+function isObject(obj) {
+  return null !== obj && 'object' === typeof obj;
+}
+
+module.exports = isObject;
+
+/***/ }),
+
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -87,12 +39,12 @@ if (typeof window !== 'undefined') {
   root = this;
 }
 
-var Emitter = __webpack_require__(3);
-var RequestBase = __webpack_require__(5);
-var isObject = __webpack_require__(1);
-var isFunction = __webpack_require__(4);
-var ResponseBase = __webpack_require__(6);
-var shouldRetry = __webpack_require__(7);
+var Emitter = __webpack_require__(552);
+var RequestBase = __webpack_require__(554);
+var isObject = __webpack_require__(550);
+var isFunction = __webpack_require__(553);
+var ResponseBase = __webpack_require__(555);
+var shouldRetry = __webpack_require__(556);
 
 /**
  * Noop.
@@ -867,8 +819,7 @@ Request.prototype._end = function () {
   // set header fields
   for (var field in this.header) {
     if (null == this.header[field]) continue;
-
-    if (this.header.hasOwnProperty(field)) xhr.setRequestHeader(field, this.header[field]);
+    xhr.setRequestHeader(field, this.header[field]);
   }
 
   if (this._responseType) {
@@ -1014,57 +965,8 @@ request.put = function (url, data, fn) {
 };
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports) {
 
-/**
- * Check if `obj` is an object.
- *
- * @param {Object} obj
- * @return {Boolean}
- * @api private
- */
-
-function isObject(obj) {
-  return null !== obj && 'object' === typeof obj;
-}
-
-module.exports = isObject;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var _isArray = Array.isArray;
-
-var getObjectValue = function getObjectValue(o, path, defaultValue) {
-    if (!o || !_isArray(path)) {
-        return defaultValue;
-    }
-    var current = o;
-    path.every(function (a) {
-        if (current[a]) {
-            current = current[a];
-            return true;
-        } else {
-            current = defaultValue;
-            return false;
-        }
-    });
-    return current;
-};
-
-exports.default = getObjectValue;
-module.exports = exports['default'];
-
-/***/ }),
-/* 3 */
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -1227,7 +1129,8 @@ Emitter.prototype.hasListeners = function (event) {
 };
 
 /***/ }),
-/* 4 */
+
+/***/ 553:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -1237,7 +1140,7 @@ Emitter.prototype.hasListeners = function (event) {
  * @return {Boolean}
  * @api private
  */
-var isObject = __webpack_require__(1);
+var isObject = __webpack_require__(550);
 
 function isFunction(fn) {
   var tag = isObject(fn) ? Object.prototype.toString.call(fn) : '';
@@ -1247,13 +1150,14 @@ function isFunction(fn) {
 module.exports = isFunction;
 
 /***/ }),
-/* 5 */
+
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module of mixed-in functions shared between node and client code
  */
-var isObject = __webpack_require__(1);
+var isObject = __webpack_require__(550);
 
 /**
  * Expose `RequestBase`.
@@ -1838,7 +1742,8 @@ RequestBase.prototype._setTimeouts = function () {
 };
 
 /***/ }),
-/* 6 */
+
+/***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -1846,7 +1751,7 @@ RequestBase.prototype._setTimeouts = function () {
  * Module dependencies.
  */
 
-var utils = __webpack_require__(8);
+var utils = __webpack_require__(557);
 
 /**
  * Expose `ResponseBase`.
@@ -1974,7 +1879,8 @@ ResponseBase.prototype._setStatusProperties = function (status) {
 };
 
 /***/ }),
-/* 7 */
+
+/***/ 556:
 /***/ (function(module, exports) {
 
 var ERROR_CODES = ['ECONNRESET', 'ETIMEDOUT', 'EADDRINFO', 'ESOCKETTIMEDOUT'];
@@ -1992,12 +1898,12 @@ module.exports = function shouldRetry(err, res) {
   if (res && res.status && res.status >= 500) return true;
   // Superagent timeout
   if (err && 'timeout' in err && err.code == 'ECONNABORTED') return true;
-  if (err && 'crossDomain' in err) return true;
   return false;
 };
 
 /***/ }),
-/* 8 */
+
+/***/ 557:
 /***/ (function(module, exports) {
 
 
@@ -2069,161 +1975,6 @@ exports.cleanHeader = function (header, shouldStripCookie) {
   return header;
 };
 
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-                target[key] = source[key];
-            }
-        }
-    }return target;
-};
-
-var _getObjectValue = __webpack_require__(2);
-
-var _getObjectValue2 = _interopRequireDefault(_getObjectValue);
-
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _objectWithoutProperties(obj, keys) {
-    var target = {};for (var i in obj) {
-        if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
-    }return target;
-}
-
-var ws;
-var callbacks = [];
-var post;
-var isWsConnect = void 0;
-var wsUrl = void 0;
-
-try {
-    post = postMessage;
-    post({ type: "ready" });
-} catch (e) {
-    post = function post(data) {
-        var e = {
-            data: data
-        };
-        callbacks.forEach(function (c) {
-            c(e);
-        });
-    };
-}
-exports.default = {
-    postMessage: function postMessage(data) {
-        var e = {
-            data: data
-        };
-        onmessage(e);
-    },
-    addEventListener: function addEventListener(type, callback) {
-        callbacks.push(callback);
-    }
-};
-
-onmessage = function onmessage(e) {
-    var data = (0, _getObjectValue2.default)(e, ['data']);
-    switch (data.type) {
-        case 'initWs':
-            initWs(data.ws);
-            break;
-        case 'ajaxGet':
-            ajaxGet(data);
-            break;
-        case 'ajaxPost':
-            ajaxPost(data);
-            break;
-    }
-};
-
-var ajaxGet = function ajaxGet(_ref) {
-    var url = _ref.url,
-        action = _ref.action;
-
-    var params = (0, _getObjectValue2.default)(action, ['params'], {});
-    Promise.resolve().then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0)]; (function (req) {
-        req.get(url).query(params.query).set('Accept', (0, _getObjectValue2.default)(params, ['accept'], 'application/json')).end(function (err, res) {
-            var error = res.error,
-                req = res.req,
-                text = res.text,
-                xhr = res.xhr,
-                resetRes = _objectWithoutProperties(res, ['error', 'req', 'text', 'xhr']);
-
-            post(_extends({}, action, {
-                text: text,
-                response: resetRes
-            }));
-        });
-    }.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
-};
-
-var ajaxPost = function ajaxPost(_ref2) {
-    var url = _ref2.url,
-        action = _ref2.action;
-
-    var params = (0, _getObjectValue2.default)(action, ['params'], {});
-    Promise.resolve().then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0)]; (function (req) {
-        req.post(url).send(params.query).set('Accept', (0, _getObjectValue2.default)(params, ['accept'], 'application/json')).end(function (err, res) {
-            var error = res.error,
-                req = res.req,
-                text = res.text,
-                xhr = res.xhr,
-                resetRes = _objectWithoutProperties(res, ['error', 'req', 'text', 'xhr']);
-
-            post(_extends({}, action, {
-                text: text,
-                response: resetRes
-            }));
-        });
-    }.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
-};
-
-var initWs = function initWs(url) {
-    wsUrl = url;
-    ws = new WebSocket(url);
-    ws.onopen = function (e) {};
-    ws.onerror = function (e) {};
-    ws.onmessage = function (e) {
-        isWsConnect = true;
-        switch (e.data) {
-            case 'ping':
-                break;
-            default:
-                post({ type: 'ws', text: e.data });
-                break;
-        }
-    };
-    ws.onclose = function (e) {
-        isWsConnect = false;
-    };
-    wsPing();
-};
-
-var wsPing = function wsPing() {
-    setTimeout(function () {
-        if (!isWsConnect) {
-            initWs(wsUrl);
-        } else {
-            ws.send(JSON.stringify({ type: 'ping' }));
-            wsPing();
-        }
-    }, 10000);
-};
-module.exports = exports['default'];
-
 /***/ })
-/******/ ]);
+
+});

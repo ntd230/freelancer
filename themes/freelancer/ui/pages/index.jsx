@@ -1,6 +1,7 @@
 import React from 'react'; 
-import Home from './Home';
+import {Home} from 'pmvc_react_portfolio';
 import {ClientRoute} from 'reshow'; 
+import Me from '../organisms/Me';
 
 const themes = {
     home: Home,
@@ -10,6 +11,7 @@ const Index = (props) => {
         <ClientRoute
             themes={themes}
             {...props}
+            me={<Me />}
             parseUrl={(url)=>{
                 const params = url.split('/');
                 const last = params.length-1;

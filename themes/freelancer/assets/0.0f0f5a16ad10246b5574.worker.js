@@ -799,8 +799,7 @@ Request.prototype._end = function () {
   // set header fields
   for (var field in this.header) {
     if (null == this.header[field]) continue;
-
-    if (this.header.hasOwnProperty(field)) xhr.setRequestHeader(field, this.header[field]);
+    xhr.setRequestHeader(field, this.header[field]);
   }
 
   if (this._responseType) {
@@ -1894,7 +1893,6 @@ module.exports = function shouldRetry(err, res) {
   if (res && res.status && res.status >= 500) return true;
   // Superagent timeout
   if (err && 'timeout' in err && err.code == 'ECONNABORTED') return true;
-  if (err && 'crossDomain' in err) return true;
   return false;
 };
 
