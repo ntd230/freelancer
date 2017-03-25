@@ -1,3 +1,4 @@
-const React=require('react');
-global.reactServer = require('react-dom/server');
-global.app = React.createFactory(require('../ui/pages/index'));
+import server from 'reshow-app/server';
+import app from '../ui/pages/index';
+
+global.app=server(app);

@@ -29,8 +29,11 @@
     "ricon": "*"
   },
   "devDependencies": {
-    "babel-core": "^5.x",
-    "babel-loader": "^5.x",
-    "webpack": "^1.13.0"
+    "babel-cli": "*",
+    "reshow-app": "*"
+  },
+  "scripts": {
+    "build": "rm -rf build && BABEL_ENV=build babel ui -d build/ui && BABEL_ENV=build babel src -d build/src",
+    "prepublish": "npm run build"
   }
 }

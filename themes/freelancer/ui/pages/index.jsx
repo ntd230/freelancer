@@ -3,7 +3,7 @@ import Home from './Home';
 import {ClientRoute} from 'reshow'; 
 
 const themes = {
-    home: <Home />,
+    home: Home,
 };
 const Index = (props) => {
     return (

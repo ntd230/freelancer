@@ -20,8 +20,8 @@
 <div id="app"><?php echo $this['run']?></div>
 </body>
 <script>var REACT_DATA=<?php echo $this['reactData']?></script>
-<script src="<?php echo $this['assetsRoot']?>/vendor.bundle.js?<?php echo $this['staticVersion']?>"></script>
-<script defer src="<?php echo $this['assetsRoot']?>/bundle.js?<?php echo $this['staticVersion']?>"></script>
+<script src="<?php echo $this->get('assetsRoot')?>/vendor.bundle.js?<?php echo $this['staticVersion']?>"></script>
+<script defer src="<?php echo $this->get('assetsRoot')?>/main.bundle.js?<?php echo $this['staticVersion']?>"></script>
 </html>
 <!-- Google Font -->
 <link href='http://fonts.googleapis.com/css?family=Tienne:400,700' rel='stylesheet' type='text/css'>

@@ -5,14 +5,15 @@ phpc=`DUMP=cli php -r "include('config/config.php');"`
 
 production(){
     echo "Production Mode";
-    NODE_ENV=production PHP_CONFIG=$phpc webpack -p 
-    NODE_ENV=production webpack -p --config webpack.node.js
+    NODE_ENV=production CONFIG=$phpc webpack -p 
+    NODE_ENV=production webpack -p --config webpack.server.js
 }
 
 develop(){
     echo "Develop Mode";
-    PHP_CONFIG=$phpc webpack
-    webpack --config webpack.node.js
+    npm run build
+    CONFIG=$phpc webpack
+    webpack --config webpack.server.js
 }
 
 case "$1" in
