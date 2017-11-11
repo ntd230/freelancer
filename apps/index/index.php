@@ -9,7 +9,6 @@ $b->addAction('index', array(
         ${_INIT_CONFIG}[_CLASS],
         'index'
     )
-    ,_FORM => 'HelloVerify'
 ));
 
 $b->addForward('home', array(

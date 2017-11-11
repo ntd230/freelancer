@@ -1,16 +1,9 @@
-webpackJsonp([2],{
+webpackJsonp([4],{
 
-/***/ 547:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 436:
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-    return typeof obj;
-} : function (obj) {
-    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 // dlog 0.1.1
 // http://ddo.github.io/dlog
@@ -68,11 +61,16 @@ dlog.prototype.color_map = {
 };
 
 dlog.prototype.getCSS = function (level) {
+    if (!this.color_map[level]) {
+        level = 'info';
+    }
     return level ? 'font-size: ' + this.size + 'px;color: ' + this.color_map[level] : 'font-size: ' + this.size + 'px';
 };
 
 dlog.prototype.log = function (level, data) {
-    if (level === 'silent') return;
+    if (level === 'silent') {
+        return;
+    }
 
     if (this.level_map[level] >= this.level_no) {
         this.show(level, data);
@@ -81,7 +79,6 @@ dlog.prototype.log = function (level, data) {
 
 //do each element of arr is a obj ?
 dlog.prototype.isAllObj = function (arr) {
-    var is_all_obj = true;
     for (var i = 0; i < arr.length; i++) {
         if (_typeof(arr[i]) !== 'object') return false;
     }
@@ -89,16 +86,22 @@ dlog.prototype.isAllObj = function (arr) {
 };
 
 dlog.prototype.show = function (level, data) {
-    console.log('%c [%s] %c %s %c %s:', this.getCSS(), new Date().toJSON(), this.getCSS('name'), this.name, this.getCSS(level), level.toUpperCase());
-
+    console.debug('%c [%s] %c %s %c %s:', this.getCSS(), new Date().toJSON(), this.getCSS('name'), this.name, this.getCSS(level), level.toUpperCase());
+    if (!console[level]) {
+        level = 'info';
+    }
+    if (level === 'trace') {
+        level = 'debug'; // consistence trace, debug, name 
+    }
     if (Array.isArray(data[0]) && this.isAllObj(data[0])) {
         console.table(data[0]);
+    } else {
+        console[level].apply(console, data);
     }
-    console[level].apply(console, data);
 };
 
 dlog.prototype.trace = function () {
-    this.log('info', arguments);
+    this.log('trace', arguments);
 };
 
 dlog.prototype.debug = function () {
