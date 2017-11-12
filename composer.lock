@@ -596,16 +596,16 @@
         },
         {
             "name": "pmvc-plugin/dotenv",
-            "version": "0.2.7",
+            "version": "0.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc-plugin/dotenv.git",
-                "reference": "c183e61e343a97eab413d787037d21249ab5de9f"
+                "reference": "44deb8ecad4bece7029d86284a98dd64c44e6add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/dotenv/zipball/c183e61e343a97eab413d787037d21249ab5de9f",
-                "reference": "c183e61e343a97eab413d787037d21249ab5de9f",
+                "url": "https://api.github.com/repos/pmvc-plugin/dotenv/zipball/44deb8ecad4bece7029d86284a98dd64c44e6add",
+                "reference": "44deb8ecad4bece7029d86284a98dd64c44e6add",
                 "shasum": ""
             },
             "require": {
@@ -630,7 +630,7 @@
                 "plug-in",
                 "pmvc"
             ],
-            "time": "2017-09-01T13:22:34+00:00"
+            "time": "2017-11-11T13:57:34+00:00"
         },
         {
             "name": "pmvc-plugin/error",
@@ -784,19 +784,20 @@
         },
         {
             "name": "pmvc-plugin/underscore",
-            "version": "0.1.10",
+            "version": "0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc-plugin/underscore.git",
-                "reference": "3c974dd36f2ac228b863df03514be2f8623e38b7"
+                "reference": "a8483c02222e5b413e24032d5a7ec1d35cd9c4a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/underscore/zipball/3c974dd36f2ac228b863df03514be2f8623e38b7",
-                "reference": "3c974dd36f2ac228b863df03514be2f8623e38b7",
+                "url": "https://api.github.com/repos/pmvc-plugin/underscore/zipball/a8483c02222e5b413e24032d5a7ec1d35cd9c4a2",
+                "reference": "a8483c02222e5b413e24032d5a7ec1d35cd9c4a2",
                 "shasum": ""
             },
             "require": {
+                "pmvc-plugin/url": "*",
                 "pmvc/pmvc": "*"
             },
             "type": "library",
@@ -818,7 +819,7 @@
                 "pmvc",
                 "underscore"
             ],
-            "time": "2016-12-29T11:21:10+00:00"
+            "time": "2017-11-11T13:54:20+00:00"
         },
         {
             "name": "pmvc-plugin/url",

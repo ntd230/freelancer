@@ -21,10 +21,10 @@
     "organism-react-typing": "*",
     "pmvc_react_portfolio": "*",
     "ra-icon-magnifier": "*",
-    "react": "^15.1.0",
+    "react": "^16.x",
     "react-atomic-molecule": "*",
     "react-atomic-organism": "*",
-    "react-dom": "^15.1.0",
+    "react-dom": "^16.x",
     "reshow": "*",
     "ricon": "*"
   },
